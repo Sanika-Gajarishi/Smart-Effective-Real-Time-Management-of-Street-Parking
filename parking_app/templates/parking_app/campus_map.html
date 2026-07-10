@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ADYPU Smart Parking Map</title>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      text-align: center;
+      margin: 15px 0;
+    }
+    #map {
+      height: 500px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>ADYPU Smart Parking Map</h2>
+
+<div id="map"></div>
+
+<script>
+function initMap() {
+
+  // 📍 ADYPU Location
+  const campusLocation = { lat: 18.5793, lng: 73.8745 };
+
+  // 🗺️ Initialize Map
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 17,
+    center: campusLocation
+  });
+
+  // 🎓 University Marker
+  new google.maps.Marker({
+    position: campusLocation,
+    map: map,
+    title: "Ajeenkya DY Patil University"
+  });
+
+  // 🅿️ Load Parking Slots from DB
+  fetch("/get_slots_json/")
+    .then(res => res.json())
+    .then(slots => {
+      slots.forEach(s => {
+
+        // Skip slots without coordinates
+        if (!s.lat || !s.lng) return;
+
+        const marker = new google.maps.Marker({
+          position: { lat: s.lat, lng: s.lng },
+          map: map,
+          label: s.slot_number.toString(),
+          icon: s.is_occupied
+            ? "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+            : "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+        });
+
+        // 🖱️ Click Event
+        marker.addListener("click", () => {
+          alert(
+            s.is_occupied
+              ? "🚫 Slot " + s.slot_number + " is Occupied"
+              : "✅ Slot " + s.slot_number + " is Available"
+          );
+        });
+      });
+    });
+}
+
+// 🚀 Load map
+initMap();
+</script>
+
+</body>
+</html>

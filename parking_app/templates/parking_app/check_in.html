@@ -1,0 +1,55 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-sm border-0 p-4 mx-auto" style="max-width: 600px;">
+    <h2 class="text-center mb-4">✓ Check-In to Parking</h2>
+
+    <div class="alert alert-info">
+      <p>Scan the QR code at your parking slot, or confirm check-in below:</p>
+    </div>
+
+    <div class="card bg-light p-4 mb-4">
+      <div class="detail-item">
+        <strong>🅿️ Slot Number:</strong>
+        <span class="float-end">{{ reservation.slot_number }}</span>
+      </div>
+      <div class="detail-item">
+        <strong>🚗 Vehicle Number:</strong>
+        <span class="float-end">{{ reservation.vehicle_number }}</span>
+      </div>
+      <div class="detail-item">
+        <strong>📦 Vehicle Type:</strong>
+        <span class="float-end">{{ reservation.vehicle_type }}</span>
+      </div>
+      <div class="detail-item">
+        <strong>⏱️ Reserved Until:</strong>
+        <span class="float-end">{{ reservation.end_time }}</span>
+      </div>
+    </div>
+
+    <form method="POST">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-success btn-lg w-100">
+        ✓ Confirm Check-In
+      </button>
+    </form>
+
+    <p class="text-muted text-center mt-3">
+      Once checked in, you can start your parking session
+    </p>
+  </div>
+</div>
+
+<style>
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .detail-item:last-child {
+    border-bottom: none;
+  }
+</style>
+{% endblock %}

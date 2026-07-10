@@ -1,0 +1,50 @@
+
+{% extends 'parking_app/base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-sm border-0 mx-auto p-4" style="max-width: 650px;">
+    <h2 class="text-center mb-4">👤 My Profile</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="text-center mb-3">
+        {% if profile.profile_image %}
+          <img src="{{ profile.profile_image.url }}" alt="Profile Picture" 
+               width="110" height="110" class="rounded-circle border border-2 mb-2" />
+        {% else %}
+          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" 
+               alt="Default Avatar" width="110" height="110" class="rounded-circle border border-2 mb-2" />
+        {% endif %}
+        <div class="mt-2">
+          <label class="btn btn-sm btn-outline-primary">
+            📸 Change Photo <input type="file" name="profile_image" accept="image/*" hidden>
+          </label>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <h4 class="fw-bold">{{ user.username|title }}</h4>
+        <p class="text-muted mb-2">{{ user.email }}</p>
+      </div>
+
+      <hr>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label fw-semibold">📱 Phone Number</label>
+        <input type="text" name="phone" id="phone" class="form-control"
+               value="{{ user.profile.phone }}" placeholder="Enter phone number">
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-success w-100 mb-2">💾 Save Changes</button>
+        <a href="{% url 'password_change' %}" class="btn btn-outline-primary w-100">🔐 Change Password</a>
+      </div>
+    </form>
+
+    <div class="text-center mt-3">
+      <a href="{% url 'dashboard' %}" class="btn btn-secondary w-100">🏠 Back to Dashboard</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

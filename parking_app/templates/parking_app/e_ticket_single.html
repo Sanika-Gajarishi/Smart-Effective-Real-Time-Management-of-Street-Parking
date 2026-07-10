@@ -1,0 +1,487 @@
+{% extends 'parking_app/base.html' %}
+{% block content %}
+<style>
+  .ticket-container {
+    max-width: 520px;
+    margin: 40px auto;
+  }
+
+  .ticket-card-full {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e8e8e8;
+    background: #fafafa;
+  }
+
+  .ticket-card-full.expired {
+    opacity: 0.85;
+  }
+
+  .expired-overlay-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .expired-text-full {
+    font-size: 68px;
+    font-weight: 900;
+    color: rgba(220, 53, 69, 0.4);
+    transform: rotate(-45deg);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif;
+  }
+
+  .ticket-header-full {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 28px 32px;
+    position: relative;
+  }
+
+  .ticket-header-full.expired {
+    background: linear-gradient(135deg, #b8444f 0%, #8b3a3f 100%);
+  }
+
+  .ticket-label-top {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .ticket-number-large {
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-family: 'Courier New', monospace;
+  }
+
+  .status-badge-full {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+  }
+
+  .status-badge-full.valid {
+    background: rgba(76, 175, 80, 0.2);
+    color: #2e7d32;
+    border: 1px solid rgba(76, 175, 80, 0.4);
+  }
+
+  .status-badge-full.expired {
+    background: rgba(220, 53, 69, 0.2);
+    color: #b71c1c;
+    border: 1px solid rgba(220, 53, 69, 0.4);
+  }
+
+  .ticket-body-full {
+    padding: 32px;
+    background: white;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  .info-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-label-full {
+    font-size: 11px;
+    color: #7a8a99;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .info-value-full {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .info-value-full.slot {
+    color: #1565c0;
+    font-size: 24px;
+  }
+
+  .info-value-full.vehicle {
+    color: #455a64;
+    font-size: 16px;
+  }
+
+  .info-value-full.type {
+    color: #7e57c2;
+    font-size: 16px;
+  }
+
+  .info-value-full.amount {
+    color: #2e7d32;
+    font-size: 24px;
+  }
+
+  .divider-full {
+    height: 1px;
+    background: #e0e0e0;
+    margin: 24px 0;
+  }
+
+  .date-section {
+    background: #f5f5f5;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 1px solid #ebebeb;
+  }
+
+  .date-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .date-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date-label {
+    font-size: 10px;
+    color: #7a8a99;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .date-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .time-value {
+    font-size: 13px;
+    color: #7a8a99;
+    margin-top: 4px;
+  }
+
+  .date-value.expired {
+    color: #c62828;
+  }
+
+  .qr-container-full {
+    text-align: center;
+    background: #f5f5f5;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 1px dashed #bdbdbd;
+  }
+
+  .qr-label-full {
+    font-size: 10px;
+    color: #7a8a99;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .qr-code-img {
+    max-width: 180px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .ticket-footer-full {
+    background: #f9f9f9;
+    padding: 18px 32px;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    color: #7a8a99;
+    text-align: center;
+    margin: 0;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .action-buttons .btn {
+    padding: 11px 26px;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 576px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .date-row {
+      grid-template-columns: 1fr;
+    }
+
+    .expired-text-full {
+      font-size: 48px;
+      letter-spacing: 4px;
+    }
+
+    .ticket-body-full {
+      padding: 24px;
+    }
+  }
+</style>
+
+<div class="container ticket-container">
+  
+  <!-- Status Alert -->
+  {% if is_expired %}
+    <div class="alert alert-danger mb-4" role="alert">
+      <div class="d-flex align-items-center">
+        <div class="flex-grow-1">
+          <h5 class="alert-heading mb-2">⏰ Ticket Expired</h5>
+          <p class="mb-0">This ticket is no longer valid. The parking time has ended.</p>
+        </div>
+        <div style="font-size: 48px;">🔴</div>
+      </div>
+    </div>
+  {% else %}
+    <div class="alert alert-success mb-4" role="alert">
+      <div class="d-flex align-items-center">
+        <div class="flex-grow-1">
+          <h5 class="alert-heading mb-2">✅ Ticket Valid</h5>
+          <p class="mb-0">This ticket is currently valid for use.</p>
+        </div>
+        <div style="font-size: 48px;">🟢</div>
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Main Ticket Card -->
+  <div class="card ticket-card-full {% if is_expired %}expired{% endif %}">
+    
+    <!-- Expired Overlay -->
+    {% if is_expired %}
+      <div class="expired-overlay-full">
+      </div>
+    {% endif %}
+
+    <!-- Header -->
+    <div class="ticket-header-full {% if is_expired %}expired{% endif %}">
+      <div class="ticket-label-top">Parking Ticket</div>
+      <div class="ticket-number-large">#{{ e_ticket.ticket_number }}</div>
+      <span class="status-badge-full {% if is_expired %}expired{% else %}valid{% endif %}">
+        {% if is_expired %}
+          Expired
+        {% else %}
+          Valid
+        {% endif %}
+      </span>
+    </div>
+
+    <!-- Body -->
+    <div class="ticket-body-full">
+      
+      <!-- Slot & Vehicle Info -->
+      <div class="info-grid">
+        <div class="info-block">
+          <span class="info-label-full">Parking Slot</span>
+          <span class="info-value-full slot">#{{ booking.slot.slot_number }}</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label-full">Vehicle Number</span>
+          <span class="info-value-full vehicle">{{ booking.vehicle_number }}</span>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-block">
+          <span class="info-label-full">Vehicle Type</span>
+          <span class="info-value-full type">{{ booking.vehicle_type|title }}</span>
+        </div>
+        <div class="info-block">
+          <span class="info-label-full">Amount Paid</span>
+          <span class="info-value-full amount">₹{{ booking.base_amount }}</span>
+        </div>
+      </div>
+
+      <div class="divider-full"></div>
+
+      <!-- Date & Time Section -->
+      <div class="date-section">
+        <div class="date-row">
+          <div class="date-item">
+            <span class="date-label">Check-In</span>
+            <span class="date-value">{{ booking.start_time|date:"d M, Y" }}</span>
+            <span class="time-value">{{ booking.start_time|date:"H:i" }} hrs</span>
+          </div>
+          <div class="date-item">
+            <span class="date-label">Check-Out</span>
+            <span class="date-value {% if is_expired %}expired{% endif %}">{{ booking.end_time|date:"d M, Y" }}</span>
+            <span class="time-value">{{ booking.end_time|date:"H:i" }} hrs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking Status -->
+      <div class="info-grid">
+        <div class="info-block">
+          <span class="info-label-full">Booking Status</span>
+          <div style="margin-top: 6px;">
+            {% if booking.status == 'confirmed' %}
+              <span class="badge bg-success p-2" style="font-size: 11px;">Confirmed</span>
+            {% elif booking.status == 'active' %}
+              <span class="badge bg-info p-2" style="font-size: 11px;">Active</span>
+            {% elif booking.status == 'completed' %}
+              <span class="badge bg-secondary p-2" style="font-size: 11px;">Completed</span>
+            {% else %}
+              <span class="badge bg-secondary p-2" style="font-size: 11px;">{{ booking.status|title }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-full"></div>
+
+      <!-- QR Code -->
+      <div class="qr-container-full">
+        <div class="qr-label-full">Scan for Check-In/Out</div>
+        {% if e_ticket.qr_code %}
+          <img src="{{ e_ticket.qr_code }}" alt="Parking Ticket QR Code" class="qr-code-img">
+        {% else %}
+          <p class="text-muted">QR Code not available</p>
+        {% endif %}
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="ticket-footer-full">
+      <p class="footer-text">
+        Generated on {{ e_ticket.generated_at|date:"d M, Y \a\t H:i" }}
+      </p>
+      <p class="footer-text mt-3">
+        <small id="redirect-notice">🔄 Redirecting to dashboard in 5 seconds...</small>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons">
+    <button class="btn btn-primary" onclick="printTicket()">
+      <i class="bi bi-printer"></i> Print Ticket
+    </button>
+    <a href="{% url 'all_e_tickets' %}" class="btn btn-outline-primary">
+      <i class="bi bi-ticket-detailed"></i> All Tickets
+    </a>
+    <form method="POST" action="{% url 'cancel_booking' booking.id %}" style="display:inline;">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger" onclick="return confirm('Delete this e-ticket?')">
+        <i class="bi bi-trash"></i> Delete
+      </button>
+    </form>
+    <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary">
+      <i class="bi bi-speedometer2"></i> Dashboard
+    </a>
+  </div>
+
+</div>
+
+<script>
+  function printTicket() {
+    const ticketCard = document.querySelector('.ticket-card-full');
+    const printWindow = window.open('', '', 'height=800,width=600');
+    
+    const styleHtml = `
+      <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background: #f5f5f5; }
+        .ticket-card-full { 
+          background: white; 
+          border-radius: 16px; 
+          overflow: hidden; 
+          box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        .ticket-header-full { 
+          background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); 
+          color: white; 
+          padding: 30px 25px; 
+        }
+        .ticket-body-full { padding: 35px; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 25px; }
+        .info-label-full { font-size: 11px; color: #666; text-transform: uppercase; margin-bottom: 6px; font-weight: 700; }
+        .info-value-full { font-size: 18px; font-weight: 700; color: #212529; }
+        .date-section { background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 20px; }
+        .date-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .qr-container-full { text-align: center; padding: 25px; border-radius: 12px; }
+        .qr-code-img { max-width: 180px; border: 2px solid #ddd; padding: 8px; border-radius: 8px; }
+        .divider-full { height: 1px; background: #e9ecef; margin: 20px 0; }
+        .badge { display: inline-block; padding: 6px 12px; border-radius: 20px; font-size: 12px; }
+        .bg-success { background: #28a745; color: white; }
+        .bg-info { background: #17a2b8; color: white; }
+      </style>
+    `;
+    
+    const ticketClone = ticketCard.cloneNode(true);
+    printWindow.document.write(styleHtml + ticketClone.outerHTML);
+    printWindow.document.close();
+    setTimeout(() => printWindow.print(), 500);
+  }
+
+  let redirectCountdown = 5;
+  const noticeElement = document.getElementById('redirect-notice');
+  
+  const redirectInterval = setInterval(() => {
+    redirectCountdown--;
+    if (noticeElement) {
+      noticeElement.textContent = `🔄 Redirecting to dashboard in ${redirectCountdown} seconds...`;
+    }
+    
+    if (redirectCountdown <= 0) {
+      clearInterval(redirectInterval);
+      window.location.href = '{% url "dashboard" %}';
+    }
+  }, 1000);
+</script>
+{% endblock %}

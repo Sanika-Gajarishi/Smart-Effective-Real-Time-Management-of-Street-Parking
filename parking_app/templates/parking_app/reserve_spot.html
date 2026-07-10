@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Parking Spot - Smart Parking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .wallet-info {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-section h3 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .spots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .spot-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .spot-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .spot-card.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .spot-card.available {
+            border-color: #4CAF50;
+        }
+
+        .spot-card.unavailable {
+            border-color: #f44336;
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .spot-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .spot-details {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .spot-price {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+
+        .cost-calculator {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cost-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .cost-item.total {
+            border-top: 2px solid #4CAF50;
+            padding-top: 0.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #2e7d32;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d, #495057);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #28a745, #20c997);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #dc3545, #c82333);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .message {
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .message.warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .quick-times {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .quick-time-btn {
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quick-time-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                min-height: 100vh;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .spots-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .back-button {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 1rem;
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'dashboard' %}" class="back-button">← Back to Dashboard</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>📅 Reserve Parking Spot</h1>
+            <p>Book your parking space in advance</p>
+        </div>
+
+        <!-- Wallet Info -->
+        <div class="wallet-info">
+            <h3>💰 Wallet Balance: ${{ wallet.balance }}</h3>
+            <p>{% if wallet.balance < 10 %}⚠️ Low balance! <a href="{% url 'wallet' %}" style="color: #FFD700;">Top up now</a>{% else %}Ready to reserve!{% endif %}</p>
+        </div>
+
+        <!-- Messages -->
+        {% if messages %}
+            {% for message in messages %}
+                <div class="message {% if message.tags %}{{ message.tags }}{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="POST" id="reservation-form">
+            {% csrf_token %}
+            
+            <!-- Vehicle Information -->
+            <div class="form-section">
+                <h3>🚗 Vehicle Information</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="vehicle_number">Vehicle Number:</label>
+                        <input type="text" id="vehicle_number" name="vehicle_number" value="{{ vehicle_number }}" placeholder="e.g., MH01AB1234" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle_type">Vehicle Type:</label>
+                        <select id="vehicle_type" name="vehicle_type" required>
+                            <option value="">-- Select Vehicle Type --</option>
+                            <option value="bike">Bike</option>
+                            <option value="car">Car</option>
+                            <option value="suv">SUV</option>
+                            <option value="truck">Truck</option>
+                            <option value="ev">EV</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Time Selection -->
+            <div class="form-section">
+                <h3>⏰ Select Time</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="start_time">Start Time:</label>
+                        <input type="datetime-local" id="start_time" name="start_time" required>
+                        <div class="quick-times">
+                            <button type="button" class="quick-time-btn" onclick="setQuickTime(15)">+15 min</button>
+                            <button type="button" class="quick-time-btn" onclick="setQuickTime(30)">+30 min</button>
+                            <button type="button" class="quick-time-btn" onclick="setQuickTime(60)">+1 hour</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="end_time">End Time:</label>
+                        <input type="datetime-local" id="end_time" name="end_time" required>
+                        <div class="quick-times">
+                            <button type="button" class="quick-time-btn" onclick="setDuration(1)">1 hour</button>
+                            <button type="button" class="quick-time-btn" onclick="setDuration(2)">2 hours</button>
+                            <button type="button" class="quick-time-btn" onclick="setDuration(4)">4 hours</button>
+                            <button type="button" class="quick-time-btn" onclick="setDuration(8)">8 hours</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auto-Assignment Message -->
+            <div class="form-section">
+                <h3>🤖 AI Parking Slot Assignment</h3>
+                <div style="background: linear-gradient(135deg, #e8f5e8, #c8e6c9); border-radius: 10px; padding: 1.5rem; text-align: center; color: #2e7d32; border: 2px solid #4CAF50;">
+                    <p><strong>✓ Your parking slot will be automatically assigned</strong></p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #558b2f;">Our AI system will find the best available spot based on your selected time and vehicle type.</p>
+                </div>
+            </div>
+
+            <!-- Cost Calculator -->
+            <div class="cost-calculator" id="cost-calculator" style="display: none;">
+                <h3 style="margin-bottom: 1rem; color: #2e7d32;">💰 Cost Breakdown</h3>
+                <div class="cost-item">
+                    <span>Duration:</span>
+                    <span id="duration-display">-</span>
+                </div>
+                <div class="cost-item">
+                    <span>Hourly Rate:</span>
+                    <span id="rate-display">-</span>
+                </div>
+                <div class="cost-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal-display">-</span>
+                </div>
+                <div class="cost-item">
+                    <span>Service Fee (5%):</span>
+                    <span id="fee-display">-</span>
+                </div>
+                <div class="cost-item total">
+                    <span>Total Cost:</span>
+                    <span id="total-display">-</span>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-success" id="reserve-btn" disabled>
+                    🎫 Reserve Spot
+                </button>
+                <a href="{% url 'dashboard' %}" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let selectedSpotId = null;
+        let selectedHourlyRate = 0;
+
+        // Helper function to format local date/time for datetime-local input
+        function formatLocalDateTime(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            return `${year}-${month}-${day}T${hours}:${minutes}`;
+        }
+
+        // Set minimum datetime to current time + 15 minutes
+        function setMinDateTime() {
+            const now = new Date();
+            const minTime = new Date(now); // Allow current time
+            const maxTime = new Date(now.getTime() + 24 * 60 * 60000); // 24 hours from now
+            
+            document.getElementById('start_time').min = formatLocalDateTime(minTime);
+            document.getElementById('start_time').max = formatLocalDateTime(maxTime);
+            document.getElementById('end_time').min = formatLocalDateTime(minTime);
+        }
+
+        function setQuickTime(minutes) {
+            const now = new Date();
+            const quickTime = new Date(now.getTime() + minutes * 60000);
+            document.getElementById('start_time').value = formatLocalDateTime(quickTime);
+            updateEndTimeMin();
+            calculateCost();
+        }
+
+        function setDuration(hours) {
+            const startTime = document.getElementById('start_time').value;
+            if (startTime) {
+                const start = new Date(startTime);
+                const end = new Date(start.getTime() + hours * 60 * 60000);
+                document.getElementById('end_time').value = formatLocalDateTime(end);
+                calculateCost();
+            }
+        }
+
+        function updateEndTimeMin() {
+            const startTime = document.getElementById('start_time').value;
+            if (startTime) {
+                const start = new Date(startTime);
+                const minEnd = new Date(start.getTime() + 60 * 60000); // 1 hour minimum
+                document.getElementById('end_time').min = minEnd.toISOString().slice(0, 16);
+            }
+        }
+
+        function selectSpot(element, spotId, hourlyRate) {
+            // Remove previous selection
+            document.querySelectorAll('.spot-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+
+            // Select current spot
+            element.classList.add('selected');
+            selectedSpotId = spotId;
+            selectedHourlyRate = hourlyRate;
+            
+            document.getElementById('spot_id').value = spotId;
+            
+            calculateCost();
+            updateReserveButton();
+        }
+
+        function calculateCost() {
+            const startTime = document.getElementById('start_time').value;
+            const endTime = document.getElementById('end_time').value;
+            
+            if (!startTime || !endTime) {
+                document.getElementById('cost-calculator').style.display = 'none';
+                updateReserveButton();
+                return;
+            }
+
+            const start = new Date(startTime);
+            const end = new Date(endTime);
+            const durationMs = end - start;
+            
+            if (durationMs <= 0) {
+                document.getElementById('cost-calculator').style.display = 'none';
+                updateReserveButton();
+                return;
+            }
+
+            const durationHours = durationMs / (1000 * 60 * 60);
+            const baseRate = 50;
+            const subtotal = durationHours * baseRate;
+            const serviceFee = subtotal * 0.05;
+            const total = subtotal + serviceFee;
+
+            document.getElementById('duration-display').textContent = `${durationHours.toFixed(1)} hours`;
+            document.getElementById('rate-display').textContent = `$${baseRate}/hr`;
+            document.getElementById('subtotal-display').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('fee-display').textContent = `$${serviceFee.toFixed(2)}`;
+            document.getElementById('total-display').textContent = `$${total.toFixed(2)}`;
+            
+            document.getElementById('cost-calculator').style.display = 'block';
+            updateReserveButton();
+        }
+
+        function updateReserveButton() {
+            const vehicleNumber = document.getElementById('vehicle_number').value.trim();
+            const vehicleType = document.getElementById('vehicle_type').value.trim();
+            const startTime = document.getElementById('start_time').value;
+            const endTime = document.getElementById('end_time').value;
+            const reserveBtn = document.getElementById('reserve-btn');
+            
+            if (vehicleNumber && vehicleType && startTime && endTime) {
+                const start = new Date(startTime);
+                const end = new Date(endTime);
+                
+                if (end > start) {
+                    reserveBtn.disabled = false;
+                    reserveBtn.textContent = '✅ Confirm Reservation';
+                } else {
+                    reserveBtn.disabled = true;
+                    reserveBtn.textContent = 'Invalid Time Range';
+                }
+            } else {
+                reserveBtn.disabled = true;
+                reserveBtn.textContent = 'Fill All Details';
+            }
+        }
+
+        // Event listeners
+        document.getElementById('vehicle_number').addEventListener('change', updateReserveButton);
+        document.getElementById('vehicle_type').addEventListener('change', updateReserveButton);
+        
+        document.getElementById('start_time').addEventListener('change', function() {
+            updateEndTimeMin();
+            calculateCost();
+        });
+
+        document.getElementById('end_time').addEventListener('change', calculateCost);
+
+        // Form validation
+        document.getElementById('reservation-form').addEventListener('submit', function(e) {
+            const vehicleNumber = document.getElementById('vehicle_number').value.trim();
+            const vehicleType = document.getElementById('vehicle_type').value.trim();
+            const startTime = new Date(document.getElementById('start_time').value);
+            const endTime = new Date(document.getElementById('end_time').value);
+            const now = new Date();
+            
+            if (!vehicleNumber) {
+                e.preventDefault();
+                alert('Please enter your vehicle number.');
+                return;
+            }
+            
+            if (!vehicleType) {
+                e.preventDefault();
+                alert('Please select a vehicle type.');
+                return;
+            }
+            
+            if (startTime < now) {
+                e.preventDefault();
+                alert('Start time must be in the present or future.');
+                return;
+            }
+            
+            if (endTime <= startTime) {
+                e.preventDefault();
+                alert('End time must be after start time.');
+                return;
+            }
+        });
+
+        // Initialize
+        function formatLocalDateTime(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            return `${year}-${month}-${day}T${hours}:${minutes}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setMinDateTime();
+            
+            // Set default start time to current time
+            const now = new Date();
+            const defaultStart = new Date(now);
+            const defaultEnd = new Date(defaultStart.getTime() + 2 * 60 * 60000); // 2 hours later
+            
+            document.getElementById('start_time').value = formatLocalDateTime(defaultStart);
+            document.getElementById('end_time').value = formatLocalDateTime(defaultEnd);
+            
+            updateEndTimeMin();
+        });
+    </script>
+</body>
+</html>

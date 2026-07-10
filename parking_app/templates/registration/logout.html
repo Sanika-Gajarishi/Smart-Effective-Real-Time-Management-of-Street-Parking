@@ -1,0 +1,31 @@
+{% extends 'parking_app/base.html' %}
+{% block content %}
+<div class="container mt-5 d-flex justify-content-center align-items-center" style="min-height:70vh;">
+  <div class="card shadow-sm border-0 text-center p-5" style="max-width: 500px; border-radius: 16px;">
+    <div class="mb-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" 
+           alt="Logout Icon" width="90" height="90" />
+    </div>
+
+    <h2 class="fw-bold text-success mb-2">You’ve Logged Out Safely</h2>
+    <p class="text-muted mb-4">
+      Thank you for using <strong>Smart Parking</strong>.<br>
+      We hope to see you again soon! 🚗💨
+    </p>
+
+    <div class="d-flex justify-content-center flex-column gap-3">
+      <a href="{% url 'login' %}" class="btn btn-primary btn-lg w-100 shadow-sm">
+        🔑 Login Again
+      </a>
+      <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary w-100">
+        🏠 Back to Home
+      </a>
+    </div>
+
+    <hr class="my-4">
+    <p class="small text-muted mb-0">
+      © 2025 Smart Parking System — All Rights Reserved
+    </p>
+  </div>
+</div>
+{% endblock %}

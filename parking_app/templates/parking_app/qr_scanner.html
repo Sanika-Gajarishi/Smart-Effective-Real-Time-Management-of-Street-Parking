@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Scanner - Smart Parking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .scanner-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .qr-input-section {
+            background: #e3f2fd;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d, #495057);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #28a745, #20c997);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #dc3545, #c82333);
+        }
+
+        .message {
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .message.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .instructions {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+
+        .instructions ul {
+            color: #856404;
+            padding-left: 1.5rem;
+        }
+
+        .instructions li {
+            margin-bottom: 0.5rem;
+        }
+
+        .camera-section {
+            display: none;
+            text-align: center;
+        }
+
+        #video {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .back-button {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                min-height: 100vh;
+            }
+            
+            .back-button {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 1rem;
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="{% url 'dashboard' %}" class="back-button">← Back to Dashboard</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>📱 QR Code Scanner</h1>
+            <p>Scan your reservation QR code to activate parking</p>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>📋 How to Use:</h3>
+            <ul>
+                <li>Enter your QR code manually in the field below, OR</li>
+                <li>Use camera scanning (if supported by your device)</li>
+                <li>Your reservation will be activated automatically</li>
+                <li>You can arrive up to 15 minutes early</li>
+            </ul>
+        </div>
+
+        <!-- Messages -->
+        <div id="messages"></div>
+
+        <!-- Manual QR Code Entry -->
+        <div class="qr-input-section">
+            <h3 style="margin-bottom: 1rem; color: #1976d2;">🔤 Enter QR Code Manually</h3>
+            <div class="input-group">
+                <label for="qr-code-input">QR Code:</label>
+                <input type="text" id="qr-code-input" placeholder="Enter your QR code (e.g., QR-ABC123)" maxlength="10">
+            </div>
+            <button onclick="verifyQRCode()" class="btn">✅ Verify & Activate</button>
+        </div>
+
+        <!-- Camera Scanner Section -->
+        <div class="scanner-section">
+            <h3 style="margin-bottom: 1rem; color: #333;">📷 Camera Scanner</h3>
+            <p style="margin-bottom: 1rem; color: #666;">Use your device camera to scan QR codes</p>
+            
+            <div class="camera-section" id="camera-section">
+                <video id="video" autoplay></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+                <button onclick="stopCamera()" class="btn btn-danger">Stop Camera</button>
+            </div>
+            
+            <button onclick="startCamera()" id="start-camera-btn" class="btn">📷 Start Camera</button>
+        </div>
+
+        <!-- Loading -->
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Processing QR code...</p>
+        </div>
+    </div>
+
+    <script>
+        let video = null;
+        let canvas = null;
+        let context = null;
+        let scanning = false;
+
+        function showMessage(message, type = 'info') {
+            const messagesDiv = document.getElementById('messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+            messageDiv.innerHTML = message;
+            messagesDiv.appendChild(messageDiv);
+            
+            // Auto-remove after 5 seconds
+            setTimeout(() => {
+                messageDiv.remove();
+            }, 5000);
+        }
+
+        function showLoading(show = true) {
+            document.getElementById('loading').style.display = show ? 'block' : 'none';
+        }
+
+        async function verifyQRCode(qrCode = null) {
+            if (!qrCode) {
+                qrCode = document.getElementById('qr-code-input').value.trim();
+            }
+            
+            if (!qrCode) {
+                showMessage('Please enter a QR code', 'error');
+                return;
+            }
+
+            showLoading(true);
+            
+            try {
+                const response = await fetch('{% url "verify_qr" %}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCookie('csrftoken')
+                    },
+                    body: JSON.stringify({
+                        qr_code: qrCode
+                    })
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    showMessage(`🎉 ${data.message}`, 'success');
+                    document.getElementById('qr-code-input').value = '';
+                    
+                    // Redirect to dashboard after 3 seconds
+                    setTimeout(() => {
+                        window.location.href = '{% url "dashboard" %}';
+                    }, 3000);
+                } else {
+                    showMessage(`❌ ${data.message}`, 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage('❌ Network error. Please try again.', 'error');
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function startCamera() {
+            try {
+                video = document.getElementById('video');
+                canvas = document.getElementById('canvas');
+                context = canvas.getContext('2d');
+                
+                const stream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { facingMode: 'environment' } 
+                });
+                
+                video.srcObject = stream;
+                document.getElementById('camera-section').style.display = 'block';
+                document.getElementById('start-camera-btn').style.display = 'none';
+                
+                scanning = true;
+                showMessage('📷 Camera started. Point at QR code to scan.', 'info');
+                
+                // Start scanning loop
+                scanForQR();
+                
+            } catch (error) {
+                console.error('Camera error:', error);
+                showMessage('❌ Camera access denied or not available. Please use manual entry.', 'error');
+            }
+        }
+
+        function stopCamera() {
+            scanning = false;
+            
+            if (video && video.srcObject) {
+                const tracks = video.srcObject.getTracks();
+                tracks.forEach(track => track.stop());
+                video.srcObject = null;
+            }
+            
+            document.getElementById('camera-section').style.display = 'none';
+            document.getElementById('start-camera-btn').style.display = 'block';
+            
+            showMessage('📷 Camera stopped.', 'info');
+        }
+
+        function scanForQR() {
+            if (!scanning || !video) return;
+            
+            // Simple QR detection simulation
+            // In a real implementation, you'd use a QR code library like jsQR
+            setTimeout(() => {
+                if (scanning) {
+                    scanForQR();
+                }
+            }, 500);
+        }
+
+        // Get CSRF token
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        // Handle Enter key in input field
+        document.getElementById('qr-code-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                verifyQRCode();
+            }
+        });
+
+        // Auto-focus on input field
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('qr-code-input').focus();
+        });
+    </script>
+</body>
+</html>

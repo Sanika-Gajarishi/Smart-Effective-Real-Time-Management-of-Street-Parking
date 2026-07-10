@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #6c757d; color: white; padding: 20px; text-align: center; border-radius: 5px; }
+        .content { background-color: #f9f9f9; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        .details { margin: 15px 0; }
+        .detail-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ddd; }
+        .detail-label { font-weight: bold; color: #6c757d; }
+        .billing { margin: 20px 0; padding: 15px; background-color: #e9ecef; border-radius: 5px; }
+        .bill-row { display: flex; justify-content: space-between; padding: 8px 0; }
+        .bill-total { font-size: 18px; font-weight: bold; color: #28a745; border-top: 2px solid #6c757d; padding-top: 10px; }
+        .footer { text-align: center; color: #999; font-size: 12px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🎟️ Parking Receipt</h2>
+        </div>
+        
+        <div class="content">
+            <p>Hello <strong>{{ user }}</strong>,</p>
+            <p>Your parking session has been completed. Here is your receipt:</p>
+            
+            <p style="margin-top: 20px;"><strong>Session Details:</strong></p>
+            
+            <div class="details">
+                <div class="detail-row">
+                    <span class="detail-label">Reservation ID:</span>
+                    <span>#{{ reservation_id }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">🅿️ Slot Number:</span>
+                    <span><strong>{{ slot_number }}</strong></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">🚗 Vehicle Number:</span>
+                    <span>{{ vehicle_number }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">🕐 Check-In Time:</span>
+                    <span>{{ start_time }}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">🕐 Check-Out Time:</span>
+                    <span>{{ actual_checkout_time }}</span>
+                </div>
+            </div>
+            
+            <p style="margin-top: 20px;"><strong>Billing Information:</strong></p>
+            
+            <div class="billing">
+                <div class="bill-row">
+                    <span>Parking Charges:</span>
+                    <span>₹{{ parking_amount }}</span>
+                </div>
+                {% if over_parking_charges > 0 %}
+                <div class="bill-row">
+                    <span>Over-Parking Charges:</span>
+                    <span style="color: #dc3545;">₹{{ over_parking_charges }}</span>
+                </div>
+                {% endif %}
+                <div class="bill-row bill-total">
+                    <span>Total Amount:</span>
+                    <span>₹{{ total_amount }}</span>
+                </div>
+            </div>
+            
+            <p style="margin-top: 20px;"><strong>Thank you for using Smart Parking!</strong></p>
+            <p>We look forward to serving you again soon. 🚗</p>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Smart Parking System. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,499 @@
+{% extends 'parking_app/base.html' %}
+{% block content %}
+<style>
+  .ticket-card {
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .invalid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .invalid-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(220, 53, 69, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  
+  .ticket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .ticket-card.expired {
+    opacity: 0.85;
+  }
+
+  .expired-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .expired-text {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8);
+    transform: rotate(-45deg);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .ticket-header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 15px;
+    position: relative;
+  }
+
+  .ticket-header.expired {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  }
+
+  .ticket-number {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .ticket-body {
+    padding: 20px;
+  }
+
+  .info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .info-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-label {
+    font-size: 11px;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .info-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212529;
+  }
+
+  .slot-value {
+    color: #0056b3;
+    font-size: 18px;
+  }
+
+  .vehicle-value {
+    color: #495057;
+  }
+
+  .amount-value {
+    color: #28a745;
+    font-size: 18px;
+  }
+
+  .qr-section {
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+
+  .qr-section img {
+    max-width: 150px;
+    border: 2px solid #dee2e6;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  .status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+  }
+
+  .status-badge.valid {
+    background: #d4edda;
+    color: #155724;
+  }
+
+  .status-badge.expired {
+    background: #f8d7da;
+    color: #721c24;
+  }
+
+  .divider {
+    height: 1px;
+    background: #e9ecef;
+    margin: 12px 0;
+  }
+
+  .header-title {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+  }
+
+  .empty-state-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+</style>
+
+<div class="container mt-5 mb-5">
+  
+  <!-- Header -->
+  <div class="mb-5">
+    <h1 class="fw-bold text-dark header-title">🎫 My E-Tickets</h1>
+    <p class="text-muted">All your parking reservations and booking tickets</p>
+  </div>
+
+  <!-- Messages Display -->
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-{% if message.tags %}{{ message.tags }}{% else %}success{% endif %} alert-dismissible fade show mb-4" role="alert">
+        <i class="bi bi-check-circle-fill"></i> {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endfor %}
+  {% endif %}
+
+  {% if tickets_with_status %}
+    
+    <!-- Tickets Grid -->
+    <div class="row g-4 mb-5">
+      {% for item in tickets_with_status %}
+        {% if item.type == 'booking' %}
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="card ticket-card shadow-sm {% if item.is_expired %}expired{% endif %}" style="position: relative;">
+              {% if item.is_expired %}
+              <div class="invalid-overlay"></div>
+              {% endif %}
+              
+              <!-- Expired Overlay -->
+              {% if item.is_expired %}
+                <div class="expired-overlay">
+                </div>
+              {% endif %}
+
+              <!-- Card Header -->
+              <div class="ticket-header {% if item.is_expired %}expired{% endif %}">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="small text-white-50 mb-1">TICKET #</div>
+                    <div class="ticket-number">{{ item.ticket.ticket_number }}</div>
+                  </div>
+                  <span class="status-badge {% if item.is_expired %}expired{% else %}valid{% endif %}">
+                    {% if item.is_expired %}⏰ Expired{% else %}✅ Valid{% endif %}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Body -->
+              <div class="ticket-body">
+                
+                <!-- Slot & Vehicle -->
+                <div class="info-row">
+                  <div class="info-item">
+                    <span class="info-label">🅿️ Slot Number</span>
+                    <span class="info-value slot-value">#{{ item.booking.slot.slot_number }}</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">🚗 Vehicle No.</span>
+                    <span class="info-value vehicle-value">{{ item.booking.vehicle_number }}</span>
+                  </div>
+                </div>
+
+                <!-- Date & Time -->
+                <div class="divider"></div>
+                
+                <div class="info-row">
+                  <div class="info-item">
+                    <span class="info-label">📅 Check-In</span>
+                    <span class="info-value">{{ item.booking.start_time|date:"d M, Y" }}</span>
+                    <span class="small text-muted">{{ item.booking.start_time|date:"H:i" }}</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">📅 Check-Out</span>
+                    <span class="info-value {% if item.is_expired %}text-danger{% endif %}">{{ item.booking.end_time|date:"d M, Y" }}</span>
+                    <span class="small text-muted">{{ item.booking.end_time|date:"H:i" }}</span>
+                  </div>
+                </div>
+
+                <!-- Amount -->
+                <div class="divider"></div>
+                
+                <div class="info-row">
+                  <div class="info-item">
+                    <span class="info-label">💳 Amount</span>
+                    <span class="info-value amount-value">₹{{ item.booking.base_amount }}</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">📝 Status</span>
+                    <span class="info-value">
+                      {% if item.booking.status == 'confirmed' %}
+                        <span class="badge bg-success">Confirmed</span>
+                      {% elif item.booking.status == 'active' %}
+                        <span class="badge bg-info">Active</span>
+                      {% else %}
+                        <span class="badge bg-secondary">{{ item.booking.status }}</span>
+                      {% endif %}
+                    </span>
+                  </div>
+                </div>
+
+                <!-- QR Code -->
+                <div class="qr-section">
+                  <div class="small text-muted mb-2">QR CODE</div>
+                  {% if item.ticket.qr_code %}
+                    <img src="{{ item.ticket.qr_code }}" alt="Ticket QR Code">
+                  {% endif %}
+                </div>
+
+              </div>
+
+              <!-- Card Footer -->
+              <div class="card-footer bg-light border-top">
+                <div class="d-flex gap-2">
+                  <a href="{% url 'view_e_ticket' item.ticket.id %}" class="btn btn-sm btn-primary w-100">
+                    <i class="bi bi-eye"></i> View Details
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        {% else %}
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="card ticket-card shadow-sm {% if item.is_expired %}expired{% endif %}" style="position: relative;">
+              {% if item.is_expired %}
+              <div class="invalid-overlay"></div>
+              {% endif %}
+              
+              <!-- Expired Overlay -->
+              {% if item.is_expired %}
+                <div class="expired-overlay">
+                </div>
+              {% endif %}
+
+              <!-- Card Header -->
+              <div class="ticket-header {% if item.is_expired %}expired{% endif %}">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="small text-white-50 mb-1">TICKET #</div>
+                    <div class="ticket-number">{{ item.ticket_number }}</div>
+                  </div>
+                  <span class="status-badge {% if item.is_expired %}expired{% else %}valid{% endif %}">
+                    {% if item.is_expired %}⏰ Expired{% else %}✅ Valid{% endif %}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Body -->
+              <div class="ticket-body">
+                
+                <!-- Slot & Vehicle -->
+                <div class="info-row">
+                  <div class="info-item">
+                    <span class="info-label">🅿️ Slot Number</span>
+                    <span class="info-value slot-value">#{{ item.reservation.slot_number }}</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">🚗 Vehicle No.</span>
+                    <span class="info-value vehicle-value">{{ item.reservation.vehicle_number }}</span>
+                  </div>
+                </div>
+
+                <!-- Date & Time -->
+                <div class="divider"></div>
+                
+                <div class="info-row">
+                  <div class="info-item">
+                    <span class="info-label">📅 Check-In</span>
+                    <span class="info-value">{{ item.reservation.start_time|date:"d M, Y" }}</span>
+                    <span class="small text-muted">{{ item.reservation.start_time|date:"H:i" }}</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">📅 Check-Out</span>
+                    <span class="info-value {% if item.is_expired %}text-danger{% endif %}">{{ item.reservation.end_time|date:"d M, Y" }}</span>
+                    <span class="small text-muted">{{ item.reservation.end_time|date:"H:i" }}</span>
+                  </div>
+                </div>
+
+                <!-- Amount -->
+                <div class="divider"></div>
+                
+                <div class="info-row">
+                  <div class="info-item">
+                    <span class="info-label">💳 Amount</span>
+                    <span class="info-value amount-value">₹{{ item.reservation.amount }}</span>
+                  </div>
+                  <div class="info-item">
+                    <span class="info-label">📝 Status</span>
+                    <span class="info-value">
+                      {% if item.reservation.status == 'Confirmed' %}
+                        <span class="badge bg-success">Confirmed</span>
+                      {% elif item.reservation.status == 'Checked-In' %}
+                        <span class="badge bg-info">Checked-In</span>
+                      {% else %}
+                        <span class="badge bg-secondary">{{ item.reservation.status }}</span>
+                      {% endif %}
+                    </span>
+                  </div>
+                </div>
+
+                <!-- QR Code -->
+                <div class="qr-section">
+                  <div class="small text-muted mb-2">QR CODE</div>
+                  {% if item.qr_code %}
+                    <img src="{{ item.qr_code }}" alt="Ticket QR Code">
+                  {% endif %}
+                </div>
+
+              </div>
+
+              <!-- Card Footer -->
+              <div class="card-footer bg-light border-top">
+                <div class="d-flex gap-2">
+                  <button class="btn btn-sm btn-primary flex-grow-1" onclick="printTicket(this)">
+                    <i class="bi bi-printer"></i> Print
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Summary Stats -->
+    <div class="row mt-5 g-3 mb-5">
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <h6 class="text-muted mb-2">📊 Total Tickets</h6>
+            <h3 class="fw-bold text-dark">{{ tickets_with_status|length }}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <h6 class="text-muted mb-2">✅ Bookings</h6>
+            <h3 class="fw-bold text-success">{{ booking_count }}</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <h6 class="text-muted mb-2">📝 Reservations</h6>
+            <h3 class="fw-bold text-info">{{ reservation_count }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {% else %}
+    
+    <!-- Empty State -->
+    <div class="empty-state">
+      <div class="empty-state-icon">🎫</div>
+      <h5 class="mb-2">No E-Tickets Yet</h5>
+      <p class="mb-4">Book a parking slot to generate your first e-ticket!</p>
+      <a href="{% url 'booking_map' %}" class="btn btn-primary">
+        🗺️ Book a Slot Now
+      </a>
+    </div>
+
+  {% endif %}
+
+  <!-- Back Button -->
+  <div class="text-center mb-5">
+    <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary btn-lg">
+      <i class="bi bi-speedometer2"></i> Back to Dashboard
+    </a>
+  </div>
+
+</div>
+
+<script>
+  function printTicket(button) {
+    const ticket = button.closest('.card');
+    const ticketClone = ticket.cloneNode(true);
+    const printWindow = window.open('', '', 'height=600,width=800');
+    
+    const styleHtml = `
+      <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .card { border: 1px solid #ddd; padding: 20px; max-width: 600px; }
+        .ticket-header { background: #007bff; color: white; padding: 15px; margin: -20px -20px 15px; }
+        .info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+        .info-label { color: #666; font-size: 12px; text-transform: uppercase; margin-bottom: 5px; }
+        .info-value { font-weight: bold; font-size: 16px; }
+        .divider { border-top: 1px solid #eee; margin: 12px 0; }
+        .qr-section { text-align: center; margin-top: 15px; }
+        img { max-width: 150px; }
+      </style>
+    `;
+    
+    printWindow.document.write(styleHtml + ticketClone.outerHTML);
+    printWindow.document.close();
+    printWindow.print();
+  }
+</script>
+{% endblock %}

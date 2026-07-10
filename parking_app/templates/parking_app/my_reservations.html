@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎫 My Reservations - Smart Parking</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 shadow-sm">
+    <a class="navbar-brand fw-bold" href="{% url 'dashboard' %}">🚗 Smart Parking</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item me-2">
+          <a class="btn btn-outline-light btn-sm" href="{% url 'dashboard' %}">
+            <i class="bi bi-speedometer2"></i> Dashboard
+          </a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="btn btn-outline-light btn-sm" href="{% url 'profile' %}">
+            <i class="bi bi-person-circle"></i> Profile
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light btn-sm" href="{% url 'logout' %}">
+            <i class="bi bi-box-arrow-right"></i> Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-dark">🎫 My Reservations</h1>
+      <p class="text-muted mt-2">View and manage all your parking reservations</p>
+    </div>
+
+    {% if messages %}
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {% for message in messages %}
+          {{ message }}
+        {% endfor %}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+    {% endif %}
+
+    {% if reservations %}
+      <div class="row g-4">
+        {% for r in reservations %}
+          <div class="col-md-6 col-lg-6">
+            <div class="card h-100 shadow-sm border-0" style="border-radius: 15px; overflow: hidden;">
+              <div class="card-header {% if r.status == 'Completed' %}bg-success{% elif r.status == 'Checked-In' %}bg-info{% elif r.status == 'Confirmed' or r.status == 'Paid' %}bg-primary{% elif r.status == 'Pending' %}bg-warning{% elif r.status == 'Cancelled' %}bg-danger{% endif %} text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0">🅿️ Slot {{ r.slot_number }}</h5>
+                  <span class="badge bg-light text-dark">{{ r.status }}</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="mb-3"><strong>🚘 Vehicle:</strong> {{ r.vehicle_number }}</p>
+                
+                <hr class="my-3">
+                
+                <p class="mb-2"><small class="text-muted"><strong>⏰ Start Date & Time</strong></small><br>
+                <strong class="text-primary">{{ r.start_time|date:"d M, Y H:i" }}</strong></p>
+                
+                <p class="mb-2"><small class="text-muted"><strong>⏰ End Date & Time</strong></small><br>
+                <strong class="text-primary">{{ r.end_time|date:"d M, Y H:i" }}</strong></p>
+                
+                <hr class="my-3">
+                
+                <p class="mb-2"><strong>💰 Amount:</strong> <span class="text-success fs-5">₹{{ r.amount }}</span></p>
+                
+                <p class="mb-3"><strong>💳 Payment:</strong> 
+                  {% if r.payment_status == 'Paid' %}
+                    <span class="badge bg-success">✅ Paid</span>
+                  {% elif r.payment_status == 'Pending' %}
+                    <span class="badge bg-warning text-dark">⏳ Pending</span>
+                  {% else %}
+                    <span class="badge bg-danger">❌ Failed</span>
+                  {% endif %}
+                </p>
+                
+                <small class="text-muted d-block">📅 Booked for: {{ r.start_time|date:"d M, Y H:i" }}</small>
+              </div>
+              
+              <div class="card-footer bg-light">
+                <div class="d-flex gap-2 flex-wrap">
+                  {% if r.status == 'Checked-In' %}
+                    <a href="{% url 'check_out' r.id %}" class="btn btn-danger btn-sm flex-grow-1">
+                      🚗 Exit
+                    </a>
+                  {% elif r.payment_status == 'Pending' and r.status == 'Confirmed' %}
+                    <a href="{% url 'payment' r.id %}" class="btn btn-primary btn-sm flex-grow-1">
+                      💳 Pay Now
+                    </a>
+                  {% elif r.payment_status == 'Paid' and r.status == 'Confirmed' %}
+                    <a href="{% url 'check_in' r.id %}" class="btn btn-success btn-sm flex-grow-1">
+                      ✓ Check-In
+                    </a>
+                  {% elif r.status == 'Confirmed' or r.status == 'Pending' %}
+                    <form method="POST" action="{% url 'cancel_reservation' r.id %}" style="display:inline;">
+                      {% csrf_token %}
+                      <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('Cancel this reservation?')">
+                        ❌ Cancel
+                      </button>
+                    </form>
+                  {% endif %}
+                  
+                  <a href="{% url 'reserve_spot' %}" class="btn btn-outline-primary btn-sm">
+                    🅿️ Book
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="card shadow-sm border-0 text-center" style="border-radius: 15px;">
+        <div class="card-body py-5">
+          <h5 class="text-muted mb-3">📭 No Reservations Yet</h5>
+          <p class="text-muted mb-4">Book a parking slot to start your reservation!</p>
+          <a href="{% url 'booking_map' %}" class="btn btn-primary btn-lg">
+            🗺️ Book Slot Now
+          </a>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="card shadow-sm border-0 p-4 mx-auto" style="max-width: 600px;">
+    <h2 class="text-center mb-4">🚗 Check-Out from Parking</h2>
+
+    <div class="alert alert-warning">
+      <p>Please confirm your check-out. Your parking session will be completed.</p>
+    </div>
+
+    <div class="card bg-light p-4 mb-4">
+      <div class="detail-item">
+        <strong>🅿️ Slot Number:</strong>
+        <span class="float-end">{{ reservation.slot_number }}</span>
+      </div>
+      <div class="detail-item">
+        <strong>🚗 Vehicle Number:</strong>
+        <span class="float-end">{{ reservation.vehicle_number }}</span>
+      </div>
+      <div class="detail-item">
+        <strong>🕐 Check-In Time:</strong>
+        <span class="float-end">{{ reservation.checked_in_at|date:"d M, H:i" }}</span>
+      </div>
+      <div class="detail-item">
+        <strong>⏱️ Reserved Until:</strong>
+        <span class="float-end">{{ reservation.end_time|date:"d M, H:i" }}</span>
+      </div>
+      <div class="detail-item">
+        <strong>💰 Parking Amount:</strong>
+        <span class="float-end text-success">₹{{ reservation.amount }}</span>
+      </div>
+    </div>
+
+    <form method="POST">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger btn-lg w-100">
+        🚗 Confirm Check-Out
+      </button>
+    </form>
+
+    <p class="text-muted text-center mt-3">
+      You will receive a receipt via email
+    </p>
+  </div>
+</div>
+
+<style>
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .detail-item:last-child {
+    border-bottom: none;
+  }
+</style>
+{% endblock %}

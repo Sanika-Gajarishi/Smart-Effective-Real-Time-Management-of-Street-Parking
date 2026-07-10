@@ -1,0 +1,100 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h3 class="card-title mb-4">🚗 Vehicle Check-Out</h3>
+                    
+                    <div class="alert alert-warning">
+                        <strong>⚠️ Check-Out Notice:</strong> Please verify your vehicle details before completing check-out.
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vehicle Details</h5>
+                                    <p><strong>Vehicle Number:</strong> {{ reservation.vehicle_number }}</p>
+                                    <p><strong>Vehicle Type:</strong> {{ reservation.vehicle_type }}</p>
+                                    <p><strong>Parking Slot:</strong> {{ reservation.slot_number }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Parking Duration</h5>
+                                    <p><strong>Check-In:</strong> {{ reservation.checked_in_at|date:"M d, Y H:i" }}</p>
+                                    <p><strong>Scheduled End:</strong> {{ reservation.end_time|date:"M d, Y H:i" }}</p>
+                                    <p><strong>Amount Paid:</strong> ₹{{ reservation.amount }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">💰 Billing Summary</h5>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8">Base Parking Fee:</div>
+                                <div class="col-4 text-right">₹{{ reservation.amount }}</div>
+                            </div>
+                            <div id="over_parking_fee" style="display: none;">
+                                <div class="row mt-2">
+                                    <div class="col-8">Over-Parking Charges:</div>
+                                    <div class="col-4 text-right" id="over_parking_amount">₹0</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row font-weight-bold">
+                                <div class="col-8">Total Amount:</div>
+                                <div class="col-4 text-right">₹<span id="total_amount">{{ reservation.amount }}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form method="POST">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-success btn-lg btn-block">
+                            Complete Check-Out
+                        </button>
+                    </form>
+                    
+                    <a href="{% url 'parking_monitor' reservation.id %}" class="btn btn-secondary btn-block mt-2">
+                        Back to Monitor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function calculateOverParking() {
+        const checkinTime = new Date("{{ reservation.checked_in_at|date:'Y-m-d H:i' }}");
+        const endTime = new Date("{{ reservation.end_time|date:'Y-m-d H:i' }}");
+        const currentTime = new Date();
+        
+        if (currentTime > endTime) {
+            const overParkedMs = currentTime - endTime;
+            const overParkedHours = overParkedMs / (1000 * 60 * 60);
+            const baseRate = 50;
+            const congestionFactor = 1.5;
+            const overParkedCharge = Math.round(overParkedHours * baseRate * congestionFactor * 100) / 100;
+            
+            if (overParkedCharge > 0) {
+                document.getElementById('over_parking_fee').style.display = 'block';
+                document.getElementById('over_parking_amount').textContent = '₹' + overParkedCharge.toFixed(2);
+                const totalAmount = parseFloat('{{ reservation.amount }}') + overParkedCharge;
+                document.getElementById('total_amount').textContent = totalAmount.toFixed(2);
+            }
+        }
+    }
+    
+    calculateOverParking();
+</script>
+{% endblock %}

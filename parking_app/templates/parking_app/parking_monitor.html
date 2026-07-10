@@ -1,0 +1,94 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h3 class="card-title mb-4">📊 Parking Monitor - Proctoring System</h3>
+                    
+                    <div class="alert alert-info">
+                        <strong>ℹ️ Monitoring Active:</strong> Your parking is being monitored for over-parking and security alerts.
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vehicle Information</h5>
+                                    <p><strong>Vehicle:</strong> {{ reservation.vehicle_number }}</p>
+                                    <p><strong>Type:</strong> {{ reservation.vehicle_type }}</p>
+                                    <p><strong>Slot:</strong> {{ reservation.slot_number }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title">Time Information</h5>
+                                    <p><strong>Checked In:</strong> {{ reservation.checked_in_at|date:"M d, Y H:i" }}</p>
+                                    <p><strong>Scheduled End:</strong> {{ reservation.end_time|date:"M d, Y H:i" }}</p>
+                                    <p><strong>Over-parked:</strong> <span id="over_parked_mins">{{ monitor.over_parking_duration_minutes }}</span> minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="card {% if monitor.over_parking_detected %}bg-danger text-white{% else %}bg-success text-white{% endif %}">
+                                <div class="card-body">
+                                    {% if monitor.over_parking_detected %}
+                                        <h5 class="card-title">⚠️ Over-Parking Alert</h5>
+                                        <p>Your vehicle has exceeded the reserved parking time by {{ monitor.over_parking_duration_minutes }} minutes.</p>
+                                        <p>Additional charges will apply based on traffic congestion rates.</p>
+                                    {% else %}
+                                        <h5 class="card-title">✅ All Clear</h5>
+                                        <p>Your vehicle is parked within the reserved time slot. No over-parking detected.</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">📍 Monitoring Status</h5>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar {% if monitor.status == 'Alert-Over-Parking' %}bg-danger{% elif monitor.status == 'Active' %}bg-success{% else %}bg-secondary{% endif %}" 
+                                             role="progressbar" style="width: 100%">
+                                            {{ monitor.status }}
+                                        </div>
+                                    </div>
+                                    <p class="text-muted">Last Check: {{ monitor.last_check|date:"H:i" }} (Updates every minute)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form method="POST" action="{% url 'checkout_parking' reservation.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            Complete Check-Out
+                        </button>
+                    </form>
+                    
+                    <a href="{% url 'my_reservations' %}" class="btn btn-secondary btn-block mt-2">
+                        Back to Reservations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateMonitorStatus() {
+        location.reload();
+    }
+    setInterval(updateMonitorStatus, 60000);
+</script>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h3 class="card-title mb-4">🚗 Vehicle Check-In</h3>
+                    
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    
+                    <div class="mb-4">
+                        <h5>Reservation Details</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Vehicle Number:</strong> {{ reservation.vehicle_number }}</p>
+                                <p><strong>Parking Slot:</strong> {{ reservation.slot_number }}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Vehicle Type:</strong> {{ reservation.vehicle_type }}</p>
+                                <p><strong>Amount:</strong> ₹{{ reservation.amount }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="qr_code"><strong>Scan/Enter QR Code:</strong></label>
+                            <input type="text" class="form-control form-control-lg" id="qr_code" 
+                                   name="qr_code" placeholder="ReservationID:...|Slot:...|Vehicle:..." required>
+                            <small class="form-text text-muted">
+                                Point your device's camera at the QR code or enter it manually.
+                            </small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success btn-lg btn-block">
+                            Check In Vehicle
+                        </button>
+                    </form>
+                    
+                    <a href="{% url 'my_reservations' %}" class="btn btn-secondary btn-block mt-2">
+                        Back to Reservations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('qr_code').focus();
+</script>
+{% endblock %}

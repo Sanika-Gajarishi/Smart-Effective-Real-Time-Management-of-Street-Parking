@@ -1,0 +1,47 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h3 class="card-title mb-4">✅ Verify Two-Factor Authentication</h3>
+                    
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    
+                    <p class="text-muted mb-4">
+                        Enter the 6-character code from your backup to verify 2FA setup.
+                    </p>
+                    
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="code">Verification Code</label>
+                            <input type="text" class="form-control" id="code" name="code" 
+                                   maxlength="6" placeholder="Enter 6-digit code" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block w-100">
+                            Verify Code
+                        </button>
+                    </form>
+                    
+                    <a href="{% url 'profile' %}" class="btn btn-secondary btn-block w-100 mt-2">
+                        Back to Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

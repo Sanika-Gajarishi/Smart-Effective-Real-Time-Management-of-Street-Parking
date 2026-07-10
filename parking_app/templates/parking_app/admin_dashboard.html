@@ -1,0 +1,237 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container-fluid mt-4">
+  <!-- HEADER -->
+  <div class="row mb-4">
+    <div class="col-md-8">
+      <h1 class="fw-bold">📊 Admin Dashboard</h1>
+      <p class="text-muted">Parking System Analytics & Monitoring</p>
+    </div>
+    <div class="col-md-4 text-end">
+      <a href="{% url 'admin:index' %}" class="btn btn-secondary btn-sm">Django Admin</a>
+      <a href="{% url 'dashboard' %}" class="btn btn-outline-secondary btn-sm">Back</a>
+    </div>
+  </div>
+
+  <!-- KEY METRICS ROW -->
+  <div class="row mb-4 g-3">
+    <!-- Parking Metrics -->
+    <div class="col-md-3">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="text-muted mb-2">Total Slots</h6>
+          <h2 class="text-primary">{{ total_slots }}</h2>
+          <small class="text-success">{{ available_slots }} Available</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="text-muted mb-2">Occupied</h6>
+          <h2 class="text-danger">{{ occupied_slots }}</h2>
+          <small>{{ occupancy_rate }}% Occupancy</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reservation Metrics -->
+    <div class="col-md-3">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="text-muted mb-2">Active</h6>
+          <h2 class="text-info">{{ active_reservations }}</h2>
+          <small class="text-warning">{{ over_parked }} Over-Parked</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body text-center">
+          <h6 class="text-muted mb-2">Total Revenue</h6>
+          <h2 class="text-success">₹{{ total_revenue }}</h2>
+          <small>{{ completed_reservations }} Completed</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS ROW -->
+  <div class="row mb-4 g-3">
+    <div class="col-md-6">
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-light">
+          <h5 class="mb-0">📈 Reservation Stats</h5>
+        </div>
+        <div class="card-body">
+          <div class="row text-center">
+            <div class="col">
+              <h6 class="text-muted">Total</h6>
+              <h3>{{ total_reservations }}</h3>
+            </div>
+            <div class="col">
+              <h6 class="text-muted">Confirmed</h6>
+              <h3 class="text-success">{{ active_reservations }}</h3>
+            </div>
+            <div class="col">
+              <h6 class="text-muted">Completed</h6>
+              <h3 class="text-info">{{ completed_reservations }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-light">
+          <h5 class="mb-0">👥 System Stats</h5>
+        </div>
+        <div class="card-body">
+          <div class="row text-center">
+            <div class="col">
+              <h6 class="text-muted">Users</h6>
+              <h3>{{ total_users }}</h3>
+            </div>
+            <div class="col">
+              <h6 class="text-muted">Slots Available</h6>
+              <h3 class="text-success">{{ available_slots }}</h3>
+            </div>
+            <div class="col">
+              <h6 class="text-muted">Over-Parked</h6>
+              <h3 class="text-danger">{{ over_parked }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACTIVE MONITORS -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-light">
+          <h5 class="mb-0">🔴 Active Parking Sessions</h5>
+        </div>
+        <div class="card-body">
+          {% if active_monitors %}
+            <div class="table-responsive">
+              <table class="table table-hover mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Vehicle</th>
+                    <th>Slot</th>
+                    <th>User</th>
+                    <th>Check-In Time</th>
+                    <th>Status</th>
+                    <th>Over-Parking</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for monitor in active_monitors %}
+                  <tr>
+                    <td><strong>{{ monitor.reservation.vehicle_number }}</strong></td>
+                    <td>#{{ monitor.reservation.slot_number }}</td>
+                    <td>{{ monitor.reservation.user.first_name|default:monitor.reservation.user.username }}</td>
+                    <td>{{ monitor.reservation.checked_in_at|date:"d M, H:i" }}</td>
+                    <td><span class="badge bg-info">{{ monitor.status }}</span></td>
+                    <td>
+                      {% if monitor.over_parking_detected %}
+                        <span class="badge bg-danger">{{ monitor.over_parking_duration_minutes }}m</span>
+                      {% else %}
+                        <span class="badge bg-success">✓ On Time</span>
+                      {% endif %}
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          {% else %}
+            <p class="text-muted text-center mb-0">No active parking sessions</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECENT RESERVATIONS -->
+  <div class="row">
+    <div class="col-12">
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-light">
+          <h5 class="mb-0">📋 Recent Reservations</h5>
+        </div>
+        <div class="card-body">
+          {% if recent_reservations %}
+            <div class="table-responsive">
+              <table class="table table-hover mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>ID</th>
+                    <th>Vehicle</th>
+                    <th>User</th>
+                    <th>Slot</th>
+                    <th>Status</th>
+                    <th>Payment</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for res in recent_reservations %}
+                  <tr>
+                    <td>#{{ res.id }}</td>
+                    <td>{{ res.vehicle_number }}</td>
+                    <td>{{ res.user.first_name|default:res.user.username }}</td>
+                    <td>#{{ res.slot_number }}</td>
+                    <td>
+                      {% if res.status == "Confirmed" %}
+                        <span class="badge bg-success">{{ res.status }}</span>
+                      {% elif res.status == "Completed" %}
+                        <span class="badge bg-info">{{ res.status }}</span>
+                      {% elif res.status == "Cancelled" %}
+                        <span class="badge bg-danger">{{ res.status }}</span>
+                      {% else %}
+                        <span class="badge bg-warning">{{ res.status }}</span>
+                      {% endif %}
+                    </td>
+                    <td>
+                      {% if res.payment_status == "Paid" %}
+                        <span class="badge bg-success">{{ res.payment_status }}</span>
+                      {% else %}
+                        <span class="badge bg-warning">{{ res.payment_status }}</span>
+                      {% endif %}
+                    </td>
+                    <td>₹{{ res.amount }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          {% else %}
+            <p class="text-muted text-center mb-0">No reservations yet</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card {
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+  }
+  .card-header {
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 10px 10px 0 0;
+  }
+</style>
+{% endblock %}

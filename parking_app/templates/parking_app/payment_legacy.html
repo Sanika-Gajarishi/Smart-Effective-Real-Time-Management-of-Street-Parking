@@ -1,0 +1,74 @@
+{% extends 'parking_app/base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm border-0">
+        <div class="card-body p-4">
+          <h3 class="mb-4 text-center">Payment Details</h3>
+
+          <!-- RESERVATION DETAILS -->
+          <div class="mb-4">
+            <div class="mb-3">
+              <label class="text-muted small d-block mb-1">Slot Number</label>
+              <p class="fs-5 fw-bold mb-0">{{ reservation.slot_number }}</p>
+            </div>
+            
+            <div class="mb-3">
+              <label class="text-muted small d-block mb-1">Vehicle Number</label>
+              <p class="fs-5 fw-bold mb-0">{{ reservation.vehicle_number }}</p>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <label class="text-muted small d-block mb-1">Start Time</label>
+                <p class="fs-6 fw-bold mb-0">{{ reservation.start_time|date:"d-m-Y H:i" }}</p>
+              </div>
+              <div class="col-6">
+                <label class="text-muted small d-block mb-1">End Time</label>
+                <p class="fs-6 fw-bold mb-0">{{ reservation.end_time|date:"d-m-Y H:i" }}</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- AMOUNT -->
+          <div class="mb-4 text-center">
+            <p class="text-muted small mb-1">Total Amount</p>
+            <h2 class="text-success">₹{{ dynamic_price }}</h2>
+          </div>
+
+          <!-- PAYMENT FORM -->
+          <form method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-success btn-lg w-100 mb-2">
+              Pay Now
+            </button>
+            <a href="{% url 'my_reservations' %}" class="btn btn-outline-secondary w-100">
+              Back
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAYMENT PROCESSING OVERLAY -->
+<div id="paymentOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+  <div class="text-center text-white">
+    <div class="spinner-border mb-3" role="status">
+      <span class="visually-hidden">Processing...</span>
+    </div>
+    <h4>Processing Payment...</h4>
+  </div>
+</div>
+
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+  document.getElementById('paymentOverlay').style.display = 'flex';
+});
+</script>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'parking_app/base.html' %}
+{% block content %}
+<div class="container mt-5">
+    <h2>Nearest Parking Lot</h2>
+
+    {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% elif lot %}
+        <p>Lot: <strong>{{ lot.name }}</strong></p>
+        <p>Distance: <strong>{{ distance }} km</strong></p>
+
+        <div class="row">
+            {% for slot in available_slots %}
+            <div class="col-md-3 mb-3">
+                <div class="card text-center {% if slot_status.slot.id == 'Available' %}border-success{% else %}border-danger{% endif %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Slot {{ slot.slot_number }}</h5>
+                        <p>Status: 
+                            {% if slot_status.slot.id == 'Available' %}
+                                <span class="text-success">Available</span>
+                            {% else %}
+                                <span class="text-danger">Occupied</span>
+                            {% endif %}
+                        </p>
+                        {% if slot_status.slot.id == 'Available' %}
+                            <a href="{% url 'book_slot' slot.id %}" class="btn btn-primary">Book Now</a>
+                        {% else %}
+                            <button class="btn btn-secondary" disabled>Occupied</button>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Enter your location to find nearest parking lot.</p>
+    {% endif %}
+</div>
+{% endblock %}
+

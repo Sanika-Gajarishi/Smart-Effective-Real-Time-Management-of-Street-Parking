@@ -1,0 +1,282 @@
+{% extends 'parking_app/base.html' %}
+{% block content %}
+
+<div class="container mt-4">
+
+  <!-- ========================= -->
+  <!-- 🚦 LIVE PARKING STATUS -->
+  <!-- ========================= -->
+  <div class="card shadow-sm border-0 p-3 mb-4">
+    <h3 class="text-center mb-3">🚦 Live Parking Status</h3>
+
+    <!-- LEGEND -->
+    <div class="mb-3 text-center">
+      <strong>
+        <span style="color:#1e88e5;">🟦 Your Slot</span> |
+        <span style="color:#43a047;">🟢 Available</span> |
+        <span style="color:#e53935;">🔴 Occupied</span>
+      </strong>
+    </div>
+
+    <div id="slots-container" class="text-center"></div>
+  </div>
+
+  <!-- ========================= -->
+  <!-- 🅿️ BOOK SLOT + MAP -->
+  <!-- ========================= -->
+  <div class="card shadow-sm border-0 p-4 mx-auto" style="max-width: 900px;">
+    <h2 class="text-center mb-3">🅿️ Book Your Parking Slot</h2>
+
+    <p class="text-center text-muted">
+      Slot will be <strong>automatically assigned</strong> using AI/ML.
+    </p>
+
+    <!-- MAP -->
+    <div id="map" style="height: 380px; border-radius: 10px; margin-bottom: 20px;"></div>
+
+    <!-- BOOKING FORM -->
+    {% if assigned_slot %}
+      <form method="POST" action="{% url 'reserve_spot' %}" id="bookingForm">
+        {% csrf_token %}
+        
+        <!-- Slot Number -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">🅿️ Slot Number</label>
+          <input type="text" class="form-control form-control-lg" value="Slot #{{ assigned_slot.slot_number }}" readonly>
+          <small class="text-muted">Auto Assigned by System</small>
+          <input type="hidden" name="slot_id" value="{{ assigned_slot.id }}">
+        </div>
+
+        <!-- Vehicle Number -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">🚗 Vehicle Number</label>
+          <input type="text" name="vehicle_number" class="form-control form-control-lg" placeholder="e.g., MH01AB1234" required>
+        </div>
+
+        <!-- Vehicle Type -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">🚙 Vehicle Type</label>
+          <select name="vehicle_type" class="form-control form-control-lg" required>
+            <option value="">-- Select Vehicle Type --</option>
+            <option value="bike">Bike</option>
+            <option value="car">Car</option>
+            <option value="suv">SUV</option>
+            <option value="truck">Truck</option>
+            <option value="ev">EV</option>
+          </select>
+        </div>
+
+        <!-- Start Time -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">⏰ Start Time</label>
+          <input type="datetime-local" name="start_time" class="form-control form-control-lg" required id="startTime">
+          <small class="text-muted">When your booking starts</small>
+        </div>
+
+        <!-- End Time -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">⏰ End Time</label>
+          <input type="datetime-local" name="end_time" class="form-control form-control-lg" required id="endTime">
+          <small class="text-muted">When your booking ends</small>
+        </div>
+
+        <!-- Amount -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">💰 Amount (₹)</label>
+          <input type="text" class="form-control form-control-lg" value="50" readonly id="amountDisplay">
+          <small class="text-muted">Base rate: ₹50/hour</small>
+          <input type="hidden" name="amount" value="50" id="amountValue">
+        </div>
+
+        <button type="submit" class="btn btn-success btn-lg w-100">
+          ✅ Proceed to Payment
+        </button>
+      </form>
+
+      <script>
+        const startTimeInput = document.getElementById('startTime');
+        const endTimeInput = document.getElementById('endTime');
+        const amountDisplay = document.getElementById('amountDisplay');
+        const amountValue = document.getElementById('amountValue');
+
+        // Set default start time to now
+        const now = new Date();
+        now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+        startTimeInput.value = now.toISOString().slice(0, 16);
+
+        startTimeInput.addEventListener('change', calculateAmount);
+        endTimeInput.addEventListener('change', calculateAmount);
+
+        function calculateAmount() {
+          const startTime = startTimeInput.value;
+          const endTime = endTimeInput.value;
+
+          if (startTime && endTime) {
+            const start = new Date(startTime);
+            const end = new Date(endTime);
+            const durationMs = end - start;
+            const durationHours = durationMs / (1000 * 60 * 60);
+
+            if (durationHours > 0) {
+              const amount = Math.ceil(durationHours * 50);
+              amountDisplay.value = amount;
+              amountValue.value = amount;
+            } else {
+              amountDisplay.value = "Invalid Time";
+            }
+          }
+        }
+      </script>
+    {% else %}
+      <div class="alert alert-warning">
+        <p class="mb-0">No parking slots available at the moment. Please try again later.</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- LOADING OVERLAY -->
+<div id="loadingOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+  <div class="text-center text-white">
+    <div class="spinner-border mb-3" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <h4>🅿️ Assigning Your Parking Slot...</h4>
+    <p>Redirecting to payment...</p>
+  </div>
+</div>
+
+<script>
+function showLoading() {
+  const overlay = document.getElementById('loadingOverlay');
+  overlay.style.display = 'flex';
+}
+</script>
+
+<!-- ========================= -->
+<!-- 🎨 SLOT STYLES -->
+<!-- ========================= -->
+<style>
+.slot-box {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 6px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  padding-top: 18px;
+}
+
+.green { background: #43a047; }
+.red { background: #e53935; }
+
+.mine {
+  background: #1e88e5;
+  border: 4px solid #0d47a1;
+  transform: scale(1.12);
+}
+
+.mine span {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+}
+</style>
+
+<!-- ========================= -->
+<!-- 🔄 LIVE SLOT STATUS (GRID + MAP) -->
+<!-- ========================= -->
+<script>
+const assignedSlotNumber = "{{ assigned_slot.slot_number }}";
+
+function loadSlots() {
+  fetch("{% url 'get_slots_json' %}")
+    .then(res => res.json())
+    .then(slots => {
+
+      /* ---------- GRID ---------- */
+      let html = "";
+      slots.forEach(s => {
+        let color = s.is_occupied ? "red" : "green";
+        if (s.slot_number == assignedSlotNumber) {
+            color = "mine";
+        }
+        
+        html += `
+          <div class="slot-box ${color}">
+            ${s.slot_number}
+            ${s.slot_number == assignedSlotNumber ? '<span>Your Slot</span>' : ''}
+          </div>
+        `;
+      });
+      document.getElementById("slots-container").innerHTML = html;
+
+      /* ---------- MAP ---------- */
+      slotLayer.clearLayers();
+
+      slots.forEach(s => {
+        if (!s.lat || !s.lng) return;
+
+        let color = s.is_occupied ? "red" : "green";
+        if (s.slot_number == assignedSlotNumber) {
+            color = "blue";
+        }
+
+        const marker = L.circleMarker([s.lat, s.lng], {
+          radius: 8,
+          color: color,
+          fillOpacity: 0.8
+        }).bindPopup(
+          `<strong>Slot #${s.slot_number}</strong><br>
+           Status: ${s.is_occupied ? "🔴 Occupied" : (s.slot_number == assignedSlotNumber ? "🟦 Your Slot" : "🟢 Available")}`
+        );
+
+        slotLayer.addLayer(marker);
+      });
+    });
+}
+</script>
+
+<!-- ========================= -->
+<!-- 🌍 LEAFLET MAP -->
+<!-- ========================= -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+let slotLayer;
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const map = L.map("map").setView([18.5793, 73.9786], 16);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; OpenStreetMap contributors",
+  }).addTo(map);
+
+  // College Marker
+  L.marker([18.5793, 73.9786]).addTo(map)
+    .bindPopup("<b>Ajeenkya DY Patil University</b><br>Lohegaon, Pune");
+
+  // Campus Boundary
+  L.polygon([
+    [18.5805, 73.9770],
+    [18.5805, 73.9805],
+    [18.5780, 73.9805],
+    [18.5780, 73.9770]
+  ], {
+    color: "blue",
+    fillColor: "#2196f3",
+    fillOpacity: 0.15
+  }).addTo(map);
+
+  slotLayer = L.layerGroup().addTo(map);
+
+  loadSlots();
+  setInterval(loadSlots, 5000); // 🔁 refresh every 5 sec
+});
+</script>
+
+{% endblock %}

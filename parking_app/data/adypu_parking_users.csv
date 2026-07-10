@@ -1,0 +1,1001 @@
+user_id,full_name,role,department,email,phone,vehicle_type,vehicle_number,parking_zone,preferred_slot_type,booking_status,priority_level
+ADYPU100001,Neha Joshi,Student,Management,neha.joshi1@adypu.edu.in,9951083590,Four-Wheeler,MH14 EF 8849,Zone-B,EV,Available,Low
+ADYPU100002,Aarav Pawar,Faculty,Artificial Intelligence,aarav.pawar2@adypu.edu.in,9952283666,Two-Wheeler,MH14 GH 2134,Zone-B,EV,Available,High
+ADYPU100003,Riya Gaikwad,Student,Architecture,riya.gaikwad3@adypu.edu.in,9679980954,Four-Wheeler,MH13 GH 1558,Zone-A,EV,Booked,Low
+ADYPU100004,Riya Kadam,Student,Media,riya.kadam4@adypu.edu.in,9272978305,Four-Wheeler,MH12 AB 1320,Zone-D,Reserved,Available,Low
+ADYPU100005,Vivaan Kale,Student,Management,vivaan.kale5@adypu.edu.in,9823481178,Two-Wheeler,MH12 AB 4233,Zone-A,EV,Booked,Low
+ADYPU100006,Pranav Kulkarni,Student,Law,pranav.kulkarni6@adypu.edu.in,9413518975,Four-Wheeler,MH13 CD 9778,Zone-D,EV,Booked,Low
+ADYPU100007,Yash Joshi,Student,Artificial Intelligence,yash.joshi7@adypu.edu.in,9871046016,Four-Wheeler,MH13 AB 2528,Zone-A,Reserved,Available,Low
+ADYPU100008,Riya Chavan,Student,Artificial Intelligence,riya.chavan8@adypu.edu.in,9819059392,Two-Wheeler,MH12 EF 2846,Zone-C,Reserved,Booked,Low
+ADYPU100009,Rohan Kulkarni,Faculty,Artificial Intelligence,rohan.kulkarni9@adypu.edu.in,9934317354,Four-Wheeler,MH12 CD 2075,Zone-C,Open,Available,High
+ADYPU100010,Isha Kulkarni,Faculty,Architecture,isha.kulkarni10@adypu.edu.in,9627112595,Four-Wheeler,MH13 CD 1233,Zone-B,Open,Available,High
+ADYPU100011,Shubham Gaikwad,Student,Design,shubham.gaikwad11@adypu.edu.in,9156021001,Four-Wheeler,MH13 GH 1940,Zone-C,Open,Booked,Low
+ADYPU100012,Pranav Sharma,Student,Media,pranav.sharma12@adypu.edu.in,9153045111,Four-Wheeler,MH13 CD 3477,Zone-B,EV,Booked,Low
+ADYPU100013,Atharva Kadam,Student,Law,atharva.kadam13@adypu.edu.in,9620183378,Four-Wheeler,MH13 CD 7041,Zone-C,Open,Booked,Low
+ADYPU100014,Riya Patil,Student,Design,riya.patil14@adypu.edu.in,9737466064,Four-Wheeler,MH13 CD 1385,Zone-B,EV,Booked,Low
+ADYPU100015,Pranav Gaikwad,Student,Computer Science,pranav.gaikwad15@adypu.edu.in,9526233515,Two-Wheeler,MH12 CD 3325,Zone-B,Open,Booked,Low
+ADYPU100016,Aditya Kadam,Faculty,Design,aditya.kadam16@adypu.edu.in,9678380283,Four-Wheeler,MH12 EF 3073,Zone-D,Reserved,Available,High
+ADYPU100017,Sai Deshmukh,Student,Engineering,sai.deshmukh17@adypu.edu.in,9949035027,Two-Wheeler,MH13 CD 1756,Zone-D,Reserved,Available,Low
+ADYPU100018,Pooja Deshmukh,Student,Architecture,pooja.deshmukh18@adypu.edu.in,9900806374,Two-Wheeler,MH14 CD 5143,Zone-B,Reserved,Available,Low
+ADYPU100019,Rohan Kadam,Student,Engineering,rohan.kadam19@adypu.edu.in,9645689073,Four-Wheeler,MH14 GH 2614,Zone-C,Reserved,Available,Low
+ADYPU100020,Kunal Kulkarni,Student,Law,kunal.kulkarni20@adypu.edu.in,9215541254,Two-Wheeler,MH13 AB 6211,Zone-A,EV,Booked,Low
+ADYPU100021,Aarav Shinde,Student,Law,aarav.shinde21@adypu.edu.in,9531122219,Two-Wheeler,MH14 GH 8714,Zone-B,Open,Available,Low
+ADYPU100022,Vivaan Kulkarni,Faculty,Media,vivaan.kulkarni22@adypu.edu.in,9956434956,Two-Wheeler,MH13 GH 7996,Zone-D,Reserved,Booked,High
+ADYPU100023,Kavya Shinde,Student,Artificial Intelligence,kavya.shinde23@adypu.edu.in,9628157400,Four-Wheeler,MH12 AB 8859,Zone-B,Reserved,Booked,Low
+ADYPU100024,Yash Joshi,Student,Engineering,yash.joshi24@adypu.edu.in,9273807955,Four-Wheeler,MH13 GH 9589,Zone-B,Reserved,Booked,Low
+ADYPU100025,Aditya Chavan,Faculty,Design,aditya.chavan25@adypu.edu.in,9765684503,Four-Wheeler,MH12 AB 9558,Zone-D,Open,Available,High
+ADYPU100026,Atharva Shinde,Faculty,Design,atharva.shinde26@adypu.edu.in,9188041984,Two-Wheeler,MH13 EF 4093,Zone-C,EV,Booked,High
+ADYPU100027,Arjun Shinde,Staff,Design,arjun.shinde27@adypu.edu.in,9869001806,Four-Wheeler,MH14 CD 4905,Zone-B,Reserved,Booked,Medium
+ADYPU100028,Shubham More,Student,Law,shubham.more28@adypu.edu.in,9767557046,Four-Wheeler,MH14 EF 3856,Zone-A,Open,Available,Low
+ADYPU100029,Tanvi Shinde,Student,Computer Science,tanvi.shinde29@adypu.edu.in,9638161588,Two-Wheeler,MH14 EF 1311,Zone-D,EV,Booked,Low
+ADYPU100030,Ishaan Patil,Faculty,Design,ishaan.patil30@adypu.edu.in,9304335997,Four-Wheeler,MH14 CD 2548,Zone-C,Open,Booked,High
+ADYPU100031,Pooja Gaikwad,Student,Management,pooja.gaikwad31@adypu.edu.in,9547898063,Four-Wheeler,MH13 AB 6056,Zone-B,Open,Booked,Low
+ADYPU100032,Aarav Shinde,Staff,Law,aarav.shinde32@adypu.edu.in,9994122567,Two-Wheeler,MH14 AB 2317,Zone-B,Open,Booked,Medium
+ADYPU100033,Aditi Chavan,Faculty,Architecture,aditi.chavan33@adypu.edu.in,9263967401,Four-Wheeler,MH14 GH 8718,Zone-B,Reserved,Booked,High
+ADYPU100034,Kavya Patil,Student,Computer Science,kavya.patil34@adypu.edu.in,9828006790,Two-Wheeler,MH12 AB 4053,Zone-C,Reserved,Booked,Low
+ADYPU100035,Vivaan More,Student,Artificial Intelligence,vivaan.more35@adypu.edu.in,9134831676,Two-Wheeler,MH13 EF 7544,Zone-B,Reserved,Booked,Low
+ADYPU100036,Neha Kulkarni,Student,Architecture,neha.kulkarni36@adypu.edu.in,9988280619,Two-Wheeler,MH14 GH 2283,Zone-B,EV,Available,Low
+ADYPU100037,Aditi Chavan,Faculty,Architecture,aditi.chavan37@adypu.edu.in,9630227057,Four-Wheeler,MH14 CD 1344,Zone-B,Reserved,Available,High
+ADYPU100038,Isha Patil,Staff,Law,isha.patil38@adypu.edu.in,9325646226,Four-Wheeler,MH12 AB 6086,Zone-C,Open,Booked,Medium
+ADYPU100039,Siddharth More,Student,Artificial Intelligence,siddharth.more39@adypu.edu.in,9675769011,Four-Wheeler,MH12 GH 3645,Zone-B,Open,Booked,Low
+ADYPU100040,Riya Gaikwad,Faculty,Law,riya.gaikwad40@adypu.edu.in,9743568161,Two-Wheeler,MH13 AB 4930,Zone-C,EV,Booked,High
+ADYPU100041,Aarav Joshi,Student,Computer Science,aarav.joshi41@adypu.edu.in,9328359259,Four-Wheeler,MH14 AB 4454,Zone-C,Open,Available,Low
+ADYPU100042,Rahul More,Student,Management,rahul.more42@adypu.edu.in,9798768443,Two-Wheeler,MH14 GH 9105,Zone-C,Open,Booked,Low
+ADYPU100043,Ishaan Kale,Faculty,Media,ishaan.kale43@adypu.edu.in,9320988558,Two-Wheeler,MH13 EF 1663,Zone-C,EV,Booked,High
+ADYPU100044,Riya Deshmukh,Faculty,Law,riya.deshmukh44@adypu.edu.in,9252788488,Four-Wheeler,MH14 CD 3597,Zone-A,Open,Booked,High
+ADYPU100045,Shubham Kulkarni,Student,Engineering,shubham.kulkarni45@adypu.edu.in,9129085409,Four-Wheeler,MH13 CD 8910,Zone-B,Reserved,Booked,Low
+ADYPU100046,Pranav More,Student,Design,pranav.more46@adypu.edu.in,9906696429,Two-Wheeler,MH14 GH 2158,Zone-C,EV,Booked,Low
+ADYPU100047,Shubham Gaikwad,Faculty,Computer Science,shubham.gaikwad47@adypu.edu.in,9900998997,Four-Wheeler,MH12 CD 6459,Zone-B,EV,Available,High
+ADYPU100048,Siddharth Sharma,Student,Management,siddharth.sharma48@adypu.edu.in,9243785636,Four-Wheeler,MH14 EF 4575,Zone-D,Open,Available,Low
+ADYPU100049,Kunal Shinde,Faculty,Management,kunal.shinde49@adypu.edu.in,9251431468,Four-Wheeler,MH14 EF 1150,Zone-A,Reserved,Booked,High
+ADYPU100050,Shruti More,Student,Media,shruti.more50@adypu.edu.in,9623902495,Four-Wheeler,MH14 AB 4808,Zone-D,EV,Available,Low
+ADYPU100051,Om Deshmukh,Student,Media,om.deshmukh51@adypu.edu.in,9872003455,Two-Wheeler,MH13 GH 8269,Zone-D,Open,Available,Low
+ADYPU100052,Shubham Kadam,Staff,Media,shubham.kadam52@adypu.edu.in,9265779859,Two-Wheeler,MH12 AB 6650,Zone-A,Reserved,Booked,Medium
+ADYPU100053,Rohan Kulkarni,Faculty,Management,rohan.kulkarni53@adypu.edu.in,9262864029,Two-Wheeler,MH12 GH 4058,Zone-B,Open,Available,High
+ADYPU100054,Sai Chavan,Student,Computer Science,sai.chavan54@adypu.edu.in,9916977587,Two-Wheeler,MH14 AB 7639,Zone-B,EV,Available,Low
+ADYPU100055,Aditya Gaikwad,Student,Management,aditya.gaikwad55@adypu.edu.in,9318692716,Four-Wheeler,MH12 CD 2577,Zone-A,Reserved,Booked,Low
+ADYPU100056,Tanvi Shinde,Staff,Media,tanvi.shinde56@adypu.edu.in,9149831473,Four-Wheeler,MH13 GH 1562,Zone-D,Open,Available,Medium
+ADYPU100057,Aditya Gaikwad,Staff,Artificial Intelligence,aditya.gaikwad57@adypu.edu.in,9410427859,Four-Wheeler,MH13 GH 5289,Zone-C,EV,Booked,Medium
+ADYPU100058,Pranav Gaikwad,Faculty,Design,pranav.gaikwad58@adypu.edu.in,9728002367,Two-Wheeler,MH13 AB 2891,Zone-D,Reserved,Available,High
+ADYPU100059,Arjun Jadhav,Faculty,Design,arjun.jadhav59@adypu.edu.in,9810719139,Four-Wheeler,MH13 GH 2836,Zone-B,Open,Booked,High
+ADYPU100060,Rahul Chavan,Faculty,Management,rahul.chavan60@adypu.edu.in,9697438792,Four-Wheeler,MH14 AB 8759,Zone-B,Open,Booked,High
+ADYPU100061,Aditi Pawar,Student,Law,aditi.pawar61@adypu.edu.in,9639833546,Two-Wheeler,MH13 CD 1306,Zone-B,Open,Available,Low
+ADYPU100062,Kunal Patil,Student,Management,kunal.patil62@adypu.edu.in,9890693845,Four-Wheeler,MH14 CD 8376,Zone-D,Open,Booked,Low
+ADYPU100063,Sai Bhosale,Faculty,Architecture,sai.bhosale63@adypu.edu.in,9495026649,Two-Wheeler,MH13 GH 3348,Zone-C,EV,Available,High
+ADYPU100064,Ishaan Bhosale,Staff,Artificial Intelligence,ishaan.bhosale64@adypu.edu.in,9874739992,Four-Wheeler,MH13 EF 7222,Zone-A,EV,Booked,Medium
+ADYPU100065,Atharva Gaikwad,Staff,Engineering,atharva.gaikwad65@adypu.edu.in,9325732510,Four-Wheeler,MH14 CD 2986,Zone-B,Reserved,Available,Medium
+ADYPU100066,Kavya Joshi,Staff,Law,kavya.joshi66@adypu.edu.in,9151970505,Two-Wheeler,MH13 EF 3121,Zone-A,Open,Available,Medium
+ADYPU100067,Shruti Kale,Student,Computer Science,shruti.kale67@adypu.edu.in,9289632796,Four-Wheeler,MH12 AB 6370,Zone-D,EV,Booked,Low
+ADYPU100068,Pranav Bhosale,Student,Architecture,pranav.bhosale68@adypu.edu.in,9105935766,Four-Wheeler,MH14 AB 5575,Zone-C,Reserved,Booked,Low
+ADYPU100069,Siddharth Kadam,Staff,Architecture,siddharth.kadam69@adypu.edu.in,9799452030,Four-Wheeler,MH13 CD 9682,Zone-B,EV,Available,Medium
+ADYPU100070,Siddharth Gaikwad,Faculty,Engineering,siddharth.gaikwad70@adypu.edu.in,9279203219,Four-Wheeler,MH12 AB 6577,Zone-B,EV,Available,High
+ADYPU100071,Aarav Deshmukh,Student,Architecture,aarav.deshmukh71@adypu.edu.in,9767486366,Two-Wheeler,MH13 CD 3100,Zone-B,Open,Available,Low
+ADYPU100072,Rohan Joshi,Staff,Law,rohan.joshi72@adypu.edu.in,9512349407,Four-Wheeler,MH13 EF 4548,Zone-A,Open,Booked,Medium
+ADYPU100073,Rohan Kadam,Student,Media,rohan.kadam73@adypu.edu.in,9594907496,Two-Wheeler,MH13 CD 2372,Zone-B,EV,Booked,Low
+ADYPU100074,Pranav Kale,Staff,Computer Science,pranav.kale74@adypu.edu.in,9761749509,Two-Wheeler,MH12 GH 3734,Zone-A,Reserved,Available,Medium
+ADYPU100075,Aarav Shinde,Faculty,Law,aarav.shinde75@adypu.edu.in,9490256341,Four-Wheeler,MH12 GH 2474,Zone-D,Reserved,Booked,High
+ADYPU100076,Rohan Shinde,Student,Artificial Intelligence,rohan.shinde76@adypu.edu.in,9271272265,Four-Wheeler,MH12 EF 2127,Zone-C,EV,Booked,Low
+ADYPU100077,Pranav Chavan,Faculty,Engineering,pranav.chavan77@adypu.edu.in,9184724565,Two-Wheeler,MH14 AB 7032,Zone-B,Reserved,Booked,High
+ADYPU100078,Ananya Kadam,Student,Management,ananya.kadam78@adypu.edu.in,9836453358,Four-Wheeler,MH12 GH 5580,Zone-C,EV,Booked,Low
+ADYPU100079,Shruti Kulkarni,Student,Artificial Intelligence,shruti.kulkarni79@adypu.edu.in,9680674837,Two-Wheeler,MH14 EF 4335,Zone-A,EV,Available,Low
+ADYPU100080,Shruti Kale,Student,Design,shruti.kale80@adypu.edu.in,9193419694,Two-Wheeler,MH13 EF 5071,Zone-C,EV,Available,Low
+ADYPU100081,Sneha Deshmukh,Student,Management,sneha.deshmukh81@adypu.edu.in,9787702726,Four-Wheeler,MH14 AB 9363,Zone-D,EV,Booked,Low
+ADYPU100082,Neha Deshmukh,Student,Design,neha.deshmukh82@adypu.edu.in,9504666129,Four-Wheeler,MH13 CD 1250,Zone-B,EV,Booked,Low
+ADYPU100083,Kavya Shinde,Staff,Management,kavya.shinde83@adypu.edu.in,9164073947,Four-Wheeler,MH13 GH 5639,Zone-C,Reserved,Booked,Medium
+ADYPU100084,Ananya Patil,Student,Artificial Intelligence,ananya.patil84@adypu.edu.in,9210912171,Four-Wheeler,MH13 CD 4836,Zone-B,Open,Available,Low
+ADYPU100085,Ananya Bhosale,Student,Engineering,ananya.bhosale85@adypu.edu.in,9822927250,Four-Wheeler,MH14 AB 1553,Zone-B,Open,Booked,Low
+ADYPU100086,Rohan Kale,Student,Artificial Intelligence,rohan.kale86@adypu.edu.in,9729208933,Four-Wheeler,MH12 CD 3392,Zone-D,Open,Booked,Low
+ADYPU100087,Pranav Pawar,Faculty,Artificial Intelligence,pranav.pawar87@adypu.edu.in,9206600287,Two-Wheeler,MH12 CD 9422,Zone-C,Open,Available,High
+ADYPU100088,Tanvi Shinde,Staff,Design,tanvi.shinde88@adypu.edu.in,9190289708,Four-Wheeler,MH13 GH 8819,Zone-A,EV,Booked,Medium
+ADYPU100089,Ananya Kale,Student,Media,ananya.kale89@adypu.edu.in,9527804904,Four-Wheeler,MH12 EF 2661,Zone-D,Reserved,Booked,Low
+ADYPU100090,Tanvi Patil,Staff,Design,tanvi.patil90@adypu.edu.in,9359145613,Four-Wheeler,MH13 CD 1886,Zone-C,Reserved,Booked,Medium
+ADYPU100091,Riya Gaikwad,Student,Management,riya.gaikwad91@adypu.edu.in,9436136282,Four-Wheeler,MH13 GH 6610,Zone-C,Reserved,Booked,Low
+ADYPU100092,Kavya Sharma,Student,Media,kavya.sharma92@adypu.edu.in,9801953031,Four-Wheeler,MH13 AB 2923,Zone-C,Reserved,Booked,Low
+ADYPU100093,Ananya Jadhav,Student,Computer Science,ananya.jadhav93@adypu.edu.in,9315865477,Four-Wheeler,MH12 CD 3900,Zone-D,EV,Booked,Low
+ADYPU100094,Ananya Gaikwad,Student,Media,ananya.gaikwad94@adypu.edu.in,9305088116,Four-Wheeler,MH12 AB 7539,Zone-B,Open,Booked,Low
+ADYPU100095,Aarav Deshmukh,Faculty,Architecture,aarav.deshmukh95@adypu.edu.in,9742927683,Four-Wheeler,MH14 CD 1841,Zone-B,EV,Available,High
+ADYPU100096,Rohan Kadam,Staff,Management,rohan.kadam96@adypu.edu.in,9620735039,Four-Wheeler,MH12 EF 1594,Zone-D,Reserved,Available,Medium
+ADYPU100097,Yash Bhosale,Student,Engineering,yash.bhosale97@adypu.edu.in,9679087066,Two-Wheeler,MH14 EF 1412,Zone-A,Reserved,Booked,Low
+ADYPU100098,Neha Kale,Student,Engineering,neha.kale98@adypu.edu.in,9381297748,Four-Wheeler,MH14 AB 5420,Zone-C,Open,Available,Low
+ADYPU100099,Aditi Deshmukh,Student,Artificial Intelligence,aditi.deshmukh99@adypu.edu.in,9517305375,Two-Wheeler,MH14 AB 5321,Zone-A,Open,Booked,Low
+ADYPU100100,Kavya Gaikwad,Student,Media,kavya.gaikwad100@adypu.edu.in,9610255503,Four-Wheeler,MH12 EF 7237,Zone-A,Reserved,Booked,Low
+ADYPU100101,Isha Pawar,Student,Media,isha.pawar101@adypu.edu.in,9859842523,Four-Wheeler,MH12 AB 3570,Zone-B,Open,Available,Low
+ADYPU100102,Siddharth Sharma,Student,Engineering,siddharth.sharma102@adypu.edu.in,9249199588,Two-Wheeler,MH12 CD 5269,Zone-D,EV,Available,Low
+ADYPU100103,Om Kadam,Student,Artificial Intelligence,om.kadam103@adypu.edu.in,9239891478,Four-Wheeler,MH13 EF 1833,Zone-C,Reserved,Booked,Low
+ADYPU100104,Pranav Pawar,Student,Engineering,pranav.pawar104@adypu.edu.in,9942462544,Four-Wheeler,MH12 CD 6584,Zone-B,EV,Booked,Low
+ADYPU100105,Pooja Kadam,Student,Architecture,pooja.kadam105@adypu.edu.in,9266480961,Two-Wheeler,MH13 CD 6154,Zone-A,EV,Available,Low
+ADYPU100106,Sai Kale,Faculty,Artificial Intelligence,sai.kale106@adypu.edu.in,9992781889,Four-Wheeler,MH14 GH 8427,Zone-D,EV,Available,High
+ADYPU100107,Ananya Chavan,Student,Computer Science,ananya.chavan107@adypu.edu.in,9699737175,Four-Wheeler,MH12 EF 8888,Zone-C,Reserved,Booked,Low
+ADYPU100108,Rohan Patil,Staff,Media,rohan.patil108@adypu.edu.in,9983389333,Two-Wheeler,MH13 CD 5999,Zone-A,Reserved,Booked,Medium
+ADYPU100109,Kavya Pawar,Student,Architecture,kavya.pawar109@adypu.edu.in,9846282490,Four-Wheeler,MH13 CD 8152,Zone-B,EV,Available,Low
+ADYPU100110,Ishaan Bhosale,Staff,Law,ishaan.bhosale110@adypu.edu.in,9284162915,Two-Wheeler,MH14 GH 2301,Zone-C,Open,Booked,Medium
+ADYPU100111,Rohan Chavan,Faculty,Computer Science,rohan.chavan111@adypu.edu.in,9312778377,Four-Wheeler,MH13 GH 6167,Zone-C,EV,Available,High
+ADYPU100112,Tanvi Pawar,Student,Architecture,tanvi.pawar112@adypu.edu.in,9744481064,Two-Wheeler,MH13 EF 9793,Zone-B,EV,Available,Low
+ADYPU100113,Shubham Sharma,Student,Management,shubham.sharma113@adypu.edu.in,9355153903,Four-Wheeler,MH12 AB 1509,Zone-A,EV,Booked,Low
+ADYPU100114,Atharva Sharma,Student,Media,atharva.sharma114@adypu.edu.in,9536589635,Two-Wheeler,MH13 AB 2289,Zone-B,Reserved,Booked,Low
+ADYPU100115,Atharva Deshmukh,Staff,Architecture,atharva.deshmukh115@adypu.edu.in,9238320252,Two-Wheeler,MH14 AB 1955,Zone-C,EV,Available,Medium
+ADYPU100116,Rahul Pawar,Student,Design,rahul.pawar116@adypu.edu.in,9923138030,Four-Wheeler,MH14 GH 2103,Zone-D,Reserved,Available,Low
+ADYPU100117,Vivaan Deshmukh,Student,Computer Science,vivaan.deshmukh117@adypu.edu.in,9411687622,Four-Wheeler,MH13 GH 8520,Zone-D,EV,Available,Low
+ADYPU100118,Vivaan Jadhav,Student,Law,vivaan.jadhav118@adypu.edu.in,9202916089,Four-Wheeler,MH12 GH 5316,Zone-A,Open,Booked,Low
+ADYPU100119,Rahul Patil,Student,Architecture,rahul.patil119@adypu.edu.in,9233476819,Four-Wheeler,MH14 CD 6118,Zone-D,Open,Available,Low
+ADYPU100120,Atharva Deshmukh,Student,Media,atharva.deshmukh120@adypu.edu.in,9786856629,Four-Wheeler,MH14 CD 3120,Zone-A,Reserved,Booked,Low
+ADYPU100121,Sai Deshmukh,Student,Law,sai.deshmukh121@adypu.edu.in,9186040910,Four-Wheeler,MH12 EF 2226,Zone-C,EV,Booked,Low
+ADYPU100122,Tanvi Sharma,Staff,Media,tanvi.sharma122@adypu.edu.in,9448302942,Two-Wheeler,MH12 EF 4775,Zone-D,Reserved,Available,Medium
+ADYPU100123,Sai Joshi,Faculty,Engineering,sai.joshi123@adypu.edu.in,9802304566,Four-Wheeler,MH12 GH 7803,Zone-C,Open,Booked,High
+ADYPU100124,Sneha Kale,Student,Computer Science,sneha.kale124@adypu.edu.in,9957315238,Four-Wheeler,MH14 CD 4822,Zone-D,Reserved,Booked,Low
+ADYPU100125,Pooja Kadam,Student,Management,pooja.kadam125@adypu.edu.in,9307745933,Two-Wheeler,MH13 AB 5404,Zone-A,Open,Available,Low
+ADYPU100126,Aditi Pawar,Student,Architecture,aditi.pawar126@adypu.edu.in,9668442537,Two-Wheeler,MH12 GH 2601,Zone-B,Reserved,Booked,Low
+ADYPU100127,Riya More,Student,Law,riya.more127@adypu.edu.in,9130245603,Two-Wheeler,MH14 GH 3157,Zone-D,Open,Booked,Low
+ADYPU100128,Siddharth Kulkarni,Faculty,Artificial Intelligence,siddharth.kulkarni128@adypu.edu.in,9420761253,Four-Wheeler,MH12 CD 3289,Zone-B,EV,Booked,High
+ADYPU100129,Yash Patil,Staff,Law,yash.patil129@adypu.edu.in,9710998545,Two-Wheeler,MH14 AB 5014,Zone-D,Open,Booked,Medium
+ADYPU100130,Shubham Kulkarni,Student,Computer Science,shubham.kulkarni130@adypu.edu.in,9496820359,Two-Wheeler,MH14 GH 3937,Zone-A,Reserved,Available,Low
+ADYPU100131,Arjun Patil,Student,Design,arjun.patil131@adypu.edu.in,9410875832,Four-Wheeler,MH14 CD 5742,Zone-B,EV,Available,Low
+ADYPU100132,Sneha Jadhav,Faculty,Engineering,sneha.jadhav132@adypu.edu.in,9500036253,Two-Wheeler,MH13 GH 9562,Zone-D,Reserved,Booked,High
+ADYPU100133,Ananya Jadhav,Student,Engineering,ananya.jadhav133@adypu.edu.in,9652972153,Four-Wheeler,MH12 EF 6303,Zone-D,EV,Booked,Low
+ADYPU100134,Aditya Sharma,Student,Artificial Intelligence,aditya.sharma134@adypu.edu.in,9970019758,Two-Wheeler,MH12 AB 1167,Zone-A,Reserved,Booked,Low
+ADYPU100135,Rohan Joshi,Faculty,Artificial Intelligence,rohan.joshi135@adypu.edu.in,9259870995,Two-Wheeler,MH13 GH 8069,Zone-B,EV,Available,High
+ADYPU100136,Yash Pawar,Student,Engineering,yash.pawar136@adypu.edu.in,9865271767,Two-Wheeler,MH12 CD 2403,Zone-D,Open,Booked,Low
+ADYPU100137,Ishaan Pawar,Student,Artificial Intelligence,ishaan.pawar137@adypu.edu.in,9686145083,Two-Wheeler,MH14 GH 3143,Zone-D,Reserved,Available,Low
+ADYPU100138,Arjun Sharma,Student,Computer Science,arjun.sharma138@adypu.edu.in,9187033895,Four-Wheeler,MH12 GH 8341,Zone-A,Reserved,Available,Low
+ADYPU100139,Sai Gaikwad,Student,Computer Science,sai.gaikwad139@adypu.edu.in,9889120358,Four-Wheeler,MH12 CD 3430,Zone-C,EV,Booked,Low
+ADYPU100140,Aditya Patil,Student,Media,aditya.patil140@adypu.edu.in,9860640683,Four-Wheeler,MH14 GH 5620,Zone-D,EV,Available,Low
+ADYPU100141,Kavya Kadam,Faculty,Design,kavya.kadam141@adypu.edu.in,9748137631,Four-Wheeler,MH14 EF 6550,Zone-C,EV,Booked,High
+ADYPU100142,Shruti Deshmukh,Staff,Computer Science,shruti.deshmukh142@adypu.edu.in,9988146407,Four-Wheeler,MH12 EF 9804,Zone-C,Open,Booked,Medium
+ADYPU100143,Tanvi Chavan,Student,Management,tanvi.chavan143@adypu.edu.in,9782680751,Four-Wheeler,MH12 AB 7372,Zone-D,Reserved,Booked,Low
+ADYPU100144,Pooja Patil,Student,Law,pooja.patil144@adypu.edu.in,9124148121,Four-Wheeler,MH12 AB 4051,Zone-B,Open,Booked,Low
+ADYPU100145,Rahul Kadam,Student,Media,rahul.kadam145@adypu.edu.in,9162676801,Two-Wheeler,MH14 GH 3892,Zone-C,EV,Booked,Low
+ADYPU100146,Pranav Kadam,Student,Computer Science,pranav.kadam146@adypu.edu.in,9359980074,Two-Wheeler,MH12 EF 6616,Zone-B,Open,Available,Low
+ADYPU100147,Aditi Pawar,Student,Design,aditi.pawar147@adypu.edu.in,9850061836,Four-Wheeler,MH12 AB 5129,Zone-A,Open,Booked,Low
+ADYPU100148,Sai Chavan,Faculty,Artificial Intelligence,sai.chavan148@adypu.edu.in,9502372156,Two-Wheeler,MH12 EF 7675,Zone-B,Reserved,Available,High
+ADYPU100149,Shubham Patil,Faculty,Computer Science,shubham.patil149@adypu.edu.in,9898959752,Two-Wheeler,MH12 AB 5674,Zone-D,Open,Available,High
+ADYPU100150,Sai Kulkarni,Faculty,Law,sai.kulkarni150@adypu.edu.in,9979043027,Four-Wheeler,MH13 CD 6366,Zone-A,Open,Available,High
+ADYPU100151,Aarav Patil,Student,Artificial Intelligence,aarav.patil151@adypu.edu.in,9556819169,Two-Wheeler,MH13 EF 8582,Zone-A,Reserved,Available,Low
+ADYPU100152,Shubham Gaikwad,Faculty,Media,shubham.gaikwad152@adypu.edu.in,9437778673,Two-Wheeler,MH12 EF 9263,Zone-B,EV,Booked,High
+ADYPU100153,Rahul Shinde,Student,Management,rahul.shinde153@adypu.edu.in,9394036914,Two-Wheeler,MH12 AB 2880,Zone-C,Open,Available,Low
+ADYPU100154,Neha Jadhav,Student,Artificial Intelligence,neha.jadhav154@adypu.edu.in,9244088562,Four-Wheeler,MH13 AB 2332,Zone-B,Open,Booked,Low
+ADYPU100155,Vihaan Deshmukh,Student,Artificial Intelligence,vihaan.deshmukh155@adypu.edu.in,9118385467,Two-Wheeler,MH14 EF 1840,Zone-C,EV,Booked,Low
+ADYPU100156,Vihaan Joshi,Faculty,Management,vihaan.joshi156@adypu.edu.in,9386906056,Two-Wheeler,MH13 EF 1342,Zone-B,EV,Available,High
+ADYPU100157,Sai Pawar,Staff,Artificial Intelligence,sai.pawar157@adypu.edu.in,9487219973,Two-Wheeler,MH13 CD 8279,Zone-D,Reserved,Booked,Medium
+ADYPU100158,Arjun More,Student,Computer Science,arjun.more158@adypu.edu.in,9484119001,Four-Wheeler,MH13 CD 6808,Zone-D,EV,Booked,Low
+ADYPU100159,Kunal Deshmukh,Student,Architecture,kunal.deshmukh159@adypu.edu.in,9354089006,Two-Wheeler,MH12 CD 2158,Zone-D,Reserved,Available,Low
+ADYPU100160,Atharva Kulkarni,Faculty,Engineering,atharva.kulkarni160@adypu.edu.in,9318202013,Four-Wheeler,MH13 AB 2155,Zone-B,Open,Available,High
+ADYPU100161,Pranav Kulkarni,Student,Management,pranav.kulkarni161@adypu.edu.in,9695394934,Two-Wheeler,MH13 GH 1595,Zone-C,EV,Booked,Low
+ADYPU100162,Pooja More,Student,Media,pooja.more162@adypu.edu.in,9218520433,Two-Wheeler,MH12 EF 3446,Zone-C,Open,Booked,Low
+ADYPU100163,Rahul Bhosale,Faculty,Management,rahul.bhosale163@adypu.edu.in,9694022914,Four-Wheeler,MH12 AB 9780,Zone-B,Reserved,Booked,High
+ADYPU100164,Pooja Jadhav,Staff,Law,pooja.jadhav164@adypu.edu.in,9845349241,Two-Wheeler,MH12 EF 4231,Zone-B,EV,Booked,Medium
+ADYPU100165,Tanvi Patil,Staff,Artificial Intelligence,tanvi.patil165@adypu.edu.in,9152856207,Two-Wheeler,MH13 GH 1989,Zone-D,EV,Available,Medium
+ADYPU100166,Kunal Joshi,Student,Artificial Intelligence,kunal.joshi166@adypu.edu.in,9243051927,Two-Wheeler,MH13 AB 6227,Zone-A,EV,Booked,Low
+ADYPU100167,Ananya Kale,Faculty,Architecture,ananya.kale167@adypu.edu.in,9149541213,Two-Wheeler,MH14 GH 9201,Zone-B,Open,Booked,High
+ADYPU100168,Atharva More,Student,Architecture,atharva.more168@adypu.edu.in,9279975309,Four-Wheeler,MH13 GH 5722,Zone-B,EV,Booked,Low
+ADYPU100169,Sneha Shinde,Faculty,Artificial Intelligence,sneha.shinde169@adypu.edu.in,9261351428,Four-Wheeler,MH14 GH 9538,Zone-B,Reserved,Available,High
+ADYPU100170,Shubham Pawar,Faculty,Design,shubham.pawar170@adypu.edu.in,9536493755,Four-Wheeler,MH13 AB 6454,Zone-D,Reserved,Available,High
+ADYPU100171,Neha Jadhav,Student,Artificial Intelligence,neha.jadhav171@adypu.edu.in,9317833886,Four-Wheeler,MH13 AB 3994,Zone-B,Open,Available,Low
+ADYPU100172,Shruti Jadhav,Student,Media,shruti.jadhav172@adypu.edu.in,9665464602,Two-Wheeler,MH14 CD 2176,Zone-C,Open,Available,Low
+ADYPU100173,Ananya Pawar,Student,Law,ananya.pawar173@adypu.edu.in,9234977811,Two-Wheeler,MH12 EF 7622,Zone-B,EV,Available,Low
+ADYPU100174,Sneha Kulkarni,Student,Artificial Intelligence,sneha.kulkarni174@adypu.edu.in,9494857593,Two-Wheeler,MH14 GH 7958,Zone-C,Open,Available,Low
+ADYPU100175,Shruti Bhosale,Faculty,Design,shruti.bhosale175@adypu.edu.in,9521788320,Four-Wheeler,MH13 EF 1366,Zone-A,EV,Available,High
+ADYPU100176,Arjun Gaikwad,Student,Artificial Intelligence,arjun.gaikwad176@adypu.edu.in,9785019242,Four-Wheeler,MH13 GH 4697,Zone-C,Reserved,Available,Low
+ADYPU100177,Arjun Deshmukh,Student,Computer Science,arjun.deshmukh177@adypu.edu.in,9524243464,Two-Wheeler,MH13 AB 7394,Zone-D,EV,Available,Low
+ADYPU100178,Shubham Shinde,Faculty,Computer Science,shubham.shinde178@adypu.edu.in,9796244193,Four-Wheeler,MH12 AB 5512,Zone-A,Reserved,Booked,High
+ADYPU100179,Pooja Pawar,Faculty,Computer Science,pooja.pawar179@adypu.edu.in,9392780956,Four-Wheeler,MH13 AB 1722,Zone-A,Open,Booked,High
+ADYPU100180,Atharva Chavan,Student,Engineering,atharva.chavan180@adypu.edu.in,9675677287,Two-Wheeler,MH14 AB 9848,Zone-B,Reserved,Booked,Low
+ADYPU100181,Vivaan Kulkarni,Student,Artificial Intelligence,vivaan.kulkarni181@adypu.edu.in,9396191762,Four-Wheeler,MH13 EF 4659,Zone-C,Open,Booked,Low
+ADYPU100182,Siddharth Bhosale,Student,Computer Science,siddharth.bhosale182@adypu.edu.in,9402782832,Four-Wheeler,MH14 CD 9690,Zone-D,Open,Booked,Low
+ADYPU100183,Aditya Pawar,Faculty,Computer Science,aditya.pawar183@adypu.edu.in,9515594843,Four-Wheeler,MH13 GH 8106,Zone-C,Reserved,Booked,High
+ADYPU100184,Rahul Pawar,Faculty,Computer Science,rahul.pawar184@adypu.edu.in,9712998189,Two-Wheeler,MH12 AB 9741,Zone-A,Reserved,Booked,High
+ADYPU100185,Vihaan Kulkarni,Student,Artificial Intelligence,vihaan.kulkarni185@adypu.edu.in,9192197153,Four-Wheeler,MH14 CD 5464,Zone-D,Open,Booked,Low
+ADYPU100186,Aditi Patil,Student,Media,aditi.patil186@adypu.edu.in,9528793146,Two-Wheeler,MH13 GH 3602,Zone-A,EV,Available,Low
+ADYPU100187,Aditya Patil,Student,Engineering,aditya.patil187@adypu.edu.in,9546044438,Two-Wheeler,MH14 GH 4170,Zone-D,EV,Booked,Low
+ADYPU100188,Kavya Kadam,Staff,Computer Science,kavya.kadam188@adypu.edu.in,9369465139,Four-Wheeler,MH12 EF 2231,Zone-A,EV,Booked,Medium
+ADYPU100189,Arjun Jadhav,Staff,Engineering,arjun.jadhav189@adypu.edu.in,9219644058,Four-Wheeler,MH12 AB 8637,Zone-C,Open,Booked,Medium
+ADYPU100190,Ishaan Sharma,Student,Engineering,ishaan.sharma190@adypu.edu.in,9116931087,Four-Wheeler,MH12 AB 9016,Zone-C,EV,Booked,Low
+ADYPU100191,Om Gaikwad,Student,Law,om.gaikwad191@adypu.edu.in,9750114644,Two-Wheeler,MH13 AB 5441,Zone-D,EV,Booked,Low
+ADYPU100192,Aarav Deshmukh,Student,Design,aarav.deshmukh192@adypu.edu.in,9704184785,Four-Wheeler,MH14 CD 2615,Zone-B,Reserved,Booked,Low
+ADYPU100193,Ananya Deshmukh,Faculty,Law,ananya.deshmukh193@adypu.edu.in,9187233241,Four-Wheeler,MH12 CD 3479,Zone-A,Open,Available,High
+ADYPU100194,Sneha Kulkarni,Faculty,Computer Science,sneha.kulkarni194@adypu.edu.in,9835085071,Two-Wheeler,MH13 CD 8972,Zone-A,EV,Booked,High
+ADYPU100195,Ananya Kale,Faculty,Artificial Intelligence,ananya.kale195@adypu.edu.in,9596330350,Four-Wheeler,MH14 AB 7157,Zone-A,EV,Booked,High
+ADYPU100196,Vihaan Kadam,Student,Architecture,vihaan.kadam196@adypu.edu.in,9266450669,Two-Wheeler,MH13 CD 7394,Zone-A,Reserved,Available,Low
+ADYPU100197,Shubham Deshmukh,Student,Computer Science,shubham.deshmukh197@adypu.edu.in,9389041047,Four-Wheeler,MH13 AB 6990,Zone-D,Reserved,Available,Low
+ADYPU100198,Ishaan Deshmukh,Student,Design,ishaan.deshmukh198@adypu.edu.in,9335393485,Four-Wheeler,MH12 GH 4719,Zone-B,Open,Booked,Low
+ADYPU100199,Atharva Kulkarni,Student,Media,atharva.kulkarni199@adypu.edu.in,9965784898,Two-Wheeler,MH12 CD 7630,Zone-C,Open,Available,Low
+ADYPU100200,Kavya More,Student,Media,kavya.more200@adypu.edu.in,9910388249,Two-Wheeler,MH13 AB 1705,Zone-D,Reserved,Available,Low
+ADYPU100201,Shruti Shinde,Student,Computer Science,shruti.shinde201@adypu.edu.in,9598541602,Four-Wheeler,MH14 GH 1230,Zone-D,Reserved,Available,Low
+ADYPU100202,Kunal Pawar,Staff,Media,kunal.pawar202@adypu.edu.in,9135442959,Four-Wheeler,MH13 EF 3459,Zone-D,Reserved,Available,Medium
+ADYPU100203,Aditya Jadhav,Faculty,Architecture,aditya.jadhav203@adypu.edu.in,9705084797,Four-Wheeler,MH14 GH 8993,Zone-C,Open,Booked,High
+ADYPU100204,Arjun Bhosale,Student,Architecture,arjun.bhosale204@adypu.edu.in,9999773352,Four-Wheeler,MH13 EF 9690,Zone-C,Reserved,Available,Low
+ADYPU100205,Aarav Deshmukh,Student,Architecture,aarav.deshmukh205@adypu.edu.in,9733127536,Four-Wheeler,MH12 CD 8105,Zone-C,Reserved,Booked,Low
+ADYPU100206,Tanvi Patil,Student,Management,tanvi.patil206@adypu.edu.in,9176975139,Four-Wheeler,MH12 AB 7086,Zone-D,EV,Available,Low
+ADYPU100207,Rohan Shinde,Staff,Architecture,rohan.shinde207@adypu.edu.in,9144103495,Four-Wheeler,MH14 GH 3951,Zone-A,Open,Booked,Medium
+ADYPU100208,Atharva Gaikwad,Student,Architecture,atharva.gaikwad208@adypu.edu.in,9809560081,Four-Wheeler,MH12 CD 1431,Zone-A,Reserved,Booked,Low
+ADYPU100209,Neha Kulkarni,Student,Architecture,neha.kulkarni209@adypu.edu.in,9918693789,Four-Wheeler,MH14 EF 2855,Zone-A,Open,Available,Low
+ADYPU100210,Arjun Kulkarni,Staff,Management,arjun.kulkarni210@adypu.edu.in,9933594116,Two-Wheeler,MH14 CD 4717,Zone-B,EV,Available,Medium
+ADYPU100211,Isha More,Staff,Media,isha.more211@adypu.edu.in,9365917706,Two-Wheeler,MH13 AB 3160,Zone-C,Reserved,Available,Medium
+ADYPU100212,Om Kadam,Student,Engineering,om.kadam212@adypu.edu.in,9474734027,Four-Wheeler,MH13 EF 5213,Zone-B,Reserved,Available,Low
+ADYPU100213,Tanvi Shinde,Faculty,Engineering,tanvi.shinde213@adypu.edu.in,9604012410,Two-Wheeler,MH12 CD 5983,Zone-D,Open,Available,High
+ADYPU100214,Rahul Joshi,Student,Computer Science,rahul.joshi214@adypu.edu.in,9630973710,Two-Wheeler,MH12 EF 3368,Zone-D,EV,Available,Low
+ADYPU100215,Shubham Gaikwad,Student,Law,shubham.gaikwad215@adypu.edu.in,9749195670,Two-Wheeler,MH12 AB 7972,Zone-B,Reserved,Booked,Low
+ADYPU100216,Rahul Patil,Student,Architecture,rahul.patil216@adypu.edu.in,9751954726,Two-Wheeler,MH13 EF 2903,Zone-C,Open,Booked,Low
+ADYPU100217,Aditya Sharma,Faculty,Law,aditya.sharma217@adypu.edu.in,9241675384,Four-Wheeler,MH13 CD 6429,Zone-B,EV,Booked,High
+ADYPU100218,Rahul Joshi,Student,Engineering,rahul.joshi218@adypu.edu.in,9996486890,Four-Wheeler,MH14 EF 7306,Zone-C,EV,Available,Low
+ADYPU100219,Aditya Kale,Student,Artificial Intelligence,aditya.kale219@adypu.edu.in,9748984603,Two-Wheeler,MH14 GH 9692,Zone-D,EV,Booked,Low
+ADYPU100220,Shruti More,Faculty,Engineering,shruti.more220@adypu.edu.in,9111099129,Two-Wheeler,MH14 AB 3297,Zone-D,Open,Available,High
+ADYPU100221,Kavya Gaikwad,Faculty,Engineering,kavya.gaikwad221@adypu.edu.in,9183698184,Four-Wheeler,MH12 EF 1519,Zone-D,Open,Booked,High
+ADYPU100222,Sai Sharma,Staff,Management,sai.sharma222@adypu.edu.in,9351979703,Two-Wheeler,MH14 EF 5768,Zone-A,Open,Booked,Medium
+ADYPU100223,Kavya Chavan,Student,Law,kavya.chavan223@adypu.edu.in,9945903657,Two-Wheeler,MH14 EF 9617,Zone-C,EV,Available,Low
+ADYPU100224,Neha Joshi,Student,Engineering,neha.joshi224@adypu.edu.in,9928791338,Two-Wheeler,MH14 GH 3741,Zone-C,EV,Booked,Low
+ADYPU100225,Siddharth Gaikwad,Staff,Design,siddharth.gaikwad225@adypu.edu.in,9389611537,Two-Wheeler,MH12 EF 8848,Zone-A,Open,Available,Medium
+ADYPU100226,Aarav Shinde,Faculty,Law,aarav.shinde226@adypu.edu.in,9822393716,Two-Wheeler,MH12 GH 3173,Zone-D,EV,Available,High
+ADYPU100227,Tanvi Kale,Student,Engineering,tanvi.kale227@adypu.edu.in,9317622958,Two-Wheeler,MH13 AB 9711,Zone-C,Reserved,Available,Low
+ADYPU100228,Pooja Gaikwad,Student,Law,pooja.gaikwad228@adypu.edu.in,9517167943,Four-Wheeler,MH12 AB 8118,Zone-D,Reserved,Booked,Low
+ADYPU100229,Sneha Kadam,Student,Law,sneha.kadam229@adypu.edu.in,9655710729,Two-Wheeler,MH14 GH 3527,Zone-D,Reserved,Booked,Low
+ADYPU100230,Rohan Jadhav,Student,Engineering,rohan.jadhav230@adypu.edu.in,9667045224,Four-Wheeler,MH13 EF 1940,Zone-B,Reserved,Available,Low
+ADYPU100231,Sneha Jadhav,Student,Management,sneha.jadhav231@adypu.edu.in,9161280073,Two-Wheeler,MH14 GH 6324,Zone-D,Open,Available,Low
+ADYPU100232,Sai Bhosale,Faculty,Media,sai.bhosale232@adypu.edu.in,9692795536,Two-Wheeler,MH13 AB 4741,Zone-B,EV,Available,High
+ADYPU100233,Aditya Patil,Faculty,Artificial Intelligence,aditya.patil233@adypu.edu.in,9150015846,Four-Wheeler,MH13 GH 7629,Zone-C,EV,Available,High
+ADYPU100234,Siddharth Sharma,Staff,Law,siddharth.sharma234@adypu.edu.in,9928570167,Two-Wheeler,MH12 AB 1546,Zone-D,Reserved,Available,Medium
+ADYPU100235,Shubham Kale,Student,Computer Science,shubham.kale235@adypu.edu.in,9118731746,Four-Wheeler,MH12 EF 7251,Zone-B,Open,Booked,Low
+ADYPU100236,Shubham Chavan,Student,Law,shubham.chavan236@adypu.edu.in,9293973217,Four-Wheeler,MH13 EF 4651,Zone-D,Reserved,Booked,Low
+ADYPU100237,Ananya Sharma,Student,Design,ananya.sharma237@adypu.edu.in,9363548965,Four-Wheeler,MH12 CD 6678,Zone-B,Open,Booked,Low
+ADYPU100238,Isha Gaikwad,Student,Engineering,isha.gaikwad238@adypu.edu.in,9531934434,Four-Wheeler,MH13 EF 4304,Zone-D,EV,Booked,Low
+ADYPU100239,Pooja Shinde,Staff,Management,pooja.shinde239@adypu.edu.in,9208576857,Four-Wheeler,MH12 EF 8932,Zone-A,Open,Booked,Medium
+ADYPU100240,Shruti Gaikwad,Student,Architecture,shruti.gaikwad240@adypu.edu.in,9490888078,Two-Wheeler,MH13 GH 7241,Zone-A,EV,Available,Low
+ADYPU100241,Pooja Gaikwad,Student,Engineering,pooja.gaikwad241@adypu.edu.in,9794522215,Four-Wheeler,MH14 CD 1991,Zone-C,Reserved,Booked,Low
+ADYPU100242,Ishaan Joshi,Student,Engineering,ishaan.joshi242@adypu.edu.in,9321756989,Two-Wheeler,MH14 EF 5092,Zone-D,Reserved,Booked,Low
+ADYPU100243,Aditya Deshmukh,Staff,Media,aditya.deshmukh243@adypu.edu.in,9936895850,Two-Wheeler,MH14 EF 8974,Zone-A,Reserved,Booked,Medium
+ADYPU100244,Shubham Gaikwad,Faculty,Law,shubham.gaikwad244@adypu.edu.in,9337755039,Two-Wheeler,MH13 GH 4386,Zone-B,Open,Available,High
+ADYPU100245,Atharva Kale,Student,Management,atharva.kale245@adypu.edu.in,9601907744,Two-Wheeler,MH12 EF 1126,Zone-A,Reserved,Available,Low
+ADYPU100246,Aditi Bhosale,Staff,Architecture,aditi.bhosale246@adypu.edu.in,9785464831,Four-Wheeler,MH14 GH 5803,Zone-C,Open,Available,Medium
+ADYPU100247,Om Shinde,Student,Law,om.shinde247@adypu.edu.in,9455207527,Four-Wheeler,MH13 GH 7940,Zone-C,Reserved,Available,Low
+ADYPU100248,Om Joshi,Student,Architecture,om.joshi248@adypu.edu.in,9113355460,Two-Wheeler,MH14 EF 3048,Zone-A,Reserved,Booked,Low
+ADYPU100249,Isha Kale,Student,Law,isha.kale249@adypu.edu.in,9397741819,Two-Wheeler,MH14 CD 7580,Zone-D,Reserved,Booked,Low
+ADYPU100250,Aditi More,Student,Law,aditi.more250@adypu.edu.in,9925773225,Four-Wheeler,MH12 GH 2636,Zone-A,Reserved,Booked,Low
+ADYPU100251,Aarav Sharma,Faculty,Media,aarav.sharma251@adypu.edu.in,9119434932,Four-Wheeler,MH12 CD 4178,Zone-B,EV,Available,High
+ADYPU100252,Aarav Shinde,Student,Law,aarav.shinde252@adypu.edu.in,9712181158,Two-Wheeler,MH14 EF 2524,Zone-D,Open,Available,Low
+ADYPU100253,Rahul Jadhav,Student,Architecture,rahul.jadhav253@adypu.edu.in,9964945874,Two-Wheeler,MH14 AB 8923,Zone-C,Open,Available,Low
+ADYPU100254,Shubham Jadhav,Student,Architecture,shubham.jadhav254@adypu.edu.in,9921121081,Four-Wheeler,MH12 GH 1487,Zone-B,Open,Available,Low
+ADYPU100255,Ishaan Joshi,Staff,Artificial Intelligence,ishaan.joshi255@adypu.edu.in,9137970884,Two-Wheeler,MH13 CD 4248,Zone-C,Reserved,Booked,Medium
+ADYPU100256,Vivaan More,Student,Artificial Intelligence,vivaan.more256@adypu.edu.in,9696578227,Two-Wheeler,MH13 GH 8356,Zone-B,Open,Available,Low
+ADYPU100257,Sai Bhosale,Student,Law,sai.bhosale257@adypu.edu.in,9132883713,Two-Wheeler,MH13 EF 1053,Zone-C,Open,Booked,Low
+ADYPU100258,Shruti Patil,Faculty,Design,shruti.patil258@adypu.edu.in,9336928895,Four-Wheeler,MH14 CD 1249,Zone-D,Reserved,Booked,High
+ADYPU100259,Yash More,Staff,Engineering,yash.more259@adypu.edu.in,9496870691,Four-Wheeler,MH13 AB 2573,Zone-A,Open,Available,Medium
+ADYPU100260,Rohan Chavan,Student,Law,rohan.chavan260@adypu.edu.in,9102293179,Two-Wheeler,MH13 EF 3166,Zone-B,EV,Available,Low
+ADYPU100261,Kavya Patil,Student,Design,kavya.patil261@adypu.edu.in,9998132310,Two-Wheeler,MH12 GH 2427,Zone-C,Reserved,Available,Low
+ADYPU100262,Siddharth Sharma,Student,Artificial Intelligence,siddharth.sharma262@adypu.edu.in,9699501346,Two-Wheeler,MH14 CD 1660,Zone-A,EV,Booked,Low
+ADYPU100263,Atharva Jadhav,Student,Computer Science,atharva.jadhav263@adypu.edu.in,9731132945,Two-Wheeler,MH13 AB 1150,Zone-A,Open,Booked,Low
+ADYPU100264,Aditi Kale,Faculty,Architecture,aditi.kale264@adypu.edu.in,9581787573,Two-Wheeler,MH13 GH 8449,Zone-C,EV,Booked,High
+ADYPU100265,Ishaan Patil,Staff,Management,ishaan.patil265@adypu.edu.in,9311479953,Four-Wheeler,MH12 GH 3490,Zone-D,EV,Available,Medium
+ADYPU100266,Riya Gaikwad,Student,Engineering,riya.gaikwad266@adypu.edu.in,9335884556,Four-Wheeler,MH12 CD 8244,Zone-C,EV,Booked,Low
+ADYPU100267,Shruti Bhosale,Staff,Law,shruti.bhosale267@adypu.edu.in,9508875308,Two-Wheeler,MH13 EF 3825,Zone-D,EV,Available,Medium
+ADYPU100268,Sai Gaikwad,Student,Engineering,sai.gaikwad268@adypu.edu.in,9218803702,Two-Wheeler,MH12 CD 3142,Zone-D,Open,Booked,Low
+ADYPU100269,Rohan Jadhav,Student,Media,rohan.jadhav269@adypu.edu.in,9864053559,Two-Wheeler,MH13 GH 5207,Zone-C,Open,Available,Low
+ADYPU100270,Arjun Sharma,Student,Management,arjun.sharma270@adypu.edu.in,9822183761,Two-Wheeler,MH13 EF 6071,Zone-C,EV,Booked,Low
+ADYPU100271,Rahul Shinde,Student,Architecture,rahul.shinde271@adypu.edu.in,9132063724,Four-Wheeler,MH12 CD 3773,Zone-D,Reserved,Available,Low
+ADYPU100272,Pranav Gaikwad,Staff,Design,pranav.gaikwad272@adypu.edu.in,9319401275,Four-Wheeler,MH13 AB 9244,Zone-C,Reserved,Available,Medium
+ADYPU100273,Ishaan Chavan,Faculty,Design,ishaan.chavan273@adypu.edu.in,9732177393,Four-Wheeler,MH12 GH 4915,Zone-A,Reserved,Available,High
+ADYPU100274,Aarav Chavan,Faculty,Design,aarav.chavan274@adypu.edu.in,9909144701,Two-Wheeler,MH13 CD 2635,Zone-B,Open,Available,High
+ADYPU100275,Vivaan Patil,Faculty,Media,vivaan.patil275@adypu.edu.in,9732044679,Two-Wheeler,MH13 CD 1826,Zone-A,Open,Available,High
+ADYPU100276,Atharva Sharma,Staff,Artificial Intelligence,atharva.sharma276@adypu.edu.in,9416239867,Two-Wheeler,MH13 GH 3017,Zone-C,Open,Available,Medium
+ADYPU100277,Vihaan Jadhav,Student,Architecture,vihaan.jadhav277@adypu.edu.in,9460287724,Four-Wheeler,MH14 AB 3289,Zone-A,Reserved,Available,Low
+ADYPU100278,Sneha Kadam,Student,Law,sneha.kadam278@adypu.edu.in,9519256476,Four-Wheeler,MH12 EF 5685,Zone-C,Reserved,Booked,Low
+ADYPU100279,Shruti Joshi,Staff,Engineering,shruti.joshi279@adypu.edu.in,9504959877,Four-Wheeler,MH12 CD 6518,Zone-B,EV,Booked,Medium
+ADYPU100280,Yash Chavan,Student,Design,yash.chavan280@adypu.edu.in,9572573314,Two-Wheeler,MH13 CD 3290,Zone-B,EV,Booked,Low
+ADYPU100281,Yash Patil,Student,Artificial Intelligence,yash.patil281@adypu.edu.in,9193711952,Two-Wheeler,MH14 GH 1916,Zone-C,Open,Available,Low
+ADYPU100282,Rohan Bhosale,Student,Computer Science,rohan.bhosale282@adypu.edu.in,9232515251,Four-Wheeler,MH12 EF 1492,Zone-B,Reserved,Available,Low
+ADYPU100283,Aditi Pawar,Staff,Architecture,aditi.pawar283@adypu.edu.in,9654133105,Four-Wheeler,MH14 CD 9282,Zone-B,Open,Available,Medium
+ADYPU100284,Om Pawar,Student,Engineering,om.pawar284@adypu.edu.in,9329595607,Two-Wheeler,MH13 GH 2623,Zone-D,Reserved,Booked,Low
+ADYPU100285,Siddharth Pawar,Student,Management,siddharth.pawar285@adypu.edu.in,9475279984,Four-Wheeler,MH13 AB 6071,Zone-B,EV,Booked,Low
+ADYPU100286,Riya Patil,Faculty,Architecture,riya.patil286@adypu.edu.in,9582842143,Four-Wheeler,MH14 EF 5349,Zone-D,Reserved,Available,High
+ADYPU100287,Aditi Pawar,Faculty,Management,aditi.pawar287@adypu.edu.in,9583292453,Four-Wheeler,MH13 CD 4837,Zone-D,Reserved,Booked,High
+ADYPU100288,Rahul Deshmukh,Student,Architecture,rahul.deshmukh288@adypu.edu.in,9764178164,Four-Wheeler,MH14 AB 8079,Zone-A,Open,Booked,Low
+ADYPU100289,Aditi Pawar,Faculty,Engineering,aditi.pawar289@adypu.edu.in,9541264645,Two-Wheeler,MH14 GH 8399,Zone-A,Open,Booked,High
+ADYPU100290,Aarav Deshmukh,Staff,Computer Science,aarav.deshmukh290@adypu.edu.in,9792686991,Four-Wheeler,MH14 AB 1725,Zone-C,EV,Available,Medium
+ADYPU100291,Atharva Kulkarni,Faculty,Computer Science,atharva.kulkarni291@adypu.edu.in,9502304553,Four-Wheeler,MH12 CD 2937,Zone-C,Open,Booked,High
+ADYPU100292,Ananya Bhosale,Student,Artificial Intelligence,ananya.bhosale292@adypu.edu.in,9278271593,Four-Wheeler,MH12 AB 4908,Zone-D,Reserved,Available,Low
+ADYPU100293,Rahul Chavan,Student,Management,rahul.chavan293@adypu.edu.in,9587620422,Two-Wheeler,MH12 GH 2507,Zone-B,Reserved,Available,Low
+ADYPU100294,Om Joshi,Faculty,Management,om.joshi294@adypu.edu.in,9195816127,Four-Wheeler,MH14 CD 2181,Zone-A,Open,Booked,High
+ADYPU100295,Sai Shinde,Student,Design,sai.shinde295@adypu.edu.in,9408622368,Two-Wheeler,MH12 CD 2060,Zone-D,Open,Available,Low
+ADYPU100296,Vihaan More,Faculty,Artificial Intelligence,vihaan.more296@adypu.edu.in,9521654755,Two-Wheeler,MH12 EF 7629,Zone-C,Reserved,Available,High
+ADYPU100297,Vivaan Deshmukh,Student,Computer Science,vivaan.deshmukh297@adypu.edu.in,9873535812,Two-Wheeler,MH14 EF 4363,Zone-B,Open,Booked,Low
+ADYPU100298,Shruti More,Student,Architecture,shruti.more298@adypu.edu.in,9792190686,Four-Wheeler,MH14 GH 7895,Zone-D,Reserved,Booked,Low
+ADYPU100299,Ananya Bhosale,Faculty,Law,ananya.bhosale299@adypu.edu.in,9390839322,Two-Wheeler,MH13 EF 6828,Zone-C,Open,Booked,High
+ADYPU100300,Kunal Gaikwad,Student,Law,kunal.gaikwad300@adypu.edu.in,9586575564,Four-Wheeler,MH12 CD 7774,Zone-A,Reserved,Available,Low
+ADYPU100301,Shruti Bhosale,Student,Architecture,shruti.bhosale301@adypu.edu.in,9440210023,Two-Wheeler,MH13 AB 9694,Zone-D,Reserved,Available,Low
+ADYPU100302,Om Kale,Faculty,Artificial Intelligence,om.kale302@adypu.edu.in,9310920863,Four-Wheeler,MH12 EF 3193,Zone-B,EV,Booked,High
+ADYPU100303,Atharva Gaikwad,Student,Management,atharva.gaikwad303@adypu.edu.in,9775138202,Two-Wheeler,MH14 AB 6111,Zone-A,Reserved,Available,Low
+ADYPU100304,Tanvi Kadam,Faculty,Artificial Intelligence,tanvi.kadam304@adypu.edu.in,9530015673,Two-Wheeler,MH12 GH 8061,Zone-D,EV,Available,High
+ADYPU100305,Tanvi Kulkarni,Student,Media,tanvi.kulkarni305@adypu.edu.in,9276248127,Four-Wheeler,MH14 EF 6526,Zone-A,Open,Booked,Low
+ADYPU100306,Rohan Kulkarni,Student,Computer Science,rohan.kulkarni306@adypu.edu.in,9708539138,Four-Wheeler,MH13 EF 6277,Zone-B,Open,Booked,Low
+ADYPU100307,Riya Kale,Student,Media,riya.kale307@adypu.edu.in,9889227753,Four-Wheeler,MH13 EF 3664,Zone-C,Reserved,Booked,Low
+ADYPU100308,Rohan Joshi,Student,Architecture,rohan.joshi308@adypu.edu.in,9912166951,Two-Wheeler,MH12 EF 9141,Zone-D,Reserved,Available,Low
+ADYPU100309,Shruti Deshmukh,Faculty,Media,shruti.deshmukh309@adypu.edu.in,9908235785,Four-Wheeler,MH12 GH 4946,Zone-D,EV,Available,High
+ADYPU100310,Vivaan Pawar,Faculty,Law,vivaan.pawar310@adypu.edu.in,9389586707,Four-Wheeler,MH14 AB 5860,Zone-B,EV,Available,High
+ADYPU100311,Aditya Bhosale,Student,Engineering,aditya.bhosale311@adypu.edu.in,9713239562,Two-Wheeler,MH12 EF 7500,Zone-A,Open,Available,Low
+ADYPU100312,Aarav Patil,Student,Management,aarav.patil312@adypu.edu.in,9963588291,Two-Wheeler,MH13 AB 7047,Zone-B,Open,Booked,Low
+ADYPU100313,Pranav More,Student,Law,pranav.more313@adypu.edu.in,9829818445,Two-Wheeler,MH13 CD 2027,Zone-D,Reserved,Available,Low
+ADYPU100314,Arjun Pawar,Student,Architecture,arjun.pawar314@adypu.edu.in,9951439533,Two-Wheeler,MH14 GH 7878,Zone-C,Reserved,Booked,Low
+ADYPU100315,Tanvi Chavan,Student,Management,tanvi.chavan315@adypu.edu.in,9538892517,Four-Wheeler,MH13 AB 9856,Zone-B,Open,Available,Low
+ADYPU100316,Sneha Deshmukh,Student,Design,sneha.deshmukh316@adypu.edu.in,9912298103,Four-Wheeler,MH13 GH 6703,Zone-D,EV,Available,Low
+ADYPU100317,Riya More,Student,Computer Science,riya.more317@adypu.edu.in,9123243751,Four-Wheeler,MH12 EF 4270,Zone-A,Reserved,Booked,Low
+ADYPU100318,Vihaan Jadhav,Student,Design,vihaan.jadhav318@adypu.edu.in,9869512711,Four-Wheeler,MH13 EF 6799,Zone-D,Open,Booked,Low
+ADYPU100319,Pranav Kadam,Student,Engineering,pranav.kadam319@adypu.edu.in,9819307243,Four-Wheeler,MH13 GH 6611,Zone-B,EV,Booked,Low
+ADYPU100320,Siddharth Kale,Student,Media,siddharth.kale320@adypu.edu.in,9884643080,Four-Wheeler,MH14 GH 2657,Zone-C,Reserved,Available,Low
+ADYPU100321,Arjun Bhosale,Student,Media,arjun.bhosale321@adypu.edu.in,9446816285,Two-Wheeler,MH14 EF 9987,Zone-B,Reserved,Available,Low
+ADYPU100322,Vivaan Pawar,Student,Artificial Intelligence,vivaan.pawar322@adypu.edu.in,9445635961,Two-Wheeler,MH12 AB 9755,Zone-A,Reserved,Booked,Low
+ADYPU100323,Vihaan Pawar,Student,Design,vihaan.pawar323@adypu.edu.in,9808579845,Four-Wheeler,MH12 EF 1924,Zone-D,Open,Booked,Low
+ADYPU100324,Ananya Gaikwad,Staff,Management,ananya.gaikwad324@adypu.edu.in,9410528353,Two-Wheeler,MH14 CD 5549,Zone-B,Reserved,Available,Medium
+ADYPU100325,Atharva Patil,Student,Engineering,atharva.patil325@adypu.edu.in,9306834957,Two-Wheeler,MH12 EF 5328,Zone-A,Open,Booked,Low
+ADYPU100326,Pranav Deshmukh,Student,Management,pranav.deshmukh326@adypu.edu.in,9894893732,Two-Wheeler,MH14 GH 7072,Zone-A,EV,Available,Low
+ADYPU100327,Isha Kulkarni,Student,Media,isha.kulkarni327@adypu.edu.in,9187362793,Two-Wheeler,MH12 EF 7637,Zone-C,EV,Available,Low
+ADYPU100328,Sneha Joshi,Staff,Architecture,sneha.joshi328@adypu.edu.in,9249211461,Four-Wheeler,MH13 AB 9813,Zone-C,Open,Available,Medium
+ADYPU100329,Siddharth Jadhav,Faculty,Design,siddharth.jadhav329@adypu.edu.in,9608834862,Two-Wheeler,MH12 AB 6701,Zone-D,Reserved,Booked,High
+ADYPU100330,Yash Pawar,Student,Management,yash.pawar330@adypu.edu.in,9582317498,Four-Wheeler,MH13 AB 5243,Zone-A,Open,Booked,Low
+ADYPU100331,Siddharth Jadhav,Faculty,Design,siddharth.jadhav331@adypu.edu.in,9995137891,Two-Wheeler,MH13 EF 5774,Zone-C,Open,Booked,High
+ADYPU100332,Neha Chavan,Staff,Law,neha.chavan332@adypu.edu.in,9474985237,Four-Wheeler,MH13 EF 7353,Zone-D,Open,Available,Medium
+ADYPU100333,Siddharth Patil,Student,Computer Science,siddharth.patil333@adypu.edu.in,9407800573,Two-Wheeler,MH12 EF 5399,Zone-D,Reserved,Booked,Low
+ADYPU100334,Shubham Chavan,Student,Law,shubham.chavan334@adypu.edu.in,9649916246,Four-Wheeler,MH12 CD 5519,Zone-C,Reserved,Booked,Low
+ADYPU100335,Neha Deshmukh,Student,Management,neha.deshmukh335@adypu.edu.in,9538874055,Two-Wheeler,MH13 GH 5403,Zone-A,EV,Available,Low
+ADYPU100336,Aditi Jadhav,Faculty,Management,aditi.jadhav336@adypu.edu.in,9292463067,Two-Wheeler,MH14 EF 6023,Zone-C,EV,Available,High
+ADYPU100337,Vivaan Joshi,Student,Computer Science,vivaan.joshi337@adypu.edu.in,9519556957,Two-Wheeler,MH13 GH 8537,Zone-A,EV,Available,Low
+ADYPU100338,Kunal Bhosale,Student,Engineering,kunal.bhosale338@adypu.edu.in,9407216422,Four-Wheeler,MH12 CD 3595,Zone-C,Open,Booked,Low
+ADYPU100339,Om Pawar,Student,Artificial Intelligence,om.pawar339@adypu.edu.in,9140335689,Two-Wheeler,MH14 CD 3192,Zone-B,EV,Available,Low
+ADYPU100340,Neha Kale,Student,Engineering,neha.kale340@adypu.edu.in,9226172961,Two-Wheeler,MH13 GH 1631,Zone-B,Open,Booked,Low
+ADYPU100341,Arjun Bhosale,Staff,Computer Science,arjun.bhosale341@adypu.edu.in,9945742144,Four-Wheeler,MH14 AB 1568,Zone-A,EV,Available,Medium
+ADYPU100342,Pranav Shinde,Student,Design,pranav.shinde342@adypu.edu.in,9394885620,Two-Wheeler,MH13 AB 7191,Zone-D,EV,Available,Low
+ADYPU100343,Siddharth Bhosale,Student,Architecture,siddharth.bhosale343@adypu.edu.in,9852124096,Four-Wheeler,MH13 EF 2421,Zone-B,EV,Booked,Low
+ADYPU100344,Riya Sharma,Student,Engineering,riya.sharma344@adypu.edu.in,9367169550,Two-Wheeler,MH14 GH 6028,Zone-D,Reserved,Available,Low
+ADYPU100345,Isha Sharma,Student,Media,isha.sharma345@adypu.edu.in,9245963294,Two-Wheeler,MH14 AB 1666,Zone-C,EV,Booked,Low
+ADYPU100346,Sneha Joshi,Faculty,Design,sneha.joshi346@adypu.edu.in,9540466604,Two-Wheeler,MH14 AB 7921,Zone-C,Reserved,Booked,High
+ADYPU100347,Rahul Sharma,Student,Law,rahul.sharma347@adypu.edu.in,9723563840,Two-Wheeler,MH14 GH 7498,Zone-C,EV,Booked,Low
+ADYPU100348,Vivaan Pawar,Student,Engineering,vivaan.pawar348@adypu.edu.in,9620010511,Four-Wheeler,MH13 CD 4365,Zone-C,Open,Available,Low
+ADYPU100349,Tanvi Deshmukh,Faculty,Design,tanvi.deshmukh349@adypu.edu.in,9666519776,Four-Wheeler,MH14 AB 5050,Zone-A,EV,Booked,High
+ADYPU100350,Vihaan Patil,Student,Design,vihaan.patil350@adypu.edu.in,9163800039,Four-Wheeler,MH12 GH 6520,Zone-C,Open,Booked,Low
+ADYPU100351,Pranav Gaikwad,Student,Media,pranav.gaikwad351@adypu.edu.in,9127926188,Two-Wheeler,MH14 AB 6172,Zone-D,Open,Booked,Low
+ADYPU100352,Yash Kale,Staff,Management,yash.kale352@adypu.edu.in,9849896986,Four-Wheeler,MH13 CD 7728,Zone-C,Reserved,Booked,Medium
+ADYPU100353,Tanvi Kulkarni,Student,Management,tanvi.kulkarni353@adypu.edu.in,9739917753,Two-Wheeler,MH14 EF 1635,Zone-A,EV,Booked,Low
+ADYPU100354,Pranav Shinde,Student,Management,pranav.shinde354@adypu.edu.in,9337585208,Two-Wheeler,MH13 EF 3142,Zone-B,Reserved,Booked,Low
+ADYPU100355,Pooja Joshi,Student,Media,pooja.joshi355@adypu.edu.in,9293304273,Four-Wheeler,MH12 EF 1088,Zone-B,EV,Available,Low
+ADYPU100356,Neha Sharma,Student,Engineering,neha.sharma356@adypu.edu.in,9374471280,Two-Wheeler,MH12 AB 6962,Zone-C,Reserved,Booked,Low
+ADYPU100357,Aditya Joshi,Student,Engineering,aditya.joshi357@adypu.edu.in,9632577844,Two-Wheeler,MH13 AB 7360,Zone-C,Open,Booked,Low
+ADYPU100358,Siddharth Kadam,Faculty,Architecture,siddharth.kadam358@adypu.edu.in,9918918461,Four-Wheeler,MH13 AB 6490,Zone-C,Reserved,Available,High
+ADYPU100359,Isha Pawar,Faculty,Management,isha.pawar359@adypu.edu.in,9627964186,Four-Wheeler,MH13 AB 7239,Zone-A,Reserved,Available,High
+ADYPU100360,Aditi Kale,Student,Engineering,aditi.kale360@adypu.edu.in,9553706029,Four-Wheeler,MH12 CD 2393,Zone-C,Reserved,Available,Low
+ADYPU100361,Rahul Chavan,Student,Architecture,rahul.chavan361@adypu.edu.in,9931720760,Two-Wheeler,MH13 GH 8987,Zone-A,EV,Booked,Low
+ADYPU100362,Aditya Bhosale,Staff,Computer Science,aditya.bhosale362@adypu.edu.in,9838758257,Four-Wheeler,MH12 CD 7648,Zone-D,Open,Available,Medium
+ADYPU100363,Shubham Sharma,Staff,Law,shubham.sharma363@adypu.edu.in,9260175772,Four-Wheeler,MH14 AB 6363,Zone-A,Open,Available,Medium
+ADYPU100364,Vivaan Jadhav,Student,Artificial Intelligence,vivaan.jadhav364@adypu.edu.in,9268591666,Four-Wheeler,MH13 AB 3000,Zone-B,Reserved,Available,Low
+ADYPU100365,Kunal Joshi,Faculty,Design,kunal.joshi365@adypu.edu.in,9626150587,Two-Wheeler,MH12 EF 1421,Zone-B,EV,Booked,High
+ADYPU100366,Ishaan Deshmukh,Student,Management,ishaan.deshmukh366@adypu.edu.in,9483178893,Four-Wheeler,MH12 AB 4771,Zone-C,Reserved,Available,Low
+ADYPU100367,Tanvi Kulkarni,Student,Management,tanvi.kulkarni367@adypu.edu.in,9188727228,Four-Wheeler,MH12 GH 7015,Zone-C,Reserved,Available,Low
+ADYPU100368,Aditya Deshmukh,Student,Law,aditya.deshmukh368@adypu.edu.in,9798935341,Two-Wheeler,MH12 EF 4377,Zone-B,Reserved,Available,Low
+ADYPU100369,Yash Kale,Student,Artificial Intelligence,yash.kale369@adypu.edu.in,9254299391,Four-Wheeler,MH13 CD 4549,Zone-D,EV,Available,Low
+ADYPU100370,Vihaan Deshmukh,Staff,Law,vihaan.deshmukh370@adypu.edu.in,9524861187,Four-Wheeler,MH12 CD 7830,Zone-A,Open,Available,Medium
+ADYPU100371,Pooja Kale,Student,Law,pooja.kale371@adypu.edu.in,9766093684,Two-Wheeler,MH13 CD 3457,Zone-A,Reserved,Available,Low
+ADYPU100372,Arjun Kadam,Faculty,Architecture,arjun.kadam372@adypu.edu.in,9924251293,Two-Wheeler,MH14 CD 5681,Zone-B,EV,Booked,High
+ADYPU100373,Yash Gaikwad,Student,Design,yash.gaikwad373@adypu.edu.in,9695424852,Two-Wheeler,MH12 EF 1319,Zone-A,EV,Booked,Low
+ADYPU100374,Rohan More,Student,Media,rohan.more374@adypu.edu.in,9429145889,Two-Wheeler,MH12 GH 2435,Zone-C,Reserved,Available,Low
+ADYPU100375,Om Pawar,Staff,Media,om.pawar375@adypu.edu.in,9943521469,Two-Wheeler,MH13 EF 1823,Zone-C,Reserved,Booked,Medium
+ADYPU100376,Ishaan Joshi,Student,Computer Science,ishaan.joshi376@adypu.edu.in,9365632595,Four-Wheeler,MH13 AB 1232,Zone-B,Open,Available,Low
+ADYPU100377,Kavya Jadhav,Student,Media,kavya.jadhav377@adypu.edu.in,9126369127,Two-Wheeler,MH14 AB 8887,Zone-A,EV,Booked,Low
+ADYPU100378,Riya Gaikwad,Student,Law,riya.gaikwad378@adypu.edu.in,9482508015,Two-Wheeler,MH13 GH 7986,Zone-D,EV,Available,Low
+ADYPU100379,Riya More,Faculty,Architecture,riya.more379@adypu.edu.in,9455421028,Two-Wheeler,MH13 GH 1354,Zone-C,EV,Booked,High
+ADYPU100380,Arjun Gaikwad,Student,Media,arjun.gaikwad380@adypu.edu.in,9397082374,Two-Wheeler,MH12 GH 5042,Zone-B,Reserved,Booked,Low
+ADYPU100381,Neha Joshi,Staff,Design,neha.joshi381@adypu.edu.in,9746730421,Two-Wheeler,MH12 AB 9691,Zone-A,EV,Available,Medium
+ADYPU100382,Ishaan Sharma,Student,Law,ishaan.sharma382@adypu.edu.in,9136188192,Two-Wheeler,MH12 CD 8022,Zone-A,Open,Booked,Low
+ADYPU100383,Rohan Chavan,Student,Design,rohan.chavan383@adypu.edu.in,9990108225,Two-Wheeler,MH12 AB 9903,Zone-D,Reserved,Booked,Low
+ADYPU100384,Siddharth Kulkarni,Student,Computer Science,siddharth.kulkarni384@adypu.edu.in,9368965922,Two-Wheeler,MH14 EF 3942,Zone-D,Open,Available,Low
+ADYPU100385,Arjun Deshmukh,Student,Design,arjun.deshmukh385@adypu.edu.in,9838742929,Four-Wheeler,MH14 GH 3268,Zone-D,Open,Booked,Low
+ADYPU100386,Vivaan Bhosale,Student,Artificial Intelligence,vivaan.bhosale386@adypu.edu.in,9735049314,Four-Wheeler,MH13 AB 5636,Zone-A,EV,Booked,Low
+ADYPU100387,Arjun Patil,Staff,Management,arjun.patil387@adypu.edu.in,9251079863,Four-Wheeler,MH12 CD 8262,Zone-A,Open,Available,Medium
+ADYPU100388,Siddharth Kadam,Student,Computer Science,siddharth.kadam388@adypu.edu.in,9216030884,Four-Wheeler,MH13 GH 6432,Zone-A,Reserved,Available,Low
+ADYPU100389,Shruti Shinde,Student,Law,shruti.shinde389@adypu.edu.in,9956984372,Four-Wheeler,MH12 CD 9345,Zone-A,Open,Available,Low
+ADYPU100390,Arjun Gaikwad,Faculty,Computer Science,arjun.gaikwad390@adypu.edu.in,9919639365,Four-Wheeler,MH13 EF 8646,Zone-A,Reserved,Available,High
+ADYPU100391,Vivaan Gaikwad,Staff,Management,vivaan.gaikwad391@adypu.edu.in,9873365790,Four-Wheeler,MH14 CD 1615,Zone-A,EV,Booked,Medium
+ADYPU100392,Rahul Sharma,Faculty,Architecture,rahul.sharma392@adypu.edu.in,9392248008,Four-Wheeler,MH12 EF 7410,Zone-A,Reserved,Booked,High
+ADYPU100393,Siddharth Sharma,Student,Media,siddharth.sharma393@adypu.edu.in,9168543114,Two-Wheeler,MH14 GH 7502,Zone-C,Reserved,Booked,Low
+ADYPU100394,Sai Deshmukh,Student,Media,sai.deshmukh394@adypu.edu.in,9733015803,Two-Wheeler,MH14 EF 5843,Zone-A,EV,Booked,Low
+ADYPU100395,Atharva Pawar,Faculty,Engineering,atharva.pawar395@adypu.edu.in,9605298477,Two-Wheeler,MH12 AB 3774,Zone-C,Reserved,Available,High
+ADYPU100396,Vivaan Kadam,Student,Computer Science,vivaan.kadam396@adypu.edu.in,9401312178,Four-Wheeler,MH13 EF 5000,Zone-A,EV,Available,Low
+ADYPU100397,Isha Jadhav,Staff,Engineering,isha.jadhav397@adypu.edu.in,9705459788,Two-Wheeler,MH13 GH 2046,Zone-D,Reserved,Available,Medium
+ADYPU100398,Siddharth More,Student,Law,siddharth.more398@adypu.edu.in,9875257100,Two-Wheeler,MH13 AB 3425,Zone-D,Reserved,Available,Low
+ADYPU100399,Ananya Kale,Student,Management,ananya.kale399@adypu.edu.in,9120284583,Four-Wheeler,MH13 GH 3566,Zone-B,Open,Booked,Low
+ADYPU100400,Arjun Sharma,Student,Computer Science,arjun.sharma400@adypu.edu.in,9498764285,Two-Wheeler,MH14 GH 5605,Zone-C,Open,Booked,Low
+ADYPU100401,Shruti Kulkarni,Student,Artificial Intelligence,shruti.kulkarni401@adypu.edu.in,9247786002,Four-Wheeler,MH14 EF 8654,Zone-C,EV,Available,Low
+ADYPU100402,Pranav Bhosale,Student,Architecture,pranav.bhosale402@adypu.edu.in,9565346080,Four-Wheeler,MH12 AB 9019,Zone-D,Open,Available,Low
+ADYPU100403,Riya Shinde,Staff,Artificial Intelligence,riya.shinde403@adypu.edu.in,9397098276,Two-Wheeler,MH12 AB 7648,Zone-C,EV,Booked,Medium
+ADYPU100404,Shruti Kale,Student,Media,shruti.kale404@adypu.edu.in,9586750790,Four-Wheeler,MH13 EF 3819,Zone-C,EV,Booked,Low
+ADYPU100405,Atharva Jadhav,Student,Management,atharva.jadhav405@adypu.edu.in,9219424097,Four-Wheeler,MH14 AB 2824,Zone-A,Open,Booked,Low
+ADYPU100406,Pranav Kulkarni,Staff,Computer Science,pranav.kulkarni406@adypu.edu.in,9689304494,Four-Wheeler,MH14 GH 4085,Zone-B,EV,Booked,Medium
+ADYPU100407,Vihaan Deshmukh,Faculty,Media,vihaan.deshmukh407@adypu.edu.in,9465031180,Two-Wheeler,MH12 EF 6151,Zone-C,EV,Available,High
+ADYPU100408,Tanvi Kulkarni,Student,Engineering,tanvi.kulkarni408@adypu.edu.in,9829843551,Two-Wheeler,MH12 AB 9405,Zone-D,Open,Booked,Low
+ADYPU100409,Isha Pawar,Faculty,Architecture,isha.pawar409@adypu.edu.in,9649347779,Four-Wheeler,MH13 GH 8626,Zone-A,EV,Booked,High
+ADYPU100410,Sai Bhosale,Student,Media,sai.bhosale410@adypu.edu.in,9357716507,Four-Wheeler,MH13 AB 2731,Zone-A,Reserved,Available,Low
+ADYPU100411,Siddharth Kadam,Student,Law,siddharth.kadam411@adypu.edu.in,9385012478,Two-Wheeler,MH13 GH 4696,Zone-A,Reserved,Available,Low
+ADYPU100412,Neha Shinde,Staff,Engineering,neha.shinde412@adypu.edu.in,9347430492,Four-Wheeler,MH13 CD 5057,Zone-B,Reserved,Booked,Medium
+ADYPU100413,Rohan More,Staff,Computer Science,rohan.more413@adypu.edu.in,9227443244,Two-Wheeler,MH12 AB 7885,Zone-C,Open,Booked,Medium
+ADYPU100414,Vihaan Kadam,Student,Artificial Intelligence,vihaan.kadam414@adypu.edu.in,9400632046,Four-Wheeler,MH14 AB 7331,Zone-D,Reserved,Available,Low
+ADYPU100415,Siddharth Jadhav,Student,Computer Science,siddharth.jadhav415@adypu.edu.in,9888158455,Four-Wheeler,MH12 CD 1498,Zone-D,EV,Available,Low
+ADYPU100416,Aarav More,Student,Design,aarav.more416@adypu.edu.in,9523299019,Four-Wheeler,MH13 AB 2697,Zone-A,EV,Booked,Low
+ADYPU100417,Rohan Patil,Student,Computer Science,rohan.patil417@adypu.edu.in,9302564225,Four-Wheeler,MH14 EF 9043,Zone-A,EV,Booked,Low
+ADYPU100418,Aditi Kadam,Faculty,Artificial Intelligence,aditi.kadam418@adypu.edu.in,9601896056,Four-Wheeler,MH13 GH 7240,Zone-D,EV,Available,High
+ADYPU100419,Pranav Pawar,Student,Architecture,pranav.pawar419@adypu.edu.in,9177377546,Four-Wheeler,MH14 EF 2483,Zone-C,Reserved,Booked,Low
+ADYPU100420,Vivaan Pawar,Student,Law,vivaan.pawar420@adypu.edu.in,9804053389,Two-Wheeler,MH13 AB 4170,Zone-D,Open,Booked,Low
+ADYPU100421,Sneha Sharma,Student,Management,sneha.sharma421@adypu.edu.in,9848922643,Two-Wheeler,MH14 GH 1453,Zone-D,Reserved,Booked,Low
+ADYPU100422,Shruti Kulkarni,Student,Engineering,shruti.kulkarni422@adypu.edu.in,9193584595,Four-Wheeler,MH14 EF 1693,Zone-A,Reserved,Available,Low
+ADYPU100423,Shubham Patil,Faculty,Law,shubham.patil423@adypu.edu.in,9847144133,Four-Wheeler,MH14 AB 6531,Zone-D,Open,Booked,High
+ADYPU100424,Om Jadhav,Student,Management,om.jadhav424@adypu.edu.in,9134116045,Two-Wheeler,MH12 EF 1474,Zone-C,Reserved,Available,Low
+ADYPU100425,Aditya Kulkarni,Student,Design,aditya.kulkarni425@adypu.edu.in,9211445057,Two-Wheeler,MH14 EF 6113,Zone-C,Open,Available,Low
+ADYPU100426,Pranav Shinde,Faculty,Artificial Intelligence,pranav.shinde426@adypu.edu.in,9852416728,Two-Wheeler,MH13 CD 2669,Zone-A,EV,Available,High
+ADYPU100427,Ishaan Gaikwad,Faculty,Design,ishaan.gaikwad427@adypu.edu.in,9385662960,Two-Wheeler,MH14 AB 2888,Zone-C,Reserved,Available,High
+ADYPU100428,Ishaan Joshi,Faculty,Engineering,ishaan.joshi428@adypu.edu.in,9875231267,Two-Wheeler,MH12 CD 4406,Zone-A,EV,Booked,High
+ADYPU100429,Ananya Shinde,Faculty,Management,ananya.shinde429@adypu.edu.in,9408011918,Two-Wheeler,MH13 CD 9179,Zone-A,Open,Available,High
+ADYPU100430,Aditya More,Student,Media,aditya.more430@adypu.edu.in,9331945395,Four-Wheeler,MH13 GH 4137,Zone-C,Reserved,Booked,Low
+ADYPU100431,Shubham Patil,Student,Artificial Intelligence,shubham.patil431@adypu.edu.in,9559040356,Four-Wheeler,MH12 AB 6459,Zone-C,Reserved,Available,Low
+ADYPU100432,Arjun Kulkarni,Faculty,Design,arjun.kulkarni432@adypu.edu.in,9701172619,Two-Wheeler,MH12 GH 1792,Zone-D,Open,Booked,High
+ADYPU100433,Arjun Pawar,Faculty,Architecture,arjun.pawar433@adypu.edu.in,9696273987,Four-Wheeler,MH12 GH 6769,Zone-A,EV,Available,High
+ADYPU100434,Neha Shinde,Faculty,Artificial Intelligence,neha.shinde434@adypu.edu.in,9988317979,Two-Wheeler,MH13 EF 2811,Zone-B,EV,Booked,High
+ADYPU100435,Siddharth Jadhav,Student,Engineering,siddharth.jadhav435@adypu.edu.in,9972461892,Two-Wheeler,MH13 EF 7624,Zone-B,Reserved,Booked,Low
+ADYPU100436,Shubham Joshi,Student,Architecture,shubham.joshi436@adypu.edu.in,9161941081,Four-Wheeler,MH13 GH 8634,Zone-B,Open,Booked,Low
+ADYPU100437,Sai Deshmukh,Faculty,Architecture,sai.deshmukh437@adypu.edu.in,9481006123,Two-Wheeler,MH13 AB 8716,Zone-B,EV,Available,High
+ADYPU100438,Aditya Bhosale,Student,Artificial Intelligence,aditya.bhosale438@adypu.edu.in,9978347810,Four-Wheeler,MH14 CD 4368,Zone-D,EV,Booked,Low
+ADYPU100439,Yash Patil,Student,Architecture,yash.patil439@adypu.edu.in,9739534768,Four-Wheeler,MH13 GH 6602,Zone-B,Open,Available,Low
+ADYPU100440,Aditya More,Student,Media,aditya.more440@adypu.edu.in,9747951582,Four-Wheeler,MH13 AB 9162,Zone-C,Reserved,Available,Low
+ADYPU100441,Vihaan Shinde,Staff,Artificial Intelligence,vihaan.shinde441@adypu.edu.in,9587984629,Two-Wheeler,MH14 GH 7532,Zone-B,Reserved,Booked,Medium
+ADYPU100442,Kavya Joshi,Student,Law,kavya.joshi442@adypu.edu.in,9487162488,Four-Wheeler,MH14 GH 6068,Zone-C,Open,Available,Low
+ADYPU100443,Pooja Patil,Student,Design,pooja.patil443@adypu.edu.in,9271338938,Four-Wheeler,MH13 EF 4939,Zone-B,EV,Available,Low
+ADYPU100444,Sai Kadam,Faculty,Media,sai.kadam444@adypu.edu.in,9583646104,Two-Wheeler,MH12 AB 7581,Zone-A,Reserved,Booked,High
+ADYPU100445,Ishaan Kulkarni,Student,Design,ishaan.kulkarni445@adypu.edu.in,9296807834,Four-Wheeler,MH12 AB 7627,Zone-B,Open,Available,Low
+ADYPU100446,Aditi More,Faculty,Computer Science,aditi.more446@adypu.edu.in,9932739870,Four-Wheeler,MH12 AB 6340,Zone-A,Reserved,Available,High
+ADYPU100447,Tanvi Gaikwad,Student,Artificial Intelligence,tanvi.gaikwad447@adypu.edu.in,9672487564,Four-Wheeler,MH14 EF 2492,Zone-D,EV,Available,Low
+ADYPU100448,Sneha Gaikwad,Student,Design,sneha.gaikwad448@adypu.edu.in,9747789677,Two-Wheeler,MH14 AB 7079,Zone-B,Reserved,Booked,Low
+ADYPU100449,Siddharth Pawar,Student,Law,siddharth.pawar449@adypu.edu.in,9836397257,Four-Wheeler,MH13 AB 2761,Zone-C,Reserved,Booked,Low
+ADYPU100450,Arjun Pawar,Faculty,Law,arjun.pawar450@adypu.edu.in,9174095916,Four-Wheeler,MH12 GH 1256,Zone-C,Reserved,Booked,High
+ADYPU100451,Shruti Deshmukh,Faculty,Media,shruti.deshmukh451@adypu.edu.in,9269517099,Four-Wheeler,MH12 GH 9776,Zone-A,EV,Available,High
+ADYPU100452,Ishaan Kale,Staff,Media,ishaan.kale452@adypu.edu.in,9168196079,Two-Wheeler,MH14 CD 5690,Zone-A,Open,Available,Medium
+ADYPU100453,Pooja Joshi,Student,Artificial Intelligence,pooja.joshi453@adypu.edu.in,9275918522,Four-Wheeler,MH13 GH 1964,Zone-B,Reserved,Available,Low
+ADYPU100454,Om Pawar,Student,Management,om.pawar454@adypu.edu.in,9227071184,Four-Wheeler,MH14 GH 1520,Zone-C,Open,Booked,Low
+ADYPU100455,Rahul Pawar,Student,Computer Science,rahul.pawar455@adypu.edu.in,9649965561,Two-Wheeler,MH13 AB 9781,Zone-A,EV,Available,Low
+ADYPU100456,Atharva Shinde,Student,Law,atharva.shinde456@adypu.edu.in,9233822669,Two-Wheeler,MH13 CD 8056,Zone-C,EV,Available,Low
+ADYPU100457,Aditya Joshi,Faculty,Engineering,aditya.joshi457@adypu.edu.in,9583211786,Two-Wheeler,MH12 AB 5984,Zone-A,Open,Available,High
+ADYPU100458,Vihaan Kulkarni,Student,Design,vihaan.kulkarni458@adypu.edu.in,9301717804,Two-Wheeler,MH14 GH 3373,Zone-D,EV,Available,Low
+ADYPU100459,Yash Patil,Student,Media,yash.patil459@adypu.edu.in,9179138452,Four-Wheeler,MH14 GH 5629,Zone-D,Open,Booked,Low
+ADYPU100460,Siddharth Patil,Student,Design,siddharth.patil460@adypu.edu.in,9996949405,Two-Wheeler,MH14 CD 7168,Zone-D,Reserved,Available,Low
+ADYPU100461,Neha More,Student,Management,neha.more461@adypu.edu.in,9359696988,Two-Wheeler,MH13 CD 2654,Zone-A,Reserved,Booked,Low
+ADYPU100462,Siddharth Pawar,Staff,Management,siddharth.pawar462@adypu.edu.in,9228263490,Four-Wheeler,MH12 AB 9993,Zone-B,EV,Booked,Medium
+ADYPU100463,Kunal Sharma,Student,Computer Science,kunal.sharma463@adypu.edu.in,9113526464,Four-Wheeler,MH13 AB 6963,Zone-D,EV,Booked,Low
+ADYPU100464,Sneha Chavan,Student,Management,sneha.chavan464@adypu.edu.in,9838959454,Four-Wheeler,MH13 AB 8057,Zone-A,EV,Available,Low
+ADYPU100465,Rahul Patil,Faculty,Engineering,rahul.patil465@adypu.edu.in,9484458515,Four-Wheeler,MH14 CD 6596,Zone-B,EV,Booked,High
+ADYPU100466,Arjun Chavan,Student,Engineering,arjun.chavan466@adypu.edu.in,9515920663,Four-Wheeler,MH14 GH 3572,Zone-D,Open,Booked,Low
+ADYPU100467,Om Joshi,Staff,Design,om.joshi467@adypu.edu.in,9393607227,Two-Wheeler,MH14 EF 8496,Zone-D,Reserved,Booked,Medium
+ADYPU100468,Aditya Joshi,Student,Computer Science,aditya.joshi468@adypu.edu.in,9632537582,Two-Wheeler,MH14 AB 5697,Zone-B,EV,Available,Low
+ADYPU100469,Aditi More,Staff,Engineering,aditi.more469@adypu.edu.in,9384115251,Four-Wheeler,MH12 CD 4513,Zone-A,Reserved,Booked,Medium
+ADYPU100470,Kunal Kale,Student,Engineering,kunal.kale470@adypu.edu.in,9611736475,Two-Wheeler,MH14 EF 6113,Zone-D,Open,Booked,Low
+ADYPU100471,Neha Patil,Staff,Architecture,neha.patil471@adypu.edu.in,9680225491,Two-Wheeler,MH13 GH 1456,Zone-D,Reserved,Available,Medium
+ADYPU100472,Shubham Kadam,Faculty,Artificial Intelligence,shubham.kadam472@adypu.edu.in,9768849973,Four-Wheeler,MH12 EF 8782,Zone-C,Open,Booked,High
+ADYPU100473,Kunal Kulkarni,Student,Computer Science,kunal.kulkarni473@adypu.edu.in,9688169180,Two-Wheeler,MH13 AB 9277,Zone-B,EV,Available,Low
+ADYPU100474,Kunal Pawar,Student,Media,kunal.pawar474@adypu.edu.in,9674704655,Four-Wheeler,MH13 AB 5578,Zone-C,EV,Available,Low
+ADYPU100475,Sai Shinde,Faculty,Architecture,sai.shinde475@adypu.edu.in,9816741154,Four-Wheeler,MH12 AB 6535,Zone-D,Open,Booked,High
+ADYPU100476,Rohan Pawar,Faculty,Law,rohan.pawar476@adypu.edu.in,9962927221,Two-Wheeler,MH13 GH 6787,Zone-B,EV,Available,High
+ADYPU100477,Arjun Bhosale,Student,Architecture,arjun.bhosale477@adypu.edu.in,9560979411,Two-Wheeler,MH14 CD 6208,Zone-D,Reserved,Available,Low
+ADYPU100478,Vivaan Deshmukh,Staff,Computer Science,vivaan.deshmukh478@adypu.edu.in,9955225968,Two-Wheeler,MH12 AB 8776,Zone-B,EV,Booked,Medium
+ADYPU100479,Pooja Kale,Staff,Artificial Intelligence,pooja.kale479@adypu.edu.in,9142443756,Four-Wheeler,MH14 EF 7159,Zone-C,Open,Booked,Medium
+ADYPU100480,Aditya Joshi,Student,Architecture,aditya.joshi480@adypu.edu.in,9928783341,Two-Wheeler,MH13 EF 2098,Zone-D,EV,Available,Low
+ADYPU100481,Vihaan Bhosale,Staff,Media,vihaan.bhosale481@adypu.edu.in,9420170702,Four-Wheeler,MH13 GH 1593,Zone-D,Open,Booked,Medium
+ADYPU100482,Arjun Kale,Student,Artificial Intelligence,arjun.kale482@adypu.edu.in,9942487467,Two-Wheeler,MH14 GH 2978,Zone-D,Open,Available,Low
+ADYPU100483,Arjun Patil,Student,Management,arjun.patil483@adypu.edu.in,9765516294,Four-Wheeler,MH13 GH 9744,Zone-B,Open,Available,Low
+ADYPU100484,Vivaan Kulkarni,Student,Architecture,vivaan.kulkarni484@adypu.edu.in,9696724360,Four-Wheeler,MH13 GH 5341,Zone-A,Open,Booked,Low
+ADYPU100485,Riya More,Staff,Artificial Intelligence,riya.more485@adypu.edu.in,9937758401,Two-Wheeler,MH12 EF 8709,Zone-C,Open,Available,Medium
+ADYPU100486,Atharva Kulkarni,Student,Computer Science,atharva.kulkarni486@adypu.edu.in,9462582029,Two-Wheeler,MH13 GH 5901,Zone-A,Open,Booked,Low
+ADYPU100487,Vivaan Bhosale,Student,Architecture,vivaan.bhosale487@adypu.edu.in,9995960536,Four-Wheeler,MH12 CD 6510,Zone-B,EV,Booked,Low
+ADYPU100488,Shubham Kale,Faculty,Computer Science,shubham.kale488@adypu.edu.in,9979302030,Two-Wheeler,MH12 CD 5960,Zone-A,Open,Booked,High
+ADYPU100489,Om Deshmukh,Student,Law,om.deshmukh489@adypu.edu.in,9999151704,Four-Wheeler,MH12 AB 8039,Zone-B,Reserved,Available,Low
+ADYPU100490,Kavya More,Faculty,Architecture,kavya.more490@adypu.edu.in,9435994679,Four-Wheeler,MH12 EF 9047,Zone-B,Reserved,Booked,High
+ADYPU100491,Sneha Bhosale,Faculty,Design,sneha.bhosale491@adypu.edu.in,9505618719,Four-Wheeler,MH14 GH 1609,Zone-B,Reserved,Booked,High
+ADYPU100492,Kavya Patil,Staff,Engineering,kavya.patil492@adypu.edu.in,9284950943,Four-Wheeler,MH13 GH 2508,Zone-A,Reserved,Booked,Medium
+ADYPU100493,Sai Pawar,Student,Architecture,sai.pawar493@adypu.edu.in,9272300321,Four-Wheeler,MH13 AB 3452,Zone-D,Reserved,Booked,Low
+ADYPU100494,Arjun Deshmukh,Faculty,Architecture,arjun.deshmukh494@adypu.edu.in,9409975961,Four-Wheeler,MH12 AB 7081,Zone-B,EV,Booked,High
+ADYPU100495,Rohan More,Student,Media,rohan.more495@adypu.edu.in,9138257359,Two-Wheeler,MH14 AB 2321,Zone-D,Reserved,Available,Low
+ADYPU100496,Shruti Deshmukh,Student,Management,shruti.deshmukh496@adypu.edu.in,9959900201,Two-Wheeler,MH14 CD 9753,Zone-A,Reserved,Booked,Low
+ADYPU100497,Vihaan Bhosale,Student,Artificial Intelligence,vihaan.bhosale497@adypu.edu.in,9422522179,Four-Wheeler,MH12 CD 5940,Zone-A,Reserved,Booked,Low
+ADYPU100498,Rohan Deshmukh,Student,Management,rohan.deshmukh498@adypu.edu.in,9767515281,Two-Wheeler,MH14 EF 1190,Zone-B,Open,Available,Low
+ADYPU100499,Sai Sharma,Student,Management,sai.sharma499@adypu.edu.in,9448058370,Two-Wheeler,MH14 EF 1820,Zone-D,Reserved,Booked,Low
+ADYPU100500,Sai Sharma,Staff,Architecture,sai.sharma500@adypu.edu.in,9737571557,Four-Wheeler,MH13 EF 1484,Zone-C,EV,Available,Medium
+ADYPU100501,Shubham Kadam,Student,Engineering,shubham.kadam501@adypu.edu.in,9409698397,Two-Wheeler,MH13 GH 6103,Zone-B,EV,Available,Low
+ADYPU100502,Isha More,Faculty,Computer Science,isha.more502@adypu.edu.in,9201580653,Two-Wheeler,MH13 GH 9760,Zone-B,EV,Available,High
+ADYPU100503,Yash Sharma,Faculty,Design,yash.sharma503@adypu.edu.in,9813464605,Two-Wheeler,MH14 CD 5781,Zone-D,Reserved,Booked,High
+ADYPU100504,Rohan Chavan,Student,Artificial Intelligence,rohan.chavan504@adypu.edu.in,9160953727,Four-Wheeler,MH14 CD 1859,Zone-D,EV,Booked,Low
+ADYPU100505,Rahul Bhosale,Student,Computer Science,rahul.bhosale505@adypu.edu.in,9635758728,Two-Wheeler,MH12 AB 7177,Zone-D,Reserved,Available,Low
+ADYPU100506,Pranav Bhosale,Staff,Architecture,pranav.bhosale506@adypu.edu.in,9143359739,Four-Wheeler,MH13 AB 3149,Zone-D,Reserved,Available,Medium
+ADYPU100507,Siddharth Pawar,Student,Computer Science,siddharth.pawar507@adypu.edu.in,9639337961,Four-Wheeler,MH13 EF 2826,Zone-A,EV,Booked,Low
+ADYPU100508,Neha Sharma,Student,Artificial Intelligence,neha.sharma508@adypu.edu.in,9733994761,Four-Wheeler,MH13 EF 5133,Zone-D,Reserved,Available,Low
+ADYPU100509,Sneha Kulkarni,Student,Design,sneha.kulkarni509@adypu.edu.in,9711716233,Four-Wheeler,MH14 EF 2390,Zone-D,Open,Booked,Low
+ADYPU100510,Siddharth Gaikwad,Student,Artificial Intelligence,siddharth.gaikwad510@adypu.edu.in,9178625414,Four-Wheeler,MH13 GH 7606,Zone-C,Reserved,Available,Low
+ADYPU100511,Ananya Jadhav,Student,Computer Science,ananya.jadhav511@adypu.edu.in,9760069979,Two-Wheeler,MH14 AB 1901,Zone-B,Reserved,Available,Low
+ADYPU100512,Aditi Kale,Faculty,Management,aditi.kale512@adypu.edu.in,9468669906,Four-Wheeler,MH14 GH 2399,Zone-A,Reserved,Available,High
+ADYPU100513,Shruti Pawar,Student,Artificial Intelligence,shruti.pawar513@adypu.edu.in,9564763938,Four-Wheeler,MH13 EF 9065,Zone-B,Open,Available,Low
+ADYPU100514,Ishaan Gaikwad,Student,Media,ishaan.gaikwad514@adypu.edu.in,9331673094,Two-Wheeler,MH14 CD 3881,Zone-A,EV,Available,Low
+ADYPU100515,Om Deshmukh,Student,Engineering,om.deshmukh515@adypu.edu.in,9552844218,Two-Wheeler,MH12 EF 1871,Zone-C,Open,Available,Low
+ADYPU100516,Pranav Pawar,Student,Design,pranav.pawar516@adypu.edu.in,9544225293,Four-Wheeler,MH12 EF 8501,Zone-B,Open,Available,Low
+ADYPU100517,Rahul Kale,Staff,Architecture,rahul.kale517@adypu.edu.in,9243925286,Two-Wheeler,MH13 CD 9095,Zone-A,EV,Available,Medium
+ADYPU100518,Rahul Patil,Student,Design,rahul.patil518@adypu.edu.in,9526504516,Two-Wheeler,MH14 GH 7971,Zone-C,Reserved,Available,Low
+ADYPU100519,Sneha Kadam,Student,Design,sneha.kadam519@adypu.edu.in,9727481271,Two-Wheeler,MH14 AB 3292,Zone-C,Open,Booked,Low
+ADYPU100520,Sneha More,Student,Architecture,sneha.more520@adypu.edu.in,9348244429,Four-Wheeler,MH14 CD 9423,Zone-A,Open,Booked,Low
+ADYPU100521,Aarav Joshi,Student,Architecture,aarav.joshi521@adypu.edu.in,9779821842,Four-Wheeler,MH13 EF 2568,Zone-D,EV,Booked,Low
+ADYPU100522,Siddharth Patil,Staff,Media,siddharth.patil522@adypu.edu.in,9425836561,Two-Wheeler,MH12 AB 7380,Zone-A,Reserved,Available,Medium
+ADYPU100523,Rohan More,Faculty,Design,rohan.more523@adypu.edu.in,9832077879,Two-Wheeler,MH14 CD 3807,Zone-D,Reserved,Booked,High
+ADYPU100524,Tanvi Shinde,Student,Media,tanvi.shinde524@adypu.edu.in,9386021366,Four-Wheeler,MH13 GH 2501,Zone-A,Open,Available,Low
+ADYPU100525,Om Joshi,Student,Law,om.joshi525@adypu.edu.in,9481502179,Four-Wheeler,MH13 CD 9644,Zone-B,Open,Booked,Low
+ADYPU100526,Shubham Chavan,Staff,Architecture,shubham.chavan526@adypu.edu.in,9471979833,Two-Wheeler,MH12 GH 8406,Zone-D,EV,Booked,Medium
+ADYPU100527,Yash More,Student,Artificial Intelligence,yash.more527@adypu.edu.in,9700044496,Two-Wheeler,MH14 EF 4481,Zone-A,Reserved,Booked,Low
+ADYPU100528,Pranav More,Student,Media,pranav.more528@adypu.edu.in,9730476828,Four-Wheeler,MH14 GH 3807,Zone-C,EV,Booked,Low
+ADYPU100529,Sneha More,Staff,Engineering,sneha.more529@adypu.edu.in,9910083072,Four-Wheeler,MH13 GH 9500,Zone-A,Reserved,Booked,Medium
+ADYPU100530,Kunal Shinde,Student,Artificial Intelligence,kunal.shinde530@adypu.edu.in,9521914833,Four-Wheeler,MH14 CD 7883,Zone-D,Reserved,Booked,Low
+ADYPU100531,Aditi Joshi,Student,Artificial Intelligence,aditi.joshi531@adypu.edu.in,9352043756,Four-Wheeler,MH14 CD 6781,Zone-D,Open,Booked,Low
+ADYPU100532,Isha Kulkarni,Student,Media,isha.kulkarni532@adypu.edu.in,9799755338,Two-Wheeler,MH12 CD 2760,Zone-C,Open,Booked,Low
+ADYPU100533,Rahul Kulkarni,Student,Management,rahul.kulkarni533@adypu.edu.in,9362310382,Two-Wheeler,MH12 AB 8882,Zone-B,Open,Available,Low
+ADYPU100534,Om Kulkarni,Faculty,Architecture,om.kulkarni534@adypu.edu.in,9134380029,Four-Wheeler,MH13 CD 4909,Zone-D,Open,Available,High
+ADYPU100535,Om Pawar,Student,Engineering,om.pawar535@adypu.edu.in,9184023594,Four-Wheeler,MH12 AB 6212,Zone-A,Reserved,Available,Low
+ADYPU100536,Riya Pawar,Student,Management,riya.pawar536@adypu.edu.in,9410565380,Two-Wheeler,MH14 CD 1431,Zone-D,Reserved,Booked,Low
+ADYPU100537,Kavya Kale,Student,Design,kavya.kale537@adypu.edu.in,9430791833,Two-Wheeler,MH13 GH 8489,Zone-B,Reserved,Booked,Low
+ADYPU100538,Siddharth Kulkarni,Student,Artificial Intelligence,siddharth.kulkarni538@adypu.edu.in,9578049135,Four-Wheeler,MH12 AB 2684,Zone-D,Reserved,Available,Low
+ADYPU100539,Pooja Pawar,Faculty,Management,pooja.pawar539@adypu.edu.in,9431638728,Two-Wheeler,MH13 EF 2535,Zone-C,EV,Booked,High
+ADYPU100540,Rohan Chavan,Student,Computer Science,rohan.chavan540@adypu.edu.in,9278761530,Four-Wheeler,MH12 AB 9903,Zone-C,EV,Booked,Low
+ADYPU100541,Kunal Joshi,Student,Management,kunal.joshi541@adypu.edu.in,9286928654,Two-Wheeler,MH13 AB 3846,Zone-A,Reserved,Available,Low
+ADYPU100542,Yash Deshmukh,Student,Engineering,yash.deshmukh542@adypu.edu.in,9727330924,Two-Wheeler,MH14 GH 7624,Zone-D,Reserved,Available,Low
+ADYPU100543,Kavya More,Student,Architecture,kavya.more543@adypu.edu.in,9276358872,Two-Wheeler,MH14 AB 9650,Zone-A,EV,Available,Low
+ADYPU100544,Ananya Joshi,Staff,Computer Science,ananya.joshi544@adypu.edu.in,9465449460,Four-Wheeler,MH14 EF 9667,Zone-D,Reserved,Available,Medium
+ADYPU100545,Vivaan Pawar,Staff,Management,vivaan.pawar545@adypu.edu.in,9377600190,Four-Wheeler,MH12 CD 9803,Zone-D,Open,Available,Medium
+ADYPU100546,Kunal Pawar,Student,Artificial Intelligence,kunal.pawar546@adypu.edu.in,9737955481,Two-Wheeler,MH13 AB 4654,Zone-D,EV,Booked,Low
+ADYPU100547,Aarav Pawar,Student,Engineering,aarav.pawar547@adypu.edu.in,9789015818,Two-Wheeler,MH12 AB 7025,Zone-D,Open,Booked,Low
+ADYPU100548,Om Kadam,Student,Architecture,om.kadam548@adypu.edu.in,9911251635,Four-Wheeler,MH13 EF 3005,Zone-C,Open,Booked,Low
+ADYPU100549,Aarav Patil,Student,Computer Science,aarav.patil549@adypu.edu.in,9315394403,Two-Wheeler,MH13 CD 6229,Zone-D,Reserved,Available,Low
+ADYPU100550,Riya Kulkarni,Student,Architecture,riya.kulkarni550@adypu.edu.in,9914693683,Four-Wheeler,MH13 CD 7906,Zone-B,Reserved,Booked,Low
+ADYPU100551,Sneha Gaikwad,Faculty,Management,sneha.gaikwad551@adypu.edu.in,9787018906,Two-Wheeler,MH14 EF 9757,Zone-C,Open,Available,High
+ADYPU100552,Ishaan Kadam,Student,Artificial Intelligence,ishaan.kadam552@adypu.edu.in,9652174136,Two-Wheeler,MH12 AB 7101,Zone-C,EV,Booked,Low
+ADYPU100553,Aditya Chavan,Student,Computer Science,aditya.chavan553@adypu.edu.in,9589039200,Four-Wheeler,MH14 EF 9298,Zone-C,Open,Available,Low
+ADYPU100554,Sneha Shinde,Student,Design,sneha.shinde554@adypu.edu.in,9912198565,Four-Wheeler,MH14 EF 2803,Zone-A,Open,Available,Low
+ADYPU100555,Aditya Sharma,Student,Management,aditya.sharma555@adypu.edu.in,9218345222,Four-Wheeler,MH14 CD 5587,Zone-A,Reserved,Booked,Low
+ADYPU100556,Siddharth Kulkarni,Faculty,Computer Science,siddharth.kulkarni556@adypu.edu.in,9218595131,Four-Wheeler,MH12 CD 6481,Zone-A,Reserved,Available,High
+ADYPU100557,Rahul Shinde,Staff,Architecture,rahul.shinde557@adypu.edu.in,9135543975,Four-Wheeler,MH14 GH 5876,Zone-D,Open,Booked,Medium
+ADYPU100558,Atharva Kadam,Faculty,Law,atharva.kadam558@adypu.edu.in,9836124900,Two-Wheeler,MH12 GH 1808,Zone-A,Open,Booked,High
+ADYPU100559,Aarav Chavan,Faculty,Architecture,aarav.chavan559@adypu.edu.in,9151659718,Four-Wheeler,MH12 AB 4645,Zone-A,Reserved,Available,High
+ADYPU100560,Pooja Jadhav,Student,Media,pooja.jadhav560@adypu.edu.in,9474456790,Four-Wheeler,MH14 GH 7714,Zone-C,EV,Available,Low
+ADYPU100561,Pranav Patil,Staff,Computer Science,pranav.patil561@adypu.edu.in,9514823135,Two-Wheeler,MH14 EF 2482,Zone-A,Open,Booked,Medium
+ADYPU100562,Kunal Sharma,Student,Media,kunal.sharma562@adypu.edu.in,9474561193,Two-Wheeler,MH13 AB 2218,Zone-D,EV,Booked,Low
+ADYPU100563,Shubham Pawar,Staff,Engineering,shubham.pawar563@adypu.edu.in,9140144350,Four-Wheeler,MH13 CD 4381,Zone-D,Reserved,Available,Medium
+ADYPU100564,Vivaan Pawar,Staff,Design,vivaan.pawar564@adypu.edu.in,9288297600,Two-Wheeler,MH14 GH 8809,Zone-D,EV,Available,Medium
+ADYPU100565,Sai Kale,Student,Design,sai.kale565@adypu.edu.in,9722749568,Four-Wheeler,MH13 EF 5964,Zone-C,Reserved,Available,Low
+ADYPU100566,Rahul Pawar,Student,Management,rahul.pawar566@adypu.edu.in,9279921748,Two-Wheeler,MH13 AB 4501,Zone-A,Open,Available,Low
+ADYPU100567,Aarav More,Student,Computer Science,aarav.more567@adypu.edu.in,9571831276,Four-Wheeler,MH14 CD 7262,Zone-C,EV,Booked,Low
+ADYPU100568,Rohan Deshmukh,Staff,Law,rohan.deshmukh568@adypu.edu.in,9514343465,Two-Wheeler,MH14 GH 8047,Zone-C,Reserved,Booked,Medium
+ADYPU100569,Yash Gaikwad,Faculty,Engineering,yash.gaikwad569@adypu.edu.in,9921455801,Four-Wheeler,MH12 GH 7444,Zone-C,EV,Booked,High
+ADYPU100570,Arjun Deshmukh,Staff,Design,arjun.deshmukh570@adypu.edu.in,9152217041,Four-Wheeler,MH12 GH 4948,Zone-C,Open,Booked,Medium
+ADYPU100571,Arjun Joshi,Faculty,Management,arjun.joshi571@adypu.edu.in,9848079190,Two-Wheeler,MH13 AB 8500,Zone-A,Open,Available,High
+ADYPU100572,Arjun Deshmukh,Student,Management,arjun.deshmukh572@adypu.edu.in,9644210450,Two-Wheeler,MH13 CD 7721,Zone-C,Reserved,Available,Low
+ADYPU100573,Om Deshmukh,Faculty,Media,om.deshmukh573@adypu.edu.in,9778829965,Four-Wheeler,MH14 CD 2366,Zone-C,Open,Available,High
+ADYPU100574,Tanvi Joshi,Student,Media,tanvi.joshi574@adypu.edu.in,9839828141,Two-Wheeler,MH12 EF 7065,Zone-C,Open,Available,Low
+ADYPU100575,Arjun Sharma,Staff,Artificial Intelligence,arjun.sharma575@adypu.edu.in,9888669637,Four-Wheeler,MH12 EF 2396,Zone-D,EV,Available,Medium
+ADYPU100576,Aditi More,Student,Law,aditi.more576@adypu.edu.in,9617624651,Four-Wheeler,MH13 EF 8987,Zone-A,Open,Available,Low
+ADYPU100577,Sneha Gaikwad,Student,Design,sneha.gaikwad577@adypu.edu.in,9786344166,Two-Wheeler,MH14 EF 1727,Zone-C,Reserved,Booked,Low
+ADYPU100578,Ishaan Pawar,Student,Management,ishaan.pawar578@adypu.edu.in,9774125781,Two-Wheeler,MH14 CD 7816,Zone-C,Open,Available,Low
+ADYPU100579,Isha Pawar,Student,Law,isha.pawar579@adypu.edu.in,9675338140,Four-Wheeler,MH13 CD 2644,Zone-A,Open,Booked,Low
+ADYPU100580,Pranav More,Student,Engineering,pranav.more580@adypu.edu.in,9668577692,Four-Wheeler,MH12 EF 5667,Zone-D,EV,Available,Low
+ADYPU100581,Riya More,Student,Engineering,riya.more581@adypu.edu.in,9112167944,Two-Wheeler,MH14 AB 5118,Zone-A,EV,Available,Low
+ADYPU100582,Vivaan Deshmukh,Student,Computer Science,vivaan.deshmukh582@adypu.edu.in,9511771109,Two-Wheeler,MH14 AB 8658,Zone-B,Reserved,Available,Low
+ADYPU100583,Aarav Bhosale,Student,Computer Science,aarav.bhosale583@adypu.edu.in,9730351402,Four-Wheeler,MH13 AB 8748,Zone-C,Reserved,Booked,Low
+ADYPU100584,Pranav Kale,Faculty,Computer Science,pranav.kale584@adypu.edu.in,9499186647,Four-Wheeler,MH13 EF 8245,Zone-D,EV,Available,High
+ADYPU100585,Riya Joshi,Staff,Management,riya.joshi585@adypu.edu.in,9148232646,Four-Wheeler,MH14 EF 8860,Zone-A,EV,Available,Medium
+ADYPU100586,Yash Kulkarni,Student,Media,yash.kulkarni586@adypu.edu.in,9579339482,Two-Wheeler,MH12 EF 9134,Zone-A,Reserved,Booked,Low
+ADYPU100587,Shruti Chavan,Faculty,Engineering,shruti.chavan587@adypu.edu.in,9342533922,Four-Wheeler,MH12 CD 4895,Zone-C,Reserved,Booked,High
+ADYPU100588,Aditya Jadhav,Student,Media,aditya.jadhav588@adypu.edu.in,9254679881,Four-Wheeler,MH13 AB 3388,Zone-A,Open,Booked,Low
+ADYPU100589,Rahul More,Student,Law,rahul.more589@adypu.edu.in,9515930345,Four-Wheeler,MH14 EF 6362,Zone-B,Open,Booked,Low
+ADYPU100590,Ishaan Shinde,Student,Computer Science,ishaan.shinde590@adypu.edu.in,9570076339,Four-Wheeler,MH14 GH 5094,Zone-B,EV,Booked,Low
+ADYPU100591,Om Joshi,Student,Artificial Intelligence,om.joshi591@adypu.edu.in,9270512814,Four-Wheeler,MH12 GH 6281,Zone-D,EV,Available,Low
+ADYPU100592,Neha Pawar,Staff,Law,neha.pawar592@adypu.edu.in,9583830037,Four-Wheeler,MH12 CD 7386,Zone-B,EV,Available,Medium
+ADYPU100593,Aditi Bhosale,Student,Artificial Intelligence,aditi.bhosale593@adypu.edu.in,9480625880,Four-Wheeler,MH13 EF 9691,Zone-A,Reserved,Booked,Low
+ADYPU100594,Neha Kulkarni,Student,Design,neha.kulkarni594@adypu.edu.in,9474929256,Four-Wheeler,MH12 CD 6848,Zone-B,Open,Booked,Low
+ADYPU100595,Rohan Jadhav,Student,Design,rohan.jadhav595@adypu.edu.in,9774149823,Two-Wheeler,MH13 CD 5447,Zone-C,Reserved,Available,Low
+ADYPU100596,Kavya Jadhav,Staff,Management,kavya.jadhav596@adypu.edu.in,9594070469,Four-Wheeler,MH13 CD 8290,Zone-A,EV,Available,Medium
+ADYPU100597,Pranav Kale,Faculty,Architecture,pranav.kale597@adypu.edu.in,9320350366,Four-Wheeler,MH14 AB 4941,Zone-A,Reserved,Booked,High
+ADYPU100598,Pooja More,Faculty,Media,pooja.more598@adypu.edu.in,9315901631,Four-Wheeler,MH14 GH 7472,Zone-C,Open,Available,High
+ADYPU100599,Pooja Bhosale,Faculty,Media,pooja.bhosale599@adypu.edu.in,9698058496,Four-Wheeler,MH12 GH 6995,Zone-A,Reserved,Available,High
+ADYPU100600,Kunal Shinde,Faculty,Law,kunal.shinde600@adypu.edu.in,9782136849,Two-Wheeler,MH12 AB 6224,Zone-D,Open,Booked,High
+ADYPU100601,Arjun Kale,Student,Computer Science,arjun.kale601@adypu.edu.in,9424259626,Four-Wheeler,MH12 EF 9539,Zone-B,Reserved,Available,Low
+ADYPU100602,Atharva Jadhav,Student,Media,atharva.jadhav602@adypu.edu.in,9488176175,Two-Wheeler,MH12 GH 8975,Zone-A,EV,Booked,Low
+ADYPU100603,Ishaan Kale,Student,Media,ishaan.kale603@adypu.edu.in,9939068010,Two-Wheeler,MH14 GH 1995,Zone-D,Open,Available,Low
+ADYPU100604,Yash Shinde,Staff,Management,yash.shinde604@adypu.edu.in,9362192801,Two-Wheeler,MH12 GH 7819,Zone-A,Reserved,Available,Medium
+ADYPU100605,Siddharth Gaikwad,Student,Artificial Intelligence,siddharth.gaikwad605@adypu.edu.in,9582166015,Two-Wheeler,MH12 EF 4950,Zone-B,Reserved,Booked,Low
+ADYPU100606,Aditya Sharma,Student,Engineering,aditya.sharma606@adypu.edu.in,9113989196,Four-Wheeler,MH12 AB 7008,Zone-D,EV,Available,Low
+ADYPU100607,Rahul Jadhav,Staff,Architecture,rahul.jadhav607@adypu.edu.in,9965879292,Four-Wheeler,MH12 CD 9619,Zone-D,EV,Available,Medium
+ADYPU100608,Aditya Kulkarni,Student,Media,aditya.kulkarni608@adypu.edu.in,9142357407,Two-Wheeler,MH12 CD 5525,Zone-C,Open,Available,Low
+ADYPU100609,Aarav More,Student,Design,aarav.more609@adypu.edu.in,9834109039,Two-Wheeler,MH14 CD 6365,Zone-B,Open,Available,Low
+ADYPU100610,Kavya Gaikwad,Student,Management,kavya.gaikwad610@adypu.edu.in,9916407984,Four-Wheeler,MH12 EF 9492,Zone-B,Open,Booked,Low
+ADYPU100611,Rahul Sharma,Student,Computer Science,rahul.sharma611@adypu.edu.in,9594941454,Four-Wheeler,MH13 AB 5059,Zone-B,Reserved,Booked,Low
+ADYPU100612,Vivaan Deshmukh,Student,Architecture,vivaan.deshmukh612@adypu.edu.in,9978320606,Four-Wheeler,MH12 AB 5787,Zone-D,Reserved,Available,Low
+ADYPU100613,Ishaan Joshi,Staff,Design,ishaan.joshi613@adypu.edu.in,9128795522,Two-Wheeler,MH13 CD 2374,Zone-A,EV,Booked,Medium
+ADYPU100614,Ishaan Kadam,Staff,Architecture,ishaan.kadam614@adypu.edu.in,9612968498,Two-Wheeler,MH14 AB 3752,Zone-B,Reserved,Available,Medium
+ADYPU100615,Aditya Sharma,Student,Engineering,aditya.sharma615@adypu.edu.in,9550938918,Four-Wheeler,MH13 GH 8013,Zone-B,Open,Available,Low
+ADYPU100616,Siddharth More,Student,Engineering,siddharth.more616@adypu.edu.in,9817450725,Four-Wheeler,MH13 EF 1119,Zone-D,Reserved,Available,Low
+ADYPU100617,Ishaan Deshmukh,Student,Law,ishaan.deshmukh617@adypu.edu.in,9534105321,Four-Wheeler,MH12 GH 2096,Zone-B,Open,Available,Low
+ADYPU100618,Atharva Shinde,Student,Design,atharva.shinde618@adypu.edu.in,9337290755,Four-Wheeler,MH13 EF 5990,Zone-A,EV,Available,Low
+ADYPU100619,Kavya Deshmukh,Student,Management,kavya.deshmukh619@adypu.edu.in,9248953087,Two-Wheeler,MH12 CD 7745,Zone-B,Reserved,Available,Low
+ADYPU100620,Pooja Shinde,Student,Design,pooja.shinde620@adypu.edu.in,9284300148,Two-Wheeler,MH12 AB 4351,Zone-A,Reserved,Available,Low
+ADYPU100621,Kavya Chavan,Student,Design,kavya.chavan621@adypu.edu.in,9508370858,Two-Wheeler,MH12 GH 5684,Zone-C,Open,Available,Low
+ADYPU100622,Ishaan Patil,Student,Architecture,ishaan.patil622@adypu.edu.in,9230931678,Four-Wheeler,MH14 AB 7439,Zone-A,Open,Available,Low
+ADYPU100623,Rahul More,Student,Law,rahul.more623@adypu.edu.in,9658101608,Four-Wheeler,MH12 CD 3075,Zone-A,Open,Available,Low
+ADYPU100624,Kunal Deshmukh,Faculty,Media,kunal.deshmukh624@adypu.edu.in,9735302447,Four-Wheeler,MH14 GH 2154,Zone-D,Reserved,Available,High
+ADYPU100625,Yash Chavan,Student,Architecture,yash.chavan625@adypu.edu.in,9757778868,Two-Wheeler,MH14 GH 9717,Zone-A,Reserved,Booked,Low
+ADYPU100626,Rohan Sharma,Student,Engineering,rohan.sharma626@adypu.edu.in,9277348413,Two-Wheeler,MH14 GH 6082,Zone-D,Open,Booked,Low
+ADYPU100627,Vivaan Bhosale,Student,Management,vivaan.bhosale627@adypu.edu.in,9686536208,Two-Wheeler,MH12 AB 1774,Zone-D,Reserved,Booked,Low
+ADYPU100628,Riya Joshi,Student,Design,riya.joshi628@adypu.edu.in,9985358112,Two-Wheeler,MH12 CD 9247,Zone-B,Reserved,Available,Low
+ADYPU100629,Sai Pawar,Staff,Architecture,sai.pawar629@adypu.edu.in,9528486914,Two-Wheeler,MH13 GH 6042,Zone-C,Open,Booked,Medium
+ADYPU100630,Shruti Chavan,Student,Management,shruti.chavan630@adypu.edu.in,9483618272,Four-Wheeler,MH13 AB 7961,Zone-D,EV,Booked,Low
+ADYPU100631,Tanvi Pawar,Staff,Artificial Intelligence,tanvi.pawar631@adypu.edu.in,9162905713,Four-Wheeler,MH13 EF 1853,Zone-A,Open,Available,Medium
+ADYPU100632,Riya Joshi,Staff,Law,riya.joshi632@adypu.edu.in,9955854341,Two-Wheeler,MH14 AB 7604,Zone-A,Reserved,Booked,Medium
+ADYPU100633,Pooja Bhosale,Faculty,Law,pooja.bhosale633@adypu.edu.in,9978769303,Four-Wheeler,MH12 AB 7316,Zone-A,Reserved,Available,High
+ADYPU100634,Om More,Student,Management,om.more634@adypu.edu.in,9117068337,Two-Wheeler,MH13 EF 6245,Zone-A,Open,Available,Low
+ADYPU100635,Arjun Shinde,Student,Architecture,arjun.shinde635@adypu.edu.in,9442649931,Two-Wheeler,MH14 GH 8446,Zone-C,EV,Booked,Low
+ADYPU100636,Isha Pawar,Staff,Computer Science,isha.pawar636@adypu.edu.in,9588944802,Four-Wheeler,MH14 EF 7955,Zone-C,Reserved,Booked,Medium
+ADYPU100637,Pranav Patil,Student,Artificial Intelligence,pranav.patil637@adypu.edu.in,9495453714,Four-Wheeler,MH12 EF 2944,Zone-B,Open,Available,Low
+ADYPU100638,Om Bhosale,Student,Artificial Intelligence,om.bhosale638@adypu.edu.in,9662007400,Four-Wheeler,MH12 GH 4198,Zone-D,Reserved,Booked,Low
+ADYPU100639,Shubham Sharma,Student,Computer Science,shubham.sharma639@adypu.edu.in,9534951987,Two-Wheeler,MH14 CD 6698,Zone-A,Open,Available,Low
+ADYPU100640,Arjun Kale,Staff,Design,arjun.kale640@adypu.edu.in,9915288503,Four-Wheeler,MH13 EF 3045,Zone-D,EV,Booked,Medium
+ADYPU100641,Aarav Shinde,Faculty,Engineering,aarav.shinde641@adypu.edu.in,9501603694,Four-Wheeler,MH14 EF 1968,Zone-C,Reserved,Booked,High
+ADYPU100642,Shruti Kulkarni,Student,Law,shruti.kulkarni642@adypu.edu.in,9965889681,Two-Wheeler,MH14 AB 7480,Zone-A,Reserved,Booked,Low
+ADYPU100643,Ananya More,Staff,Artificial Intelligence,ananya.more643@adypu.edu.in,9103204571,Two-Wheeler,MH13 GH 3811,Zone-D,EV,Available,Medium
+ADYPU100644,Vivaan Deshmukh,Student,Law,vivaan.deshmukh644@adypu.edu.in,9593793620,Two-Wheeler,MH13 GH 5948,Zone-A,Reserved,Booked,Low
+ADYPU100645,Aditi Shinde,Faculty,Computer Science,aditi.shinde645@adypu.edu.in,9490161153,Two-Wheeler,MH13 AB 3740,Zone-C,Open,Available,High
+ADYPU100646,Shruti Patil,Student,Management,shruti.patil646@adypu.edu.in,9286824510,Four-Wheeler,MH13 EF 1449,Zone-A,EV,Booked,Low
+ADYPU100647,Pooja Bhosale,Faculty,Management,pooja.bhosale647@adypu.edu.in,9177067371,Four-Wheeler,MH12 EF 5837,Zone-C,Open,Booked,High
+ADYPU100648,Aarav Shinde,Student,Architecture,aarav.shinde648@adypu.edu.in,9424741573,Two-Wheeler,MH12 AB 3798,Zone-A,Open,Available,Low
+ADYPU100649,Ishaan More,Student,Design,ishaan.more649@adypu.edu.in,9414724625,Two-Wheeler,MH13 CD 5038,Zone-B,EV,Booked,Low
+ADYPU100650,Aditi Jadhav,Student,Architecture,aditi.jadhav650@adypu.edu.in,9218376952,Two-Wheeler,MH13 EF 4538,Zone-B,Reserved,Booked,Low
+ADYPU100651,Kunal Patil,Staff,Architecture,kunal.patil651@adypu.edu.in,9149789935,Four-Wheeler,MH14 GH 3301,Zone-A,Reserved,Booked,Medium
+ADYPU100652,Arjun Sharma,Student,Law,arjun.sharma652@adypu.edu.in,9440714302,Four-Wheeler,MH13 GH 2074,Zone-A,Open,Available,Low
+ADYPU100653,Rohan Deshmukh,Student,Architecture,rohan.deshmukh653@adypu.edu.in,9870613437,Two-Wheeler,MH14 EF 8010,Zone-C,Reserved,Available,Low
+ADYPU100654,Atharva Patil,Faculty,Computer Science,atharva.patil654@adypu.edu.in,9422824272,Two-Wheeler,MH13 CD 3048,Zone-A,Reserved,Available,High
+ADYPU100655,Shubham Deshmukh,Student,Engineering,shubham.deshmukh655@adypu.edu.in,9251113544,Two-Wheeler,MH12 CD 4958,Zone-D,Reserved,Available,Low
+ADYPU100656,Pranav Jadhav,Student,Media,pranav.jadhav656@adypu.edu.in,9224167883,Two-Wheeler,MH14 EF 3481,Zone-C,Open,Booked,Low
+ADYPU100657,Sneha Sharma,Student,Engineering,sneha.sharma657@adypu.edu.in,9802771523,Two-Wheeler,MH13 CD 3124,Zone-B,Reserved,Booked,Low
+ADYPU100658,Aditya Kulkarni,Faculty,Computer Science,aditya.kulkarni658@adypu.edu.in,9924865254,Four-Wheeler,MH13 CD 8786,Zone-A,Reserved,Available,High
+ADYPU100659,Rahul Kale,Student,Computer Science,rahul.kale659@adypu.edu.in,9435300790,Two-Wheeler,MH12 CD 6322,Zone-A,Open,Available,Low
+ADYPU100660,Kunal Kadam,Student,Management,kunal.kadam660@adypu.edu.in,9550320549,Two-Wheeler,MH13 EF 3946,Zone-B,EV,Booked,Low
+ADYPU100661,Vivaan Gaikwad,Student,Computer Science,vivaan.gaikwad661@adypu.edu.in,9676701573,Two-Wheeler,MH12 AB 5348,Zone-C,Reserved,Available,Low
+ADYPU100662,Aditya Kadam,Faculty,Computer Science,aditya.kadam662@adypu.edu.in,9666276549,Four-Wheeler,MH14 EF 8611,Zone-C,Reserved,Booked,High
+ADYPU100663,Ishaan Bhosale,Student,Architecture,ishaan.bhosale663@adypu.edu.in,9841509136,Two-Wheeler,MH14 GH 1618,Zone-C,Open,Booked,Low
+ADYPU100664,Atharva Patil,Student,Artificial Intelligence,atharva.patil664@adypu.edu.in,9914303875,Two-Wheeler,MH13 EF 6075,Zone-D,EV,Booked,Low
+ADYPU100665,Ishaan Gaikwad,Student,Engineering,ishaan.gaikwad665@adypu.edu.in,9899485458,Four-Wheeler,MH12 GH 1527,Zone-C,EV,Booked,Low
+ADYPU100666,Riya Jadhav,Student,Artificial Intelligence,riya.jadhav666@adypu.edu.in,9627316089,Two-Wheeler,MH12 GH 6077,Zone-C,Open,Available,Low
+ADYPU100667,Aarav Pawar,Faculty,Media,aarav.pawar667@adypu.edu.in,9860577167,Two-Wheeler,MH12 GH 4785,Zone-B,Open,Available,High
+ADYPU100668,Tanvi Patil,Student,Architecture,tanvi.patil668@adypu.edu.in,9700344763,Two-Wheeler,MH13 AB 4584,Zone-A,Open,Booked,Low
+ADYPU100669,Aditi Gaikwad,Student,Media,aditi.gaikwad669@adypu.edu.in,9330948629,Four-Wheeler,MH14 CD 8085,Zone-D,EV,Available,Low
+ADYPU100670,Yash Kale,Student,Engineering,yash.kale670@adypu.edu.in,9922296986,Four-Wheeler,MH13 CD 6358,Zone-C,Open,Available,Low
+ADYPU100671,Om Pawar,Staff,Engineering,om.pawar671@adypu.edu.in,9729726798,Two-Wheeler,MH13 GH 1299,Zone-D,Open,Booked,Medium
+ADYPU100672,Rahul Joshi,Student,Artificial Intelligence,rahul.joshi672@adypu.edu.in,9860640542,Four-Wheeler,MH14 CD 4588,Zone-C,EV,Booked,Low
+ADYPU100673,Rahul Deshmukh,Student,Artificial Intelligence,rahul.deshmukh673@adypu.edu.in,9346156653,Four-Wheeler,MH12 GH 1624,Zone-D,Reserved,Booked,Low
+ADYPU100674,Kavya Sharma,Student,Management,kavya.sharma674@adypu.edu.in,9144155817,Two-Wheeler,MH13 GH 5481,Zone-D,Open,Booked,Low
+ADYPU100675,Ananya Kale,Student,Design,ananya.kale675@adypu.edu.in,9753190333,Four-Wheeler,MH12 CD 9765,Zone-A,Open,Booked,Low
+ADYPU100676,Om More,Student,Design,om.more676@adypu.edu.in,9202498858,Two-Wheeler,MH12 CD 9078,Zone-B,EV,Available,Low
+ADYPU100677,Isha Gaikwad,Student,Design,isha.gaikwad677@adypu.edu.in,9659227300,Four-Wheeler,MH13 AB 9084,Zone-C,EV,Available,Low
+ADYPU100678,Tanvi Bhosale,Student,Design,tanvi.bhosale678@adypu.edu.in,9352209783,Four-Wheeler,MH13 EF 2206,Zone-D,EV,Booked,Low
+ADYPU100679,Aditya Chavan,Student,Media,aditya.chavan679@adypu.edu.in,9161016832,Four-Wheeler,MH12 AB 6879,Zone-C,EV,Available,Low
+ADYPU100680,Pooja Deshmukh,Student,Architecture,pooja.deshmukh680@adypu.edu.in,9699201681,Two-Wheeler,MH13 AB 3402,Zone-D,Open,Booked,Low
+ADYPU100681,Vihaan Deshmukh,Student,Computer Science,vihaan.deshmukh681@adypu.edu.in,9363270414,Four-Wheeler,MH12 CD 2898,Zone-D,Reserved,Booked,Low
+ADYPU100682,Om Kale,Staff,Media,om.kale682@adypu.edu.in,9278901538,Two-Wheeler,MH14 EF 6266,Zone-A,Open,Booked,Medium
+ADYPU100683,Kavya Pawar,Student,Architecture,kavya.pawar683@adypu.edu.in,9337627444,Four-Wheeler,MH12 EF 4549,Zone-D,Reserved,Available,Low
+ADYPU100684,Riya Gaikwad,Staff,Law,riya.gaikwad684@adypu.edu.in,9417054560,Four-Wheeler,MH13 CD 8746,Zone-A,Reserved,Available,Medium
+ADYPU100685,Kunal More,Staff,Engineering,kunal.more685@adypu.edu.in,9244981083,Four-Wheeler,MH13 AB 3761,Zone-D,Reserved,Booked,Medium
+ADYPU100686,Yash Kulkarni,Faculty,Computer Science,yash.kulkarni686@adypu.edu.in,9977263119,Two-Wheeler,MH14 CD 5709,Zone-C,EV,Booked,High
+ADYPU100687,Ananya Gaikwad,Faculty,Engineering,ananya.gaikwad687@adypu.edu.in,9971145822,Four-Wheeler,MH14 GH 4104,Zone-B,EV,Available,High
+ADYPU100688,Neha Deshmukh,Student,Architecture,neha.deshmukh688@adypu.edu.in,9801041646,Two-Wheeler,MH14 AB 7408,Zone-A,EV,Available,Low
+ADYPU100689,Kavya Deshmukh,Student,Artificial Intelligence,kavya.deshmukh689@adypu.edu.in,9105873399,Two-Wheeler,MH13 GH 5810,Zone-C,Reserved,Available,Low
+ADYPU100690,Rahul More,Student,Media,rahul.more690@adypu.edu.in,9624177777,Four-Wheeler,MH14 CD 2729,Zone-D,Reserved,Available,Low
+ADYPU100691,Isha Jadhav,Student,Law,isha.jadhav691@adypu.edu.in,9539025073,Two-Wheeler,MH13 AB 7167,Zone-A,Open,Booked,Low
+ADYPU100692,Arjun Patil,Student,Media,arjun.patil692@adypu.edu.in,9309266886,Two-Wheeler,MH13 EF 6527,Zone-D,Reserved,Available,Low
+ADYPU100693,Pranav Sharma,Staff,Media,pranav.sharma693@adypu.edu.in,9918969951,Four-Wheeler,MH13 AB 5363,Zone-A,Reserved,Available,Medium
+ADYPU100694,Sneha More,Student,Engineering,sneha.more694@adypu.edu.in,9510029614,Two-Wheeler,MH13 EF 9782,Zone-B,Reserved,Available,Low
+ADYPU100695,Siddharth Kadam,Student,Media,siddharth.kadam695@adypu.edu.in,9765480355,Four-Wheeler,MH13 AB 4279,Zone-D,Open,Booked,Low
+ADYPU100696,Aditi Shinde,Student,Design,aditi.shinde696@adypu.edu.in,9571469938,Four-Wheeler,MH12 CD 2193,Zone-A,Reserved,Booked,Low
+ADYPU100697,Pooja Kadam,Student,Computer Science,pooja.kadam697@adypu.edu.in,9673925920,Two-Wheeler,MH12 CD 4900,Zone-C,EV,Available,Low
+ADYPU100698,Kunal Patil,Student,Media,kunal.patil698@adypu.edu.in,9129558298,Two-Wheeler,MH12 GH 2557,Zone-A,EV,Available,Low
+ADYPU100699,Sneha Deshmukh,Staff,Architecture,sneha.deshmukh699@adypu.edu.in,9928647251,Two-Wheeler,MH13 GH 9062,Zone-B,EV,Booked,Medium
+ADYPU100700,Isha Joshi,Staff,Architecture,isha.joshi700@adypu.edu.in,9261243197,Four-Wheeler,MH13 CD 5609,Zone-D,Reserved,Booked,Medium
+ADYPU100701,Aditi Kulkarni,Student,Computer Science,aditi.kulkarni701@adypu.edu.in,9590246079,Four-Wheeler,MH13 CD 5281,Zone-C,Reserved,Booked,Low
+ADYPU100702,Kunal Deshmukh,Student,Engineering,kunal.deshmukh702@adypu.edu.in,9519257325,Two-Wheeler,MH12 GH 5326,Zone-C,EV,Available,Low
+ADYPU100703,Isha Shinde,Student,Law,isha.shinde703@adypu.edu.in,9467935007,Two-Wheeler,MH14 AB 3898,Zone-C,Reserved,Available,Low
+ADYPU100704,Om Pawar,Student,Law,om.pawar704@adypu.edu.in,9714914632,Two-Wheeler,MH14 AB 5152,Zone-A,Reserved,Booked,Low
+ADYPU100705,Shubham Kale,Student,Design,shubham.kale705@adypu.edu.in,9595967847,Four-Wheeler,MH14 CD 4234,Zone-C,EV,Available,Low
+ADYPU100706,Ishaan Kulkarni,Student,Artificial Intelligence,ishaan.kulkarni706@adypu.edu.in,9696556935,Two-Wheeler,MH12 EF 9005,Zone-C,EV,Booked,Low
+ADYPU100707,Shruti Shinde,Student,Engineering,shruti.shinde707@adypu.edu.in,9751047853,Two-Wheeler,MH12 GH 8942,Zone-C,Open,Available,Low
+ADYPU100708,Yash Kulkarni,Student,Artificial Intelligence,yash.kulkarni708@adypu.edu.in,9512332607,Four-Wheeler,MH12 GH 5669,Zone-C,Open,Available,Low
+ADYPU100709,Shruti Chavan,Student,Computer Science,shruti.chavan709@adypu.edu.in,9892205243,Two-Wheeler,MH14 EF 3023,Zone-A,EV,Booked,Low
+ADYPU100710,Shruti More,Staff,Artificial Intelligence,shruti.more710@adypu.edu.in,9553477846,Two-Wheeler,MH12 GH 2353,Zone-B,Reserved,Booked,Medium
+ADYPU100711,Atharva Kulkarni,Faculty,Management,atharva.kulkarni711@adypu.edu.in,9414428580,Four-Wheeler,MH14 EF 7379,Zone-B,Open,Booked,High
+ADYPU100712,Sneha Bhosale,Staff,Artificial Intelligence,sneha.bhosale712@adypu.edu.in,9708967270,Four-Wheeler,MH14 AB 3117,Zone-A,Reserved,Booked,Medium
+ADYPU100713,Pooja Jadhav,Student,Media,pooja.jadhav713@adypu.edu.in,9404192389,Two-Wheeler,MH12 EF 1148,Zone-D,EV,Available,Low
+ADYPU100714,Aarav Jadhav,Student,Artificial Intelligence,aarav.jadhav714@adypu.edu.in,9219764275,Four-Wheeler,MH14 AB 3694,Zone-C,Reserved,Booked,Low
+ADYPU100715,Neha Chavan,Student,Management,neha.chavan715@adypu.edu.in,9704520596,Four-Wheeler,MH14 GH 1889,Zone-B,Reserved,Available,Low
+ADYPU100716,Sai Deshmukh,Student,Computer Science,sai.deshmukh716@adypu.edu.in,9292203467,Four-Wheeler,MH13 GH 6184,Zone-A,Open,Booked,Low
+ADYPU100717,Neha Pawar,Student,Law,neha.pawar717@adypu.edu.in,9964963382,Two-Wheeler,MH12 EF 6193,Zone-B,EV,Available,Low
+ADYPU100718,Sai Jadhav,Student,Design,sai.jadhav718@adypu.edu.in,9250298355,Two-Wheeler,MH14 AB 8941,Zone-D,Open,Booked,Low
+ADYPU100719,Riya Deshmukh,Student,Engineering,riya.deshmukh719@adypu.edu.in,9772754000,Four-Wheeler,MH14 AB 7515,Zone-C,Reserved,Available,Low
+ADYPU100720,Om Joshi,Staff,Law,om.joshi720@adypu.edu.in,9954608425,Two-Wheeler,MH13 CD 4899,Zone-A,Open,Booked,Medium
+ADYPU100721,Siddharth Bhosale,Student,Artificial Intelligence,siddharth.bhosale721@adypu.edu.in,9641855965,Four-Wheeler,MH13 GH 9853,Zone-D,Reserved,Booked,Low
+ADYPU100722,Riya More,Student,Architecture,riya.more722@adypu.edu.in,9865730841,Four-Wheeler,MH13 EF 6386,Zone-B,Open,Booked,Low
+ADYPU100723,Om Joshi,Staff,Design,om.joshi723@adypu.edu.in,9455076614,Two-Wheeler,MH13 GH 8270,Zone-D,Reserved,Booked,Medium
+ADYPU100724,Shubham Gaikwad,Student,Engineering,shubham.gaikwad724@adypu.edu.in,9395304983,Four-Wheeler,MH12 AB 5313,Zone-D,EV,Available,Low
+ADYPU100725,Aarav Sharma,Faculty,Design,aarav.sharma725@adypu.edu.in,9745358169,Four-Wheeler,MH14 AB 9377,Zone-C,EV,Available,High
+ADYPU100726,Ananya Shinde,Student,Management,ananya.shinde726@adypu.edu.in,9544474725,Two-Wheeler,MH14 AB 7235,Zone-D,EV,Booked,Low
+ADYPU100727,Kunal Gaikwad,Student,Management,kunal.gaikwad727@adypu.edu.in,9400423161,Four-Wheeler,MH14 CD 6978,Zone-A,EV,Booked,Low
+ADYPU100728,Atharva Chavan,Student,Management,atharva.chavan728@adypu.edu.in,9717818905,Four-Wheeler,MH13 CD 3960,Zone-A,Reserved,Available,Low
+ADYPU100729,Pranav Kadam,Student,Management,pranav.kadam729@adypu.edu.in,9854302457,Four-Wheeler,MH14 CD 9694,Zone-A,Reserved,Available,Low
+ADYPU100730,Kunal Patil,Staff,Computer Science,kunal.patil730@adypu.edu.in,9521775070,Four-Wheeler,MH14 EF 1649,Zone-D,EV,Available,Medium
+ADYPU100731,Ananya Chavan,Student,Artificial Intelligence,ananya.chavan731@adypu.edu.in,9787137821,Two-Wheeler,MH14 CD 3617,Zone-D,EV,Available,Low
+ADYPU100732,Neha Gaikwad,Student,Media,neha.gaikwad732@adypu.edu.in,9773305734,Two-Wheeler,MH14 AB 5343,Zone-A,Reserved,Booked,Low
+ADYPU100733,Riya Shinde,Student,Computer Science,riya.shinde733@adypu.edu.in,9965992108,Four-Wheeler,MH12 EF 6415,Zone-A,EV,Booked,Low
+ADYPU100734,Atharva Chavan,Student,Design,atharva.chavan734@adypu.edu.in,9823744273,Four-Wheeler,MH13 CD 4761,Zone-C,Reserved,Booked,Low
+ADYPU100735,Vivaan Bhosale,Student,Artificial Intelligence,vivaan.bhosale735@adypu.edu.in,9561888313,Four-Wheeler,MH13 GH 3850,Zone-B,EV,Booked,Low
+ADYPU100736,Arjun Chavan,Student,Management,arjun.chavan736@adypu.edu.in,9414755199,Two-Wheeler,MH14 CD 4414,Zone-B,EV,Booked,Low
+ADYPU100737,Isha Kulkarni,Faculty,Engineering,isha.kulkarni737@adypu.edu.in,9800764952,Four-Wheeler,MH12 GH 2026,Zone-C,Reserved,Available,High
+ADYPU100738,Rahul Kadam,Student,Engineering,rahul.kadam738@adypu.edu.in,9193391885,Four-Wheeler,MH13 AB 1020,Zone-D,Open,Available,Low
+ADYPU100739,Ishaan Pawar,Staff,Media,ishaan.pawar739@adypu.edu.in,9893174802,Two-Wheeler,MH13 GH 7841,Zone-A,Reserved,Available,Medium
+ADYPU100740,Kavya Patil,Staff,Media,kavya.patil740@adypu.edu.in,9572378154,Two-Wheeler,MH14 CD 9817,Zone-C,EV,Available,Medium
+ADYPU100741,Kavya Joshi,Student,Architecture,kavya.joshi741@adypu.edu.in,9108819768,Four-Wheeler,MH12 AB 5232,Zone-D,Reserved,Available,Low
+ADYPU100742,Aditi Bhosale,Faculty,Law,aditi.bhosale742@adypu.edu.in,9724974835,Two-Wheeler,MH12 CD 8774,Zone-C,Reserved,Booked,High
+ADYPU100743,Tanvi Shinde,Staff,Management,tanvi.shinde743@adypu.edu.in,9353406309,Two-Wheeler,MH13 EF 4767,Zone-C,EV,Booked,Medium
+ADYPU100744,Sneha Deshmukh,Student,Management,sneha.deshmukh744@adypu.edu.in,9289624783,Two-Wheeler,MH13 EF 8087,Zone-B,Open,Available,Low
+ADYPU100745,Siddharth Jadhav,Staff,Computer Science,siddharth.jadhav745@adypu.edu.in,9971447504,Two-Wheeler,MH14 GH 6162,Zone-A,Reserved,Available,Medium
+ADYPU100746,Sneha Kulkarni,Student,Engineering,sneha.kulkarni746@adypu.edu.in,9237763074,Four-Wheeler,MH13 CD 8645,Zone-B,Reserved,Available,Low
+ADYPU100747,Shruti Joshi,Student,Engineering,shruti.joshi747@adypu.edu.in,9239151929,Two-Wheeler,MH14 EF 8350,Zone-B,Reserved,Available,Low
+ADYPU100748,Kavya Sharma,Faculty,Engineering,kavya.sharma748@adypu.edu.in,9598135314,Two-Wheeler,MH13 GH 8400,Zone-B,Reserved,Booked,High
+ADYPU100749,Om Kadam,Student,Management,om.kadam749@adypu.edu.in,9716329516,Two-Wheeler,MH13 EF 2872,Zone-C,EV,Booked,Low
+ADYPU100750,Ishaan Chavan,Faculty,Engineering,ishaan.chavan750@adypu.edu.in,9909511309,Four-Wheeler,MH12 CD 8476,Zone-C,Open,Available,High
+ADYPU100751,Vihaan Kulkarni,Staff,Media,vihaan.kulkarni751@adypu.edu.in,9937611544,Four-Wheeler,MH14 GH 1327,Zone-D,Open,Available,Medium
+ADYPU100752,Om Kadam,Student,Artificial Intelligence,om.kadam752@adypu.edu.in,9526559030,Four-Wheeler,MH13 GH 9845,Zone-C,EV,Available,Low
+ADYPU100753,Ishaan Bhosale,Staff,Engineering,ishaan.bhosale753@adypu.edu.in,9668219697,Four-Wheeler,MH14 CD 2772,Zone-D,EV,Booked,Medium
+ADYPU100754,Kunal Bhosale,Student,Computer Science,kunal.bhosale754@adypu.edu.in,9970320858,Four-Wheeler,MH13 EF 2860,Zone-A,Open,Booked,Low
+ADYPU100755,Ishaan Sharma,Staff,Architecture,ishaan.sharma755@adypu.edu.in,9304776288,Four-Wheeler,MH14 GH 6892,Zone-D,Reserved,Booked,Medium
+ADYPU100756,Ananya Pawar,Faculty,Computer Science,ananya.pawar756@adypu.edu.in,9645731968,Two-Wheeler,MH14 CD 2142,Zone-C,Reserved,Available,High
+ADYPU100757,Atharva Kadam,Student,Architecture,atharva.kadam757@adypu.edu.in,9885447215,Two-Wheeler,MH13 EF 7730,Zone-D,EV,Booked,Low
+ADYPU100758,Ananya Patil,Faculty,Artificial Intelligence,ananya.patil758@adypu.edu.in,9985958020,Four-Wheeler,MH12 EF 8086,Zone-C,Open,Booked,High
+ADYPU100759,Siddharth Jadhav,Staff,Artificial Intelligence,siddharth.jadhav759@adypu.edu.in,9988991506,Two-Wheeler,MH14 AB 3705,Zone-B,Reserved,Available,Medium
+ADYPU100760,Sneha Gaikwad,Faculty,Media,sneha.gaikwad760@adypu.edu.in,9517258730,Two-Wheeler,MH14 GH 7458,Zone-A,EV,Booked,High
+ADYPU100761,Isha Shinde,Student,Management,isha.shinde761@adypu.edu.in,9759620728,Two-Wheeler,MH14 CD 1848,Zone-C,Open,Available,Low
+ADYPU100762,Shruti Kulkarni,Faculty,Architecture,shruti.kulkarni762@adypu.edu.in,9653445056,Four-Wheeler,MH12 AB 7689,Zone-C,Open,Booked,High
+ADYPU100763,Rahul Patil,Staff,Engineering,rahul.patil763@adypu.edu.in,9938170441,Four-Wheeler,MH12 AB 5444,Zone-B,EV,Available,Medium
+ADYPU100764,Neha Jadhav,Student,Artificial Intelligence,neha.jadhav764@adypu.edu.in,9764744677,Four-Wheeler,MH13 EF 3896,Zone-C,EV,Booked,Low
+ADYPU100765,Aditi Patil,Student,Management,aditi.patil765@adypu.edu.in,9587626471,Four-Wheeler,MH12 AB 1708,Zone-D,EV,Available,Low
+ADYPU100766,Aditya Sharma,Student,Law,aditya.sharma766@adypu.edu.in,9397049805,Two-Wheeler,MH14 AB 1800,Zone-D,Reserved,Available,Low
+ADYPU100767,Ishaan More,Faculty,Artificial Intelligence,ishaan.more767@adypu.edu.in,9407002870,Four-Wheeler,MH12 GH 5934,Zone-B,Reserved,Available,High
+ADYPU100768,Atharva Pawar,Student,Architecture,atharva.pawar768@adypu.edu.in,9389832836,Four-Wheeler,MH13 EF 1873,Zone-D,EV,Available,Low
+ADYPU100769,Vivaan Patil,Student,Architecture,vivaan.patil769@adypu.edu.in,9935759802,Two-Wheeler,MH13 GH 9645,Zone-C,Open,Booked,Low
+ADYPU100770,Atharva Patil,Student,Artificial Intelligence,atharva.patil770@adypu.edu.in,9596803330,Four-Wheeler,MH13 EF 6430,Zone-B,Open,Available,Low
+ADYPU100771,Sneha Kadam,Student,Engineering,sneha.kadam771@adypu.edu.in,9649810797,Four-Wheeler,MH12 AB 2248,Zone-A,Open,Available,Low
+ADYPU100772,Siddharth Patil,Faculty,Engineering,siddharth.patil772@adypu.edu.in,9397015090,Four-Wheeler,MH12 EF 8770,Zone-B,EV,Available,High
+ADYPU100773,Shruti Patil,Staff,Design,shruti.patil773@adypu.edu.in,9239887534,Two-Wheeler,MH14 EF 7756,Zone-A,Reserved,Booked,Medium
+ADYPU100774,Pooja Deshmukh,Student,Engineering,pooja.deshmukh774@adypu.edu.in,9413976448,Four-Wheeler,MH12 GH 8186,Zone-D,Reserved,Booked,Low
+ADYPU100775,Tanvi Gaikwad,Student,Law,tanvi.gaikwad775@adypu.edu.in,9238238098,Two-Wheeler,MH12 AB 5690,Zone-B,Reserved,Available,Low
+ADYPU100776,Vivaan Jadhav,Student,Computer Science,vivaan.jadhav776@adypu.edu.in,9153899782,Two-Wheeler,MH13 GH 9270,Zone-A,Open,Available,Low
+ADYPU100777,Rahul Jadhav,Faculty,Engineering,rahul.jadhav777@adypu.edu.in,9466746904,Four-Wheeler,MH13 AB 2429,Zone-A,Open,Booked,High
+ADYPU100778,Sneha Chavan,Student,Architecture,sneha.chavan778@adypu.edu.in,9230525363,Two-Wheeler,MH14 AB 2268,Zone-B,Reserved,Booked,Low
+ADYPU100779,Shruti Chavan,Faculty,Law,shruti.chavan779@adypu.edu.in,9670787582,Four-Wheeler,MH14 CD 1754,Zone-B,EV,Booked,High
+ADYPU100780,Ananya Pawar,Student,Media,ananya.pawar780@adypu.edu.in,9895658681,Four-Wheeler,MH12 GH 2324,Zone-D,Open,Booked,Low
+ADYPU100781,Shruti Chavan,Student,Engineering,shruti.chavan781@adypu.edu.in,9821977974,Four-Wheeler,MH14 GH 3706,Zone-A,Reserved,Available,Low
+ADYPU100782,Neha Pawar,Student,Media,neha.pawar782@adypu.edu.in,9955501746,Two-Wheeler,MH13 AB 5715,Zone-D,EV,Available,Low
+ADYPU100783,Atharva Deshmukh,Student,Computer Science,atharva.deshmukh783@adypu.edu.in,9570500264,Two-Wheeler,MH14 GH 2375,Zone-D,EV,Booked,Low
+ADYPU100784,Ishaan Patil,Student,Design,ishaan.patil784@adypu.edu.in,9969919301,Two-Wheeler,MH13 AB 1506,Zone-C,Reserved,Available,Low
+ADYPU100785,Aditya Shinde,Staff,Artificial Intelligence,aditya.shinde785@adypu.edu.in,9558279913,Two-Wheeler,MH14 AB 2694,Zone-D,Reserved,Available,Medium
+ADYPU100786,Shubham Chavan,Student,Design,shubham.chavan786@adypu.edu.in,9524506491,Two-Wheeler,MH14 GH 8508,Zone-A,Reserved,Available,Low
+ADYPU100787,Ananya Shinde,Student,Artificial Intelligence,ananya.shinde787@adypu.edu.in,9921123825,Four-Wheeler,MH13 AB 1608,Zone-A,EV,Available,Low
+ADYPU100788,Kunal Bhosale,Staff,Engineering,kunal.bhosale788@adypu.edu.in,9825113059,Four-Wheeler,MH14 EF 9543,Zone-A,Reserved,Available,Medium
+ADYPU100789,Arjun Jadhav,Staff,Law,arjun.jadhav789@adypu.edu.in,9377276556,Four-Wheeler,MH12 GH 3822,Zone-C,Reserved,Booked,Medium
+ADYPU100790,Arjun Kale,Student,Media,arjun.kale790@adypu.edu.in,9601461904,Two-Wheeler,MH14 EF 4933,Zone-C,EV,Booked,Low
+ADYPU100791,Sai Joshi,Faculty,Media,sai.joshi791@adypu.edu.in,9308489524,Four-Wheeler,MH14 AB 9549,Zone-B,EV,Available,High
+ADYPU100792,Pooja Joshi,Staff,Law,pooja.joshi792@adypu.edu.in,9868220682,Four-Wheeler,MH12 AB 2660,Zone-A,Open,Booked,Medium
+ADYPU100793,Aarav Kulkarni,Student,Artificial Intelligence,aarav.kulkarni793@adypu.edu.in,9965263085,Four-Wheeler,MH12 CD 2753,Zone-C,Open,Booked,Low
+ADYPU100794,Isha More,Faculty,Design,isha.more794@adypu.edu.in,9339769491,Two-Wheeler,MH13 EF 7889,Zone-C,Open,Booked,High
+ADYPU100795,Arjun Kale,Student,Architecture,arjun.kale795@adypu.edu.in,9339797784,Two-Wheeler,MH13 GH 5449,Zone-D,EV,Available,Low
+ADYPU100796,Ishaan Deshmukh,Student,Design,ishaan.deshmukh796@adypu.edu.in,9964750646,Four-Wheeler,MH12 EF 4061,Zone-B,Open,Available,Low
+ADYPU100797,Tanvi Sharma,Faculty,Design,tanvi.sharma797@adypu.edu.in,9667129773,Two-Wheeler,MH13 GH 3055,Zone-C,Reserved,Available,High
+ADYPU100798,Aditya Shinde,Student,Computer Science,aditya.shinde798@adypu.edu.in,9416108504,Two-Wheeler,MH14 AB 3040,Zone-A,Open,Available,Low
+ADYPU100799,Ishaan More,Student,Management,ishaan.more799@adypu.edu.in,9282294196,Two-Wheeler,MH14 CD 9955,Zone-A,EV,Available,Low
+ADYPU100800,Atharva More,Faculty,Artificial Intelligence,atharva.more800@adypu.edu.in,9408977705,Four-Wheeler,MH12 CD 5456,Zone-D,EV,Booked,High
+ADYPU100801,Yash Patil,Student,Media,yash.patil801@adypu.edu.in,9187929620,Two-Wheeler,MH12 CD 3872,Zone-C,Open,Available,Low
+ADYPU100802,Kavya Sharma,Student,Design,kavya.sharma802@adypu.edu.in,9980183268,Four-Wheeler,MH13 CD 9257,Zone-A,EV,Available,Low
+ADYPU100803,Aditya More,Faculty,Media,aditya.more803@adypu.edu.in,9900563583,Two-Wheeler,MH14 GH 8459,Zone-D,EV,Booked,High
+ADYPU100804,Om Bhosale,Student,Design,om.bhosale804@adypu.edu.in,9735285619,Four-Wheeler,MH13 GH 9118,Zone-B,Open,Booked,Low
+ADYPU100805,Sneha Chavan,Student,Artificial Intelligence,sneha.chavan805@adypu.edu.in,9392550281,Two-Wheeler,MH13 CD 6363,Zone-D,EV,Available,Low
+ADYPU100806,Sneha Gaikwad,Faculty,Computer Science,sneha.gaikwad806@adypu.edu.in,9345991503,Four-Wheeler,MH12 EF 9971,Zone-A,Open,Available,High
+ADYPU100807,Isha Gaikwad,Staff,Law,isha.gaikwad807@adypu.edu.in,9560988228,Four-Wheeler,MH14 EF 6554,Zone-C,Open,Booked,Medium
+ADYPU100808,Pooja Shinde,Student,Artificial Intelligence,pooja.shinde808@adypu.edu.in,9195099591,Four-Wheeler,MH14 GH 7072,Zone-B,EV,Available,Low
+ADYPU100809,Atharva Shinde,Student,Management,atharva.shinde809@adypu.edu.in,9137621861,Two-Wheeler,MH13 EF 1878,Zone-C,EV,Booked,Low
+ADYPU100810,Isha Gaikwad,Student,Artificial Intelligence,isha.gaikwad810@adypu.edu.in,9883384788,Four-Wheeler,MH12 EF 3855,Zone-A,Open,Booked,Low
+ADYPU100811,Pooja Shinde,Staff,Design,pooja.shinde811@adypu.edu.in,9802068160,Two-Wheeler,MH14 EF 6390,Zone-A,Reserved,Available,Medium
+ADYPU100812,Rohan Deshmukh,Staff,Law,rohan.deshmukh812@adypu.edu.in,9618089226,Four-Wheeler,MH14 AB 8843,Zone-A,Reserved,Available,Medium
+ADYPU100813,Rohan Jadhav,Student,Architecture,rohan.jadhav813@adypu.edu.in,9872495563,Four-Wheeler,MH13 GH 2210,Zone-C,Reserved,Booked,Low
+ADYPU100814,Ishaan Patil,Student,Design,ishaan.patil814@adypu.edu.in,9266854601,Two-Wheeler,MH12 CD 8673,Zone-C,EV,Available,Low
+ADYPU100815,Aditi Deshmukh,Faculty,Law,aditi.deshmukh815@adypu.edu.in,9128314937,Four-Wheeler,MH13 CD 5890,Zone-C,EV,Booked,High
+ADYPU100816,Aditi Shinde,Staff,Architecture,aditi.shinde816@adypu.edu.in,9383948041,Two-Wheeler,MH12 CD 1639,Zone-A,Open,Available,Medium
+ADYPU100817,Pranav Bhosale,Student,Law,pranav.bhosale817@adypu.edu.in,9171674790,Four-Wheeler,MH14 GH 2204,Zone-A,Open,Available,Low
+ADYPU100818,Vihaan Chavan,Student,Management,vihaan.chavan818@adypu.edu.in,9790652269,Two-Wheeler,MH12 GH 2919,Zone-A,Open,Booked,Low
+ADYPU100819,Rohan Deshmukh,Student,Management,rohan.deshmukh819@adypu.edu.in,9560324380,Two-Wheeler,MH12 GH 5432,Zone-B,EV,Booked,Low
+ADYPU100820,Sneha Kadam,Student,Computer Science,sneha.kadam820@adypu.edu.in,9288552781,Four-Wheeler,MH12 CD 4791,Zone-B,Reserved,Available,Low
+ADYPU100821,Siddharth Kale,Student,Management,siddharth.kale821@adypu.edu.in,9473761460,Two-Wheeler,MH12 GH 8073,Zone-D,Reserved,Available,Low
+ADYPU100822,Shruti Sharma,Staff,Design,shruti.sharma822@adypu.edu.in,9882529535,Four-Wheeler,MH13 EF 4342,Zone-A,Open,Booked,Medium
+ADYPU100823,Rohan Jadhav,Faculty,Artificial Intelligence,rohan.jadhav823@adypu.edu.in,9877159173,Four-Wheeler,MH14 AB 6767,Zone-C,Open,Available,High
+ADYPU100824,Ananya More,Staff,Law,ananya.more824@adypu.edu.in,9610010468,Four-Wheeler,MH12 AB 9314,Zone-B,Open,Booked,Medium
+ADYPU100825,Vihaan Kale,Student,Engineering,vihaan.kale825@adypu.edu.in,9522582652,Four-Wheeler,MH13 AB 3466,Zone-A,Open,Available,Low
+ADYPU100826,Isha Pawar,Student,Engineering,isha.pawar826@adypu.edu.in,9852416956,Two-Wheeler,MH14 CD 9766,Zone-B,EV,Booked,Low
+ADYPU100827,Isha Kadam,Student,Architecture,isha.kadam827@adypu.edu.in,9961810761,Four-Wheeler,MH12 CD 5133,Zone-D,Reserved,Booked,Low
+ADYPU100828,Siddharth Joshi,Student,Engineering,siddharth.joshi828@adypu.edu.in,9623659381,Four-Wheeler,MH12 CD 2321,Zone-B,Reserved,Available,Low
+ADYPU100829,Ananya Deshmukh,Student,Artificial Intelligence,ananya.deshmukh829@adypu.edu.in,9178454049,Four-Wheeler,MH13 AB 1646,Zone-D,Open,Available,Low
+ADYPU100830,Om Gaikwad,Student,Architecture,om.gaikwad830@adypu.edu.in,9862253744,Four-Wheeler,MH13 AB 4946,Zone-A,EV,Available,Low
+ADYPU100831,Siddharth Patil,Staff,Management,siddharth.patil831@adypu.edu.in,9993381402,Four-Wheeler,MH13 EF 1945,Zone-A,EV,Booked,Medium
+ADYPU100832,Isha More,Student,Management,isha.more832@adypu.edu.in,9326571391,Four-Wheeler,MH14 CD 7065,Zone-C,Open,Available,Low
+ADYPU100833,Aarav Chavan,Faculty,Artificial Intelligence,aarav.chavan833@adypu.edu.in,9721916062,Two-Wheeler,MH13 CD 4543,Zone-B,Reserved,Booked,High
+ADYPU100834,Aditya Bhosale,Student,Design,aditya.bhosale834@adypu.edu.in,9104159135,Four-Wheeler,MH12 CD 7898,Zone-D,Open,Booked,Low
+ADYPU100835,Sai Shinde,Student,Artificial Intelligence,sai.shinde835@adypu.edu.in,9480669678,Two-Wheeler,MH12 EF 8326,Zone-B,Reserved,Available,Low
+ADYPU100836,Tanvi Kadam,Faculty,Artificial Intelligence,tanvi.kadam836@adypu.edu.in,9547321477,Four-Wheeler,MH14 CD 9340,Zone-B,Reserved,Available,High
+ADYPU100837,Siddharth Deshmukh,Student,Design,siddharth.deshmukh837@adypu.edu.in,9307309827,Two-Wheeler,MH12 AB 3310,Zone-B,Reserved,Available,Low
+ADYPU100838,Pranav Jadhav,Student,Artificial Intelligence,pranav.jadhav838@adypu.edu.in,9188116046,Two-Wheeler,MH14 GH 1013,Zone-D,Reserved,Available,Low
+ADYPU100839,Ananya Patil,Student,Architecture,ananya.patil839@adypu.edu.in,9706065860,Two-Wheeler,MH13 GH 5637,Zone-A,Open,Available,Low
+ADYPU100840,Om Jadhav,Student,Computer Science,om.jadhav840@adypu.edu.in,9600677404,Two-Wheeler,MH14 GH 3575,Zone-A,Open,Available,Low
+ADYPU100841,Aarav Kale,Student,Computer Science,aarav.kale841@adypu.edu.in,9391862073,Four-Wheeler,MH13 EF 7834,Zone-D,Reserved,Available,Low
+ADYPU100842,Vihaan Gaikwad,Staff,Media,vihaan.gaikwad842@adypu.edu.in,9209232128,Two-Wheeler,MH13 EF 4013,Zone-A,Open,Booked,Medium
+ADYPU100843,Kavya Bhosale,Faculty,Artificial Intelligence,kavya.bhosale843@adypu.edu.in,9457883463,Two-Wheeler,MH13 AB 9215,Zone-C,EV,Available,High
+ADYPU100844,Vihaan Shinde,Student,Management,vihaan.shinde844@adypu.edu.in,9261772239,Four-Wheeler,MH12 EF 5980,Zone-A,EV,Booked,Low
+ADYPU100845,Isha Kale,Faculty,Computer Science,isha.kale845@adypu.edu.in,9235194303,Two-Wheeler,MH13 EF 5777,Zone-D,Reserved,Booked,High
+ADYPU100846,Vivaan Chavan,Faculty,Law,vivaan.chavan846@adypu.edu.in,9615646262,Two-Wheeler,MH14 AB 2652,Zone-C,EV,Available,High
+ADYPU100847,Tanvi Gaikwad,Staff,Artificial Intelligence,tanvi.gaikwad847@adypu.edu.in,9192925109,Four-Wheeler,MH13 AB 6138,Zone-C,Open,Available,Medium
+ADYPU100848,Ishaan Deshmukh,Staff,Architecture,ishaan.deshmukh848@adypu.edu.in,9400434996,Two-Wheeler,MH12 CD 2968,Zone-A,Reserved,Available,Medium
+ADYPU100849,Aditya Joshi,Student,Artificial Intelligence,aditya.joshi849@adypu.edu.in,9619496329,Four-Wheeler,MH14 EF 4656,Zone-A,Reserved,Available,Low
+ADYPU100850,Isha Gaikwad,Student,Computer Science,isha.gaikwad850@adypu.edu.in,9842954366,Two-Wheeler,MH12 AB 6232,Zone-A,Reserved,Available,Low
+ADYPU100851,Aditya More,Student,Artificial Intelligence,aditya.more851@adypu.edu.in,9924724255,Four-Wheeler,MH13 AB 7725,Zone-B,EV,Booked,Low
+ADYPU100852,Om Sharma,Student,Artificial Intelligence,om.sharma852@adypu.edu.in,9617569869,Four-Wheeler,MH14 EF 9688,Zone-C,EV,Available,Low
+ADYPU100853,Om Patil,Student,Artificial Intelligence,om.patil853@adypu.edu.in,9683493038,Two-Wheeler,MH12 GH 1228,Zone-C,Open,Available,Low
+ADYPU100854,Pranav Sharma,Student,Engineering,pranav.sharma854@adypu.edu.in,9378207947,Four-Wheeler,MH14 AB 4443,Zone-C,Reserved,Booked,Low
+ADYPU100855,Pooja Jadhav,Student,Media,pooja.jadhav855@adypu.edu.in,9498943415,Four-Wheeler,MH13 CD 1744,Zone-A,Reserved,Available,Low
+ADYPU100856,Pooja Deshmukh,Student,Computer Science,pooja.deshmukh856@adypu.edu.in,9804416092,Two-Wheeler,MH13 CD 2311,Zone-B,Reserved,Available,Low
+ADYPU100857,Aditya Gaikwad,Student,Management,aditya.gaikwad857@adypu.edu.in,9180220060,Four-Wheeler,MH14 AB 8500,Zone-B,EV,Available,Low
+ADYPU100858,Aarav Chavan,Faculty,Law,aarav.chavan858@adypu.edu.in,9812385648,Four-Wheeler,MH13 AB 5361,Zone-C,EV,Booked,High
+ADYPU100859,Sai Gaikwad,Student,Computer Science,sai.gaikwad859@adypu.edu.in,9328894565,Four-Wheeler,MH12 AB 4855,Zone-C,EV,Available,Low
+ADYPU100860,Tanvi Kadam,Student,Law,tanvi.kadam860@adypu.edu.in,9634041827,Four-Wheeler,MH14 AB 5596,Zone-C,EV,Available,Low
+ADYPU100861,Riya Pawar,Staff,Media,riya.pawar861@adypu.edu.in,9580111850,Two-Wheeler,MH14 GH 9288,Zone-C,Reserved,Available,Medium
+ADYPU100862,Ishaan Pawar,Staff,Architecture,ishaan.pawar862@adypu.edu.in,9223038929,Four-Wheeler,MH14 EF 8745,Zone-A,Open,Booked,Medium
+ADYPU100863,Sai Shinde,Student,Design,sai.shinde863@adypu.edu.in,9955169782,Two-Wheeler,MH13 AB 8030,Zone-B,Reserved,Available,Low
+ADYPU100864,Aditi Deshmukh,Student,Design,aditi.deshmukh864@adypu.edu.in,9983554032,Four-Wheeler,MH14 AB 5577,Zone-C,Open,Booked,Low
+ADYPU100865,Tanvi Pawar,Staff,Engineering,tanvi.pawar865@adypu.edu.in,9530680456,Four-Wheeler,MH14 AB 3519,Zone-C,EV,Booked,Medium
+ADYPU100866,Sai Deshmukh,Student,Media,sai.deshmukh866@adypu.edu.in,9666168066,Four-Wheeler,MH14 AB 3638,Zone-B,EV,Booked,Low
+ADYPU100867,Pranav Joshi,Student,Law,pranav.joshi867@adypu.edu.in,9174032231,Four-Wheeler,MH13 EF 2540,Zone-C,Open,Available,Low
+ADYPU100868,Neha Kale,Student,Architecture,neha.kale868@adypu.edu.in,9687196680,Two-Wheeler,MH14 GH 9514,Zone-A,Open,Available,Low
+ADYPU100869,Pooja Deshmukh,Student,Artificial Intelligence,pooja.deshmukh869@adypu.edu.in,9194020988,Two-Wheeler,MH14 GH 5718,Zone-B,EV,Booked,Low
+ADYPU100870,Sai Gaikwad,Student,Design,sai.gaikwad870@adypu.edu.in,9370983492,Four-Wheeler,MH13 GH 5382,Zone-D,EV,Available,Low
+ADYPU100871,Neha Jadhav,Staff,Computer Science,neha.jadhav871@adypu.edu.in,9885852708,Two-Wheeler,MH14 GH 6242,Zone-B,Open,Booked,Medium
+ADYPU100872,Riya Jadhav,Student,Engineering,riya.jadhav872@adypu.edu.in,9629977057,Two-Wheeler,MH14 GH 8088,Zone-A,Reserved,Booked,Low
+ADYPU100873,Pooja More,Student,Management,pooja.more873@adypu.edu.in,9232486176,Four-Wheeler,MH13 GH 5948,Zone-D,Open,Available,Low
+ADYPU100874,Yash Pawar,Faculty,Management,yash.pawar874@adypu.edu.in,9218837625,Four-Wheeler,MH12 EF 9355,Zone-A,Reserved,Available,High
+ADYPU100875,Yash Bhosale,Student,Management,yash.bhosale875@adypu.edu.in,9792714468,Four-Wheeler,MH14 AB 1726,Zone-D,Reserved,Available,Low
+ADYPU100876,Ishaan Kale,Staff,Architecture,ishaan.kale876@adypu.edu.in,9933839933,Four-Wheeler,MH12 GH 5970,Zone-D,Reserved,Booked,Medium
+ADYPU100877,Ishaan Kale,Student,Media,ishaan.kale877@adypu.edu.in,9962805041,Four-Wheeler,MH12 CD 3775,Zone-A,EV,Booked,Low
+ADYPU100878,Rahul Chavan,Student,Computer Science,rahul.chavan878@adypu.edu.in,9424707342,Four-Wheeler,MH12 GH 2136,Zone-C,Reserved,Booked,Low
+ADYPU100879,Sai Kale,Student,Law,sai.kale879@adypu.edu.in,9970565843,Two-Wheeler,MH12 EF 1665,Zone-B,Reserved,Booked,Low
+ADYPU100880,Kavya Shinde,Student,Architecture,kavya.shinde880@adypu.edu.in,9336592166,Four-Wheeler,MH13 EF 6681,Zone-C,Open,Booked,Low
+ADYPU100881,Rahul Kulkarni,Student,Computer Science,rahul.kulkarni881@adypu.edu.in,9523063381,Two-Wheeler,MH12 CD 8939,Zone-B,Reserved,Booked,Low
+ADYPU100882,Atharva Sharma,Student,Law,atharva.sharma882@adypu.edu.in,9509128326,Two-Wheeler,MH13 CD 7043,Zone-D,Reserved,Booked,Low
+ADYPU100883,Pranav Gaikwad,Student,Media,pranav.gaikwad883@adypu.edu.in,9354435036,Two-Wheeler,MH12 AB 6243,Zone-C,Open,Available,Low
+ADYPU100884,Om Kadam,Faculty,Engineering,om.kadam884@adypu.edu.in,9789621137,Two-Wheeler,MH13 EF 8047,Zone-C,EV,Available,High
+ADYPU100885,Riya Patil,Student,Management,riya.patil885@adypu.edu.in,9404479610,Four-Wheeler,MH14 EF 3012,Zone-D,EV,Available,Low
+ADYPU100886,Tanvi Patil,Faculty,Artificial Intelligence,tanvi.patil886@adypu.edu.in,9930725497,Two-Wheeler,MH13 AB 7892,Zone-A,Reserved,Booked,High
+ADYPU100887,Tanvi Gaikwad,Student,Media,tanvi.gaikwad887@adypu.edu.in,9266177189,Four-Wheeler,MH14 AB 3772,Zone-B,Open,Available,Low
+ADYPU100888,Riya Patil,Staff,Architecture,riya.patil888@adypu.edu.in,9814346979,Two-Wheeler,MH14 EF 6436,Zone-D,EV,Available,Medium
+ADYPU100889,Kunal Kulkarni,Student,Design,kunal.kulkarni889@adypu.edu.in,9381932457,Four-Wheeler,MH13 CD 3491,Zone-D,EV,Booked,Low
+ADYPU100890,Sneha Jadhav,Student,Law,sneha.jadhav890@adypu.edu.in,9239671937,Two-Wheeler,MH14 EF 6348,Zone-B,Reserved,Booked,Low
+ADYPU100891,Yash Joshi,Student,Management,yash.joshi891@adypu.edu.in,9942910191,Four-Wheeler,MH13 AB 6171,Zone-A,Open,Booked,Low
+ADYPU100892,Ishaan Kulkarni,Student,Artificial Intelligence,ishaan.kulkarni892@adypu.edu.in,9730592522,Four-Wheeler,MH12 CD 3540,Zone-B,Open,Available,Low
+ADYPU100893,Ishaan Pawar,Staff,Management,ishaan.pawar893@adypu.edu.in,9614508493,Two-Wheeler,MH13 EF 3662,Zone-C,Open,Booked,Medium
+ADYPU100894,Arjun Joshi,Student,Computer Science,arjun.joshi894@adypu.edu.in,9964884246,Four-Wheeler,MH13 EF 3773,Zone-A,EV,Available,Low
+ADYPU100895,Shruti Jadhav,Student,Management,shruti.jadhav895@adypu.edu.in,9429352806,Two-Wheeler,MH14 AB 5119,Zone-B,Reserved,Booked,Low
+ADYPU100896,Sneha More,Student,Design,sneha.more896@adypu.edu.in,9900068410,Four-Wheeler,MH13 GH 3231,Zone-A,EV,Available,Low
+ADYPU100897,Sneha Sharma,Student,Computer Science,sneha.sharma897@adypu.edu.in,9379758565,Two-Wheeler,MH12 EF 4876,Zone-D,EV,Available,Low
+ADYPU100898,Isha Shinde,Student,Management,isha.shinde898@adypu.edu.in,9588561666,Four-Wheeler,MH14 EF 1098,Zone-D,EV,Available,Low
+ADYPU100899,Kavya Kulkarni,Student,Architecture,kavya.kulkarni899@adypu.edu.in,9869217294,Two-Wheeler,MH12 EF 1711,Zone-D,Open,Available,Low
+ADYPU100900,Rohan Sharma,Faculty,Management,rohan.sharma900@adypu.edu.in,9853288524,Four-Wheeler,MH12 EF 5879,Zone-C,Open,Booked,High
+ADYPU100901,Aarav Jadhav,Student,Computer Science,aarav.jadhav901@adypu.edu.in,9129143619,Four-Wheeler,MH13 AB 4616,Zone-B,Open,Booked,Low
+ADYPU100902,Isha Gaikwad,Staff,Media,isha.gaikwad902@adypu.edu.in,9789449872,Four-Wheeler,MH14 AB 3829,Zone-B,Open,Available,Medium
+ADYPU100903,Sneha Bhosale,Staff,Media,sneha.bhosale903@adypu.edu.in,9226718498,Four-Wheeler,MH12 EF 1741,Zone-D,Open,Available,Medium
+ADYPU100904,Ananya Joshi,Student,Management,ananya.joshi904@adypu.edu.in,9416741924,Four-Wheeler,MH13 GH 5696,Zone-C,EV,Available,Low
+ADYPU100905,Arjun Deshmukh,Student,Artificial Intelligence,arjun.deshmukh905@adypu.edu.in,9392266318,Four-Wheeler,MH12 GH 5571,Zone-D,EV,Booked,Low
+ADYPU100906,Kunal Joshi,Staff,Architecture,kunal.joshi906@adypu.edu.in,9484379301,Four-Wheeler,MH13 GH 4381,Zone-A,EV,Booked,Medium
+ADYPU100907,Kunal Shinde,Student,Law,kunal.shinde907@adypu.edu.in,9733714724,Four-Wheeler,MH13 CD 8530,Zone-A,Reserved,Available,Low
+ADYPU100908,Tanvi Kale,Staff,Computer Science,tanvi.kale908@adypu.edu.in,9216846958,Four-Wheeler,MH14 GH 1142,Zone-C,Open,Booked,Medium
+ADYPU100909,Aditya Deshmukh,Student,Law,aditya.deshmukh909@adypu.edu.in,9881862256,Four-Wheeler,MH12 AB 1049,Zone-C,EV,Available,Low
+ADYPU100910,Arjun Shinde,Faculty,Computer Science,arjun.shinde910@adypu.edu.in,9896543878,Four-Wheeler,MH13 EF 3477,Zone-A,Reserved,Available,High
+ADYPU100911,Sneha Pawar,Faculty,Media,sneha.pawar911@adypu.edu.in,9836449347,Four-Wheeler,MH13 AB 4346,Zone-D,Open,Available,High
+ADYPU100912,Aarav More,Staff,Media,aarav.more912@adypu.edu.in,9149604333,Two-Wheeler,MH14 GH 5000,Zone-A,Reserved,Booked,Medium
+ADYPU100913,Sneha Gaikwad,Student,Computer Science,sneha.gaikwad913@adypu.edu.in,9579486587,Four-Wheeler,MH12 CD 3566,Zone-D,EV,Booked,Low
+ADYPU100914,Atharva Pawar,Student,Law,atharva.pawar914@adypu.edu.in,9470370322,Two-Wheeler,MH13 CD 5414,Zone-C,Open,Booked,Low
+ADYPU100915,Om Pawar,Faculty,Computer Science,om.pawar915@adypu.edu.in,9450203606,Four-Wheeler,MH14 CD 2055,Zone-A,Reserved,Booked,High
+ADYPU100916,Yash Kale,Faculty,Architecture,yash.kale916@adypu.edu.in,9322605313,Four-Wheeler,MH14 EF 3840,Zone-A,Open,Available,High
+ADYPU100917,Aarav Shinde,Student,Media,aarav.shinde917@adypu.edu.in,9269353565,Two-Wheeler,MH13 EF 1731,Zone-C,EV,Available,Low
+ADYPU100918,Neha Bhosale,Student,Artificial Intelligence,neha.bhosale918@adypu.edu.in,9760437360,Two-Wheeler,MH12 EF 4405,Zone-C,Reserved,Booked,Low
+ADYPU100919,Isha More,Faculty,Engineering,isha.more919@adypu.edu.in,9887393508,Two-Wheeler,MH14 EF 8648,Zone-D,EV,Available,High
+ADYPU100920,Rahul Kulkarni,Student,Management,rahul.kulkarni920@adypu.edu.in,9840215031,Four-Wheeler,MH13 AB 5152,Zone-A,Open,Booked,Low
+ADYPU100921,Pranav Gaikwad,Student,Management,pranav.gaikwad921@adypu.edu.in,9462577383,Four-Wheeler,MH14 CD 3888,Zone-C,Open,Available,Low
+ADYPU100922,Vivaan Kadam,Student,Media,vivaan.kadam922@adypu.edu.in,9927071337,Two-Wheeler,MH12 AB 1015,Zone-C,Reserved,Available,Low
+ADYPU100923,Vihaan Kale,Faculty,Media,vihaan.kale923@adypu.edu.in,9200327940,Two-Wheeler,MH12 AB 2537,Zone-D,Open,Booked,High
+ADYPU100924,Siddharth Chavan,Student,Engineering,siddharth.chavan924@adypu.edu.in,9655321442,Four-Wheeler,MH13 GH 7485,Zone-C,Open,Available,Low
+ADYPU100925,Vihaan Gaikwad,Student,Computer Science,vihaan.gaikwad925@adypu.edu.in,9610107004,Four-Wheeler,MH14 CD 1511,Zone-B,Reserved,Available,Low
+ADYPU100926,Rahul More,Staff,Management,rahul.more926@adypu.edu.in,9969992008,Two-Wheeler,MH14 EF 3967,Zone-A,EV,Booked,Medium
+ADYPU100927,Isha Sharma,Student,Management,isha.sharma927@adypu.edu.in,9770199445,Four-Wheeler,MH14 CD 1188,Zone-C,EV,Available,Low
+ADYPU100928,Shubham More,Student,Engineering,shubham.more928@adypu.edu.in,9248400191,Two-Wheeler,MH14 EF 8950,Zone-D,Open,Available,Low
+ADYPU100929,Sai Chavan,Student,Management,sai.chavan929@adypu.edu.in,9601603116,Two-Wheeler,MH12 AB 2378,Zone-D,Open,Booked,Low
+ADYPU100930,Aditya Sharma,Faculty,Architecture,aditya.sharma930@adypu.edu.in,9309115935,Two-Wheeler,MH14 AB 6393,Zone-D,Reserved,Booked,High
+ADYPU100931,Aditya Deshmukh,Student,Engineering,aditya.deshmukh931@adypu.edu.in,9763396068,Two-Wheeler,MH13 EF 8176,Zone-D,Reserved,Booked,Low
+ADYPU100932,Pooja Chavan,Student,Artificial Intelligence,pooja.chavan932@adypu.edu.in,9307165220,Four-Wheeler,MH12 AB 9199,Zone-C,Reserved,Booked,Low
+ADYPU100933,Ananya More,Faculty,Law,ananya.more933@adypu.edu.in,9817117777,Four-Wheeler,MH14 GH 5979,Zone-B,Reserved,Booked,High
+ADYPU100934,Yash Sharma,Student,Design,yash.sharma934@adypu.edu.in,9953903385,Four-Wheeler,MH14 CD 7719,Zone-B,EV,Booked,Low
+ADYPU100935,Siddharth Patil,Student,Computer Science,siddharth.patil935@adypu.edu.in,9859863537,Four-Wheeler,MH12 AB 1947,Zone-A,Reserved,Booked,Low
+ADYPU100936,Shubham Kale,Student,Design,shubham.kale936@adypu.edu.in,9886934707,Four-Wheeler,MH13 EF 3575,Zone-B,Open,Booked,Low
+ADYPU100937,Pooja Sharma,Student,Media,pooja.sharma937@adypu.edu.in,9235368346,Four-Wheeler,MH14 AB 1745,Zone-A,Open,Available,Low
+ADYPU100938,Pooja Patil,Staff,Media,pooja.patil938@adypu.edu.in,9452948559,Four-Wheeler,MH12 GH 7296,Zone-A,Open,Available,Medium
+ADYPU100939,Sai Joshi,Student,Law,sai.joshi939@adypu.edu.in,9448837248,Four-Wheeler,MH13 CD 1717,Zone-C,Open,Available,Low
+ADYPU100940,Pooja Chavan,Student,Engineering,pooja.chavan940@adypu.edu.in,9602322457,Four-Wheeler,MH13 CD 1576,Zone-D,EV,Available,Low
+ADYPU100941,Ananya Jadhav,Student,Artificial Intelligence,ananya.jadhav941@adypu.edu.in,9699888494,Two-Wheeler,MH12 GH 4131,Zone-C,Open,Booked,Low
+ADYPU100942,Shruti Deshmukh,Student,Management,shruti.deshmukh942@adypu.edu.in,9585897139,Two-Wheeler,MH12 GH 3980,Zone-B,Open,Booked,Low
+ADYPU100943,Riya Shinde,Staff,Engineering,riya.shinde943@adypu.edu.in,9711776202,Four-Wheeler,MH14 CD 4220,Zone-B,Reserved,Booked,Medium
+ADYPU100944,Sneha Pawar,Staff,Design,sneha.pawar944@adypu.edu.in,9950134365,Two-Wheeler,MH12 GH 5901,Zone-C,Reserved,Available,Medium
+ADYPU100945,Vivaan Patil,Staff,Architecture,vivaan.patil945@adypu.edu.in,9200912257,Two-Wheeler,MH13 GH 2561,Zone-B,EV,Booked,Medium
+ADYPU100946,Tanvi Sharma,Student,Engineering,tanvi.sharma946@adypu.edu.in,9937370670,Two-Wheeler,MH14 GH 4382,Zone-A,Open,Available,Low
+ADYPU100947,Pranav Joshi,Student,Computer Science,pranav.joshi947@adypu.edu.in,9994716310,Four-Wheeler,MH12 EF 5240,Zone-A,Open,Booked,Low
+ADYPU100948,Neha Deshmukh,Student,Engineering,neha.deshmukh948@adypu.edu.in,9347102618,Four-Wheeler,MH12 EF 6903,Zone-A,Reserved,Booked,Low
+ADYPU100949,Tanvi Deshmukh,Student,Management,tanvi.deshmukh949@adypu.edu.in,9897112854,Two-Wheeler,MH13 GH 7197,Zone-B,Open,Booked,Low
+ADYPU100950,Aditya Kale,Student,Architecture,aditya.kale950@adypu.edu.in,9869707744,Two-Wheeler,MH12 CD 2313,Zone-B,EV,Booked,Low
+ADYPU100951,Shruti Joshi,Staff,Law,shruti.joshi951@adypu.edu.in,9836199510,Four-Wheeler,MH12 AB 9990,Zone-D,Open,Available,Medium
+ADYPU100952,Kavya Kulkarni,Student,Engineering,kavya.kulkarni952@adypu.edu.in,9574470402,Two-Wheeler,MH14 CD 6639,Zone-C,Open,Available,Low
+ADYPU100953,Isha Bhosale,Staff,Management,isha.bhosale953@adypu.edu.in,9441597553,Four-Wheeler,MH12 EF 3627,Zone-B,Reserved,Available,Medium
+ADYPU100954,Arjun Joshi,Staff,Management,arjun.joshi954@adypu.edu.in,9252964722,Four-Wheeler,MH12 CD 1495,Zone-D,EV,Available,Medium
+ADYPU100955,Pooja Bhosale,Staff,Computer Science,pooja.bhosale955@adypu.edu.in,9736923204,Four-Wheeler,MH13 GH 8899,Zone-C,EV,Booked,Medium
+ADYPU100956,Atharva Deshmukh,Student,Law,atharva.deshmukh956@adypu.edu.in,9227511360,Four-Wheeler,MH13 GH 2725,Zone-D,Open,Booked,Low
+ADYPU100957,Neha Bhosale,Student,Computer Science,neha.bhosale957@adypu.edu.in,9346727944,Two-Wheeler,MH12 EF 3104,Zone-B,Open,Booked,Low
+ADYPU100958,Siddharth Chavan,Student,Management,siddharth.chavan958@adypu.edu.in,9717910271,Two-Wheeler,MH14 AB 9989,Zone-D,Reserved,Booked,Low
+ADYPU100959,Shubham Kale,Student,Artificial Intelligence,shubham.kale959@adypu.edu.in,9738603345,Four-Wheeler,MH14 GH 6888,Zone-C,Open,Available,Low
+ADYPU100960,Ishaan Chavan,Student,Management,ishaan.chavan960@adypu.edu.in,9561864052,Four-Wheeler,MH12 CD 2962,Zone-D,Reserved,Available,Low
+ADYPU100961,Shubham Joshi,Student,Engineering,shubham.joshi961@adypu.edu.in,9731104506,Two-Wheeler,MH14 EF 4142,Zone-C,Reserved,Available,Low
+ADYPU100962,Aditya Kadam,Student,Law,aditya.kadam962@adypu.edu.in,9867466594,Two-Wheeler,MH14 GH 4471,Zone-B,EV,Available,Low
+ADYPU100963,Aditya Shinde,Staff,Law,aditya.shinde963@adypu.edu.in,9148421414,Two-Wheeler,MH12 EF 7916,Zone-D,Open,Available,Medium
+ADYPU100964,Vihaan More,Staff,Design,vihaan.more964@adypu.edu.in,9628056916,Two-Wheeler,MH12 AB 1630,Zone-D,EV,Available,Medium
+ADYPU100965,Atharva More,Faculty,Media,atharva.more965@adypu.edu.in,9552685497,Two-Wheeler,MH12 GH 7901,Zone-D,EV,Booked,High
+ADYPU100966,Shruti Joshi,Student,Management,shruti.joshi966@adypu.edu.in,9970023084,Four-Wheeler,MH13 GH 2545,Zone-D,Reserved,Available,Low
+ADYPU100967,Aditi Jadhav,Faculty,Artificial Intelligence,aditi.jadhav967@adypu.edu.in,9959325796,Four-Wheeler,MH13 EF 7347,Zone-A,EV,Booked,High
+ADYPU100968,Siddharth Kadam,Staff,Media,siddharth.kadam968@adypu.edu.in,9162183018,Two-Wheeler,MH12 GH 4558,Zone-A,Open,Available,Medium
+ADYPU100969,Yash Gaikwad,Student,Architecture,yash.gaikwad969@adypu.edu.in,9664242741,Two-Wheeler,MH13 GH 1667,Zone-B,Open,Booked,Low
+ADYPU100970,Om Chavan,Staff,Artificial Intelligence,om.chavan970@adypu.edu.in,9114186029,Two-Wheeler,MH14 AB 8846,Zone-A,Reserved,Booked,Medium
+ADYPU100971,Pooja Shinde,Student,Computer Science,pooja.shinde971@adypu.edu.in,9246444968,Two-Wheeler,MH12 CD 5568,Zone-A,Open,Available,Low
+ADYPU100972,Tanvi Joshi,Student,Artificial Intelligence,tanvi.joshi972@adypu.edu.in,9465364517,Four-Wheeler,MH12 EF 4707,Zone-A,Reserved,Available,Low
+ADYPU100973,Aarav Jadhav,Student,Architecture,aarav.jadhav973@adypu.edu.in,9215806790,Two-Wheeler,MH13 EF 8594,Zone-D,Reserved,Available,Low
+ADYPU100974,Rohan Kadam,Student,Law,rohan.kadam974@adypu.edu.in,9134449582,Two-Wheeler,MH12 AB 9860,Zone-A,EV,Booked,Low
+ADYPU100975,Shubham Patil,Student,Engineering,shubham.patil975@adypu.edu.in,9712309945,Four-Wheeler,MH12 CD 2082,Zone-D,EV,Booked,Low
+ADYPU100976,Aditi Jadhav,Faculty,Engineering,aditi.jadhav976@adypu.edu.in,9578132247,Four-Wheeler,MH12 EF 7678,Zone-C,Open,Available,High
+ADYPU100977,Shubham Joshi,Staff,Design,shubham.joshi977@adypu.edu.in,9954854867,Four-Wheeler,MH13 GH 4272,Zone-D,Reserved,Available,Medium
+ADYPU100978,Kavya Deshmukh,Student,Media,kavya.deshmukh978@adypu.edu.in,9557565055,Two-Wheeler,MH12 EF 8269,Zone-B,Open,Booked,Low
+ADYPU100979,Pranav Pawar,Student,Management,pranav.pawar979@adypu.edu.in,9467371450,Four-Wheeler,MH14 CD 8766,Zone-C,Open,Available,Low
+ADYPU100980,Ananya Deshmukh,Student,Law,ananya.deshmukh980@adypu.edu.in,9919107248,Four-Wheeler,MH12 AB 5801,Zone-C,Reserved,Available,Low
+ADYPU100981,Pranav Chavan,Student,Management,pranav.chavan981@adypu.edu.in,9590963374,Four-Wheeler,MH12 AB 7749,Zone-A,Open,Booked,Low
+ADYPU100982,Isha Pawar,Student,Engineering,isha.pawar982@adypu.edu.in,9677564914,Four-Wheeler,MH12 CD 4711,Zone-C,EV,Booked,Low
+ADYPU100983,Shruti Sharma,Student,Computer Science,shruti.sharma983@adypu.edu.in,9403930668,Four-Wheeler,MH14 GH 9621,Zone-B,EV,Booked,Low
+ADYPU100984,Atharva Gaikwad,Student,Artificial Intelligence,atharva.gaikwad984@adypu.edu.in,9781200257,Four-Wheeler,MH12 AB 2852,Zone-C,EV,Available,Low
+ADYPU100985,Ananya Kadam,Student,Computer Science,ananya.kadam985@adypu.edu.in,9853471028,Two-Wheeler,MH14 AB 5913,Zone-C,EV,Available,Low
+ADYPU100986,Rahul Deshmukh,Faculty,Law,rahul.deshmukh986@adypu.edu.in,9407447794,Four-Wheeler,MH12 AB 4059,Zone-A,Reserved,Available,High
+ADYPU100987,Rahul Gaikwad,Student,Architecture,rahul.gaikwad987@adypu.edu.in,9221411147,Four-Wheeler,MH14 EF 3602,Zone-A,EV,Booked,Low
+ADYPU100988,Neha Pawar,Student,Law,neha.pawar988@adypu.edu.in,9705866524,Four-Wheeler,MH12 GH 5456,Zone-C,EV,Booked,Low
+ADYPU100989,Pooja Patil,Student,Engineering,pooja.patil989@adypu.edu.in,9926087195,Two-Wheeler,MH14 AB 7056,Zone-D,Open,Booked,Low
+ADYPU100990,Pooja Chavan,Student,Design,pooja.chavan990@adypu.edu.in,9957246705,Two-Wheeler,MH13 CD 8982,Zone-D,Reserved,Booked,Low
+ADYPU100991,Om Bhosale,Staff,Management,om.bhosale991@adypu.edu.in,9192852920,Four-Wheeler,MH13 GH 1937,Zone-B,Open,Booked,Medium
+ADYPU100992,Pooja Pawar,Student,Law,pooja.pawar992@adypu.edu.in,9552888761,Two-Wheeler,MH13 AB 9701,Zone-A,Open,Available,Low
+ADYPU100993,Pooja Shinde,Student,Law,pooja.shinde993@adypu.edu.in,9432809776,Four-Wheeler,MH12 AB 3901,Zone-B,Reserved,Booked,Low
+ADYPU100994,Kunal Deshmukh,Student,Computer Science,kunal.deshmukh994@adypu.edu.in,9791390547,Four-Wheeler,MH13 CD 9684,Zone-A,EV,Booked,Low
+ADYPU100995,Rahul Kale,Staff,Engineering,rahul.kale995@adypu.edu.in,9754515349,Four-Wheeler,MH12 CD 4048,Zone-B,Open,Available,Medium
+ADYPU100996,Rahul Kadam,Student,Artificial Intelligence,rahul.kadam996@adypu.edu.in,9538606778,Four-Wheeler,MH13 AB 4972,Zone-C,Reserved,Booked,Low
+ADYPU100997,Siddharth Kulkarni,Faculty,Artificial Intelligence,siddharth.kulkarni997@adypu.edu.in,9766107879,Two-Wheeler,MH12 CD 6013,Zone-B,Open,Available,High
+ADYPU100998,Pooja Kulkarni,Student,Management,pooja.kulkarni998@adypu.edu.in,9763414792,Two-Wheeler,MH13 GH 2701,Zone-C,EV,Available,Low
+ADYPU100999,Isha Chavan,Student,Media,isha.chavan999@adypu.edu.in,9742326199,Two-Wheeler,MH13 CD 9655,Zone-A,Reserved,Available,Low
+ADYPU101000,Aditya Patil,Student,Management,aditya.patil1000@adypu.edu.in,9715359541,Four-Wheeler,MH12 EF 7836,Zone-C,Reserved,Available,Low

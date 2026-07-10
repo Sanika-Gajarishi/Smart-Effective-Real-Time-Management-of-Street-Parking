@@ -1,0 +1,16 @@
+
+{% extends 'parking_app/base.html' %}
+{% block content %}
+<div class="container text-center mt-5">
+  <h2>🎫 Parking E-Ticket</h2>
+  <p>Reservation ID: <strong>#{{ reservation.id }}</strong></p>
+  <p>Slot: {{ reservation.slot_number }}</p>
+  <p>Vehicle: {{ reservation.vehicle_number }}</p>
+  {% if reservation.qr_code %}
+    <img src="{{ reservation.qr_code.url }}" class="img-fluid mt-3" style="max-width:200px;">
+  {% endif %}
+  <div class="mt-4">
+    <a href="{% url 'dashboard' %}" class="btn btn-primary">Back to Dashboard</a>
+  </div>
+</div>
+{% endblock %}
