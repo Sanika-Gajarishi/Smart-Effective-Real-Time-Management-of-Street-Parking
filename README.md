@@ -1,4 +1,4 @@
-.# 🚗 Smart & Effective Real-Time Management of Street Parking
+## 🚗 Smart & Effective Real-Time Management of Street Parking
 
 A Django-based smart parking management system designed to simplify parking discovery, slot booking, digital payments, check-in/check-out, and parking-time monitoring.
 
